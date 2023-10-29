@@ -1,0 +1,141 @@
+<template>
+  <footer>
+    <section>
+        <div class="logo"></div>
+        <h2>Subscribe</h2>
+        <p style="font-size: 13px">Get 10% off your first order</p>
+        <div class="mail"></div>
+    </section>
+    <section>
+        <h2>Support</h2>
+        <p>111, Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
+        <p>exclusive@gmail.com</p>
+        <p>+ 88015-8888-32849</p>
+    </section>
+    <section class="account">
+        <h2>Account</h2>
+        <p>My Account</p>
+        <p>Login/Register</p>
+        <p>Cart</p>
+        <p>Wishlist</p>
+        <p>Shop</p>
+    </section>
+    <section class="quick">
+        <h2>Quick Link</h2>
+        <p>Privacy Policy</p>
+        <p>Terms of Use</p>
+        <p>FAQ</p>
+        <p>Contact</p>
+    </section>
+    <section class="download">
+        <h2>Download App</h2>
+        <p style="font-size: 13px">Save $3 with app new user only.</p>
+        <div class="app">
+            <div class="qr"></div>
+            <div class="playstore1"></div>
+            <div class="playstore2"></div>
+        </div>
+        <div class="socials">
+            <div class="social"></div>
+            <div class="social"></div>
+            <div class="social"></div>
+            <div class="social"></div>
+        </div>
+    </section>
+    <section class="copy">
+        <p>© Copyrights. FALANA SHERIFF OLATUNJI 2023. </p>
+    </section>
+  </footer>
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style scoped>
+footer {
+    border: 2px solid red;
+    width: 100%;
+    height: auto;
+    background: purple;
+    padding: 80px 60px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+section {
+    border: 4px solid green;
+    width: 200px;
+    height: 350px;
+}
+.logo {
+    border: 1px solid yellow;
+    height: 50px;
+    width: 160px;
+}
+.mail {
+    border: 1px solid blue;
+    height: 45px;
+    width: 100%;
+}
+.account {
+    border: 4px solid green;
+    width: 180px;
+    height: 350px;
+}
+.quick {
+    border: 4px solid green;
+    width: 180px;
+    height: 350px;
+}
+.download {
+    border: 4px solid green;
+    width: 220px;
+    height: 350px;
+}
+.qr {
+    border: 2px solid blue;
+    grid-area: qr
+}
+.playstore1 {
+    border: 2px solid green;
+    grid-area: store1;
+}
+.playstore2 {
+    border: 2px solid yellow;
+    grid-area: store2;
+}
+.app {
+    border: 1px solid red;
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-areas: 'qr store1 ' 'qr store2';
+    gap: 2px
+}
+.socials {
+    border: 1px solid green;
+    height: 40px;
+    width: 90%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.social {
+    border: 1px solid blue;
+    height: 40px;
+    width: 40px;
+}
+.copy {
+    border: 2px solid red;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+}
+</style>
