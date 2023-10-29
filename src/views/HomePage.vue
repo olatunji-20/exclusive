@@ -1,9 +1,5 @@
 <template>
     <NavBar />
-    <div class="ew">
-        <h1>YOU ARE WELCOME</h1>
-
-    </div>
 </template>
 
 <script>
@@ -21,10 +17,4 @@ export default {
 </script>
 
 <style>
-.ew {
-    border: 2px solid red;
-    height: 500px;
-    width: 100%;
-}
-
 </style>
