@@ -1,8 +1,33 @@
 <template>
-  <div>
+  <div class="categories">
     <h1>Categories</h1>
     <h2>Browse By Category</h2>
-    <div class="content"></div>
+    <div class="content">
+        <div class="cat">
+            <div class="icon"></div>
+            <p>Phones</p>
+        </div>
+        <div class="cat">
+            <div class="icon"></div>
+            <p>Computers</p>
+        </div>
+        <div class="cat">
+            <div class="icon"></div>
+            <p>SmartWatch</p>
+        </div>
+        <div class="cat">
+            <div class="icon"></div>
+            <p>Camera</p>
+        </div>
+        <div class="cat">
+            <div class="icon"></div>
+            <p>HeadPhones</p>
+        </div>
+        <div class="cat">
+            <div class="icon"></div>
+            <p>Gaming</p>
+        </div>
+    </div>
   </div>
 </template>
 
@@ -17,10 +42,10 @@ export default {
 </script>
 
 <style scoped>
-div {
+.categories {
     border: 3px solid blue;
     width: 100%;
-    height: 700px;
+    height: auto;
     padding: 50px;
 }
 h1 {
@@ -35,7 +60,33 @@ h2 {
 .content {
     border: 2px solid brown;
     width: 100%;
-    height: 200px;
+    height: 165px;
     margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.cat {
+    border: 2px solid green;
+    width: 180px;
+    height: 150px;
+    padding: 30px;
+    text-align: center;
+}
+.cat:hover {
+    background: tomato;
+    cursor: pointer;
+    transition: .3s;
+    color: white;
+}
+.icon {
+    border: 1px solid red;
+    width: 50px;
+    height: 50px;
+    margin: 0px auto;
+}
+.cat p {
+    margin-top: 25px;
 }
 </style>
