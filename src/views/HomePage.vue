@@ -13,11 +13,13 @@
             <div class="main"></div>
         </aside>
     </section>
+    <Categories />
     <FootBar />
 </template>
 
 <script>
 import NavBar from '../components/NavBar.vue'
+import Categories from '../components/Categories.vue'
 import FootBar from '../components/FootBar.vue'
 export default {
     name: 'HomePage',
@@ -26,6 +28,7 @@ export default {
     },
     components: {
         NavBar,
+        Categories,
         FootBar
     }
 
