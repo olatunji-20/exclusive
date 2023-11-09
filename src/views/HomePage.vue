@@ -16,6 +16,7 @@
     <Todays />
     <Categories />
     <Month />
+    <Enhance />
     <OurProducts />
     <NewArrival />
     <Value />
@@ -27,6 +28,7 @@ import NavBar from '../components/NavBar.vue'
 import Todays from '../components/Todays.vue'
 import Categories from '../components/Categories.vue'
 import Month from '../components/Month.vue' 
+import Enhance from '../components/Enhance.vue'
 import OurProducts from '../components/OurProducts.vue' 
 import NewArrival from '../components/NewArrival.vue'
 import Value from '../components/Value.vue'
@@ -41,6 +43,7 @@ export default {
     Todays, 
     Categories,
     Month,
+    Enhance,
     OurProducts,
     NewArrival,
     Value,

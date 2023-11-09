@@ -1,7 +1,9 @@
 <template>
   <footer>
     <section>
-        <div class="logo"></div>
+        <div class="logo">
+            <img src="/img/exclusive.svg" class="p-img" />
+        </div>
         <h2>Subscribe</h2>
         <p style="font-size: 13px">Get 10% off your first order</p>
         <div class="mail"></div>
@@ -75,6 +77,12 @@ section {
     border: 1px solid yellow;
     height: 50px;
     width: 160px;
+}
+.p-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 5px;
 }
 .mail {
     border: 1px solid blue;

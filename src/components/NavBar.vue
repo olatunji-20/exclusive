@@ -1,6 +1,8 @@
 <template>
   <header>
-    <div class="logo"></div>
+    <div class="logo">
+      <img src="/img/exclusive.svg" class="p-img" />
+    </div>
     <nav class="nav">
       <ul>
         <li>Home</li>
@@ -37,6 +39,11 @@ header {
   border: 1px solid pink;
   width: 200px;
   height: 50px;
+}
+.p-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 .nav {
   border: 1px solid red;
