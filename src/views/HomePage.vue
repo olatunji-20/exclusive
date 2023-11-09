@@ -15,6 +15,8 @@
     </section>
     <Todays />
     <Categories />
+    <Month />
+    <OurProducts />
     <FootBar />
 </template>
 
@@ -22,6 +24,8 @@
 import NavBar from '../components/NavBar.vue'
 import Todays from '../components/Todays.vue'
 import Categories from '../components/Categories.vue'
+import Month from '../components/Month.vue' 
+import OurProducts from '../components/OurProducts.vue' 
 import FootBar from '../components/FootBar.vue'
 export default {
     name: 'HomePage',
@@ -32,6 +36,8 @@ export default {
         NavBar,
         Todays,
         Categories,
+        Month,
+        OurProducts,
         FootBar
     }
 
