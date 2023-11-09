@@ -3,14 +3,15 @@
       <h1>Our Products</h1>
       <h2>Explore Our Products</h2>
       <div class="sales">
-        <FlashSales />
+        <Explore />
       </div>
+      <div class="view">View All Products</div>
       
     </div>
   </template>
   
   <script>
-  import FlashSales from './FlashSales.vue'
+  import Explore from './Explore.vue'
 
   export default {
       name: "OurProducts",
@@ -18,7 +19,7 @@
   
       },
       components: {
-        FlashSales
+        Explore
       }
   
   }
@@ -46,5 +47,14 @@
     width: 100%;
     height: 650px;
     margin: 30px auto;
-  }  
+  }
+  .view {
+    border: 1px solid blue;
+    width: 250px;
+    height: auto;
+    padding: 15px 60px;
+    text-align: center;
+    margin: 10px auto;
+
+  }
   </style>

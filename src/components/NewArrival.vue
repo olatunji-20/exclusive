@@ -1,25 +1,17 @@
 <template>
     <div class="categories">
-      <h1>This Month</h1>
-      <h2>Best Selling Products</h2>
-      <div class="sales">
-        <BestSelling />
-      </div>
-      
+      <h1>Featured</h1>
+      <h2>New Arrival</h2>
+      <div class="new"></div>
     </div>
   </template>
   
   <script>
-  import BestSelling from './BestSelling.vue';
-
   export default {
-      name: "Month",
+      name: "NewArrival",
       setup() {
   
-      },
-      components: {
-        BestSelling
-}
+      }
   
   }
   </script>
@@ -38,13 +30,11 @@
       padding: 15px;
   }
   h2 {
-      font-size: 40px;
-      display: inline;
+      font-size: 45px;
   }
-  .sales {
-    border: 3px solid green;
+  .new {
+    border: 4px solid red;
     width: 100%;
-    height: auto;
-    margin: 30px auto;
-  }  
+    height: 600px;
+  }
   </style>

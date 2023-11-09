@@ -17,6 +17,8 @@
     <Categories />
     <Month />
     <OurProducts />
+    <NewArrival />
+    <Value />
     <FootBar />
 </template>
 
@@ -26,6 +28,8 @@ import Todays from '../components/Todays.vue'
 import Categories from '../components/Categories.vue'
 import Month from '../components/Month.vue' 
 import OurProducts from '../components/OurProducts.vue' 
+import NewArrival from '../components/NewArrival.vue'
+import Value from '../components/Value.vue'
 import FootBar from '../components/FootBar.vue'
 export default {
     name: 'HomePage',
@@ -33,13 +37,15 @@ export default {
 
     },
     components: {
-        NavBar,
-        Todays,
-        Categories,
-        Month,
-        OurProducts,
-        FootBar
-    }
+    NavBar,
+    Todays, 
+    Categories,
+    Month,
+    OurProducts,
+    NewArrival,
+    Value,
+    FootBar
+}
 
 }
 </script>
