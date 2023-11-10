@@ -1,17 +1,26 @@
 <template>
     <div class="flash">
-      <Card />
-      <h1>explore</h1>
+      <Card :displayProducts="productStore.products" />
     </div>
   </template>
   
   <script>
-  import Card from './Card.vue'
+  import { useProductStore } from '../stores/productStore';
+  import Card from './Card.vue';
+
   export default {
       name: 'Explore',
-      components: {
-        Card
+      setup() {
+      const productStore = useProductStore();
+      productStore.getProducts();
+
+      return {
+        productStore
       }
+    },
+    components: {
+       Card
+    }
   }
   </script>
   
@@ -22,8 +31,8 @@
       height: 100%;
       display: flex;
       flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: space-between;
+      flex-wrap: wrap;
+      justify-content: space-around;
   
   }
   .card {

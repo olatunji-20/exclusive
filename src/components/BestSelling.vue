@@ -1,14 +1,22 @@
 <template>
     <div class="flash">
-      <Card />
-      <h1>Best selling</h1>
+      <Card :displayProducts="productStore.products" />
     </div>
   </template>
   
   <script>
+  import { useProductStore } from '../stores/productStore';
   import Card from './Card.vue'
   export default {
       name: 'BestSelling',
+      setup() {
+        const productStore = useProductStore();
+        productStore.getProducts();
+
+        return {
+          productStore
+        }
+      },
       components: {
         Card
       }
@@ -18,8 +26,8 @@
   <style scoped>
   .flash {
       border: 2px solid purple;
-      width: 950px;
-      height: 360px;
+      width: 3000px;
+      height: 370px;
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;

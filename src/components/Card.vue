@@ -1,34 +1,38 @@
 <template>
-  <div class="product-card">
+  <div v-for="p in displayProducts" :key="p.id" class="product-card">
     <div class="image">
-        <div class="discount">-35%</div>
+        <div class="discount">-{{ p.discount }}%</div>
         <div class="fave">8</div>
         <div class="watch">8</div>
-        <img src="/img/pad.png" class="p-img" />
+        <img :src="p.productImage" class="p-img" />
         <div class="add">ADD TO CART</div>
-    </div>
-    
+    </div>    
     <div class="details">
-        <p>PRODUCT NAME</p>
+        <p style="font-weight: bold"> {{ p.productName }} </p>
         <p style="display: inline; line-height: 10px">$350</p>
         <p style="display: inline; margin-left: 15px; text-decoration: line-through;">$500</p>
-        <div class="star"></div>
+        <div class="star">{{ p.rating }}</div>
     </div>
-
   </div>
 </template>
 
 <script>
 export default {
-
+    name: 'Card',
+    setup() {
+        
+    },
+    props: {
+        displayProducts: Array
+    }
 }
 </script>
 
 <style scoped>
 .product-card {
-    border: 4px solid hotpink;
-    width: 230px;
-    height: 360px;
+    border: 2px solid hotpink;
+    width: 220px;
+    height: 350px;
     cursor: pointer;
 }
 .image {
@@ -93,7 +97,7 @@ export default {
 .details {
     border: 1px solid red;
     width: 100%;
-    height: 150px;
+    height: 140px;
 }
 .star {
     border: 1px solid green;

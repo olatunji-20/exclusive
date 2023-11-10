@@ -5,70 +5,80 @@
             "productName": "CANON EOS DSLR Camera",
             "price": 360,
             "rating": 4.6,
-            "productImage": "../rnug"
+            "discount": 5,
+            "productImage": "/img/pad.png"
         },
         {
             "id": 2,
             "productName": "ASUS FHD Gaming Laptop",
             "price": 700,
             "rating": 5,
-            "productImage": "../rnug"
+            "discount": 3,
+            "productImage": "/img/pad.png"
         },
         {
             "id": 3,
             "productName": "Curology Product Set",
             "price": 500,
             "rating": 4.3,
-            "productImage": "../rnug"
+            "discount": 9,
+            "productImage": "/img/pad.png"
         },
         {
             "id": 4,
             "productName": "Kids Electric car",
             "price": 950,
             "rating": 4.6,
-            "productImage": "../rnug"
+            "discount": 6,
+            "productImage": "/img/pad.png"
         },
         {
             "id": 5,
             "productName": "Jr. Zoom Soccer Cleats",
             "price": 1180,
             "rating": 5,
-            "productImage": "../rnug"
+            "discount": 5,
+            "productImage": "/img/pad.png"
         },
         {
             "id": 6,
             "productName": "GP11 Shooter USB Gamepad",
             "price": 650,
             "rating": 3.7,
-            "productImage": "../rnug"
+            "discount": 2,
+            "productImage": "/img/pad.png"
         },
         {
             "id": 7,
             "productName": "Quilted Satin Jacket",
             "price": 240,
             "rating": 4.1,
-            "productImage": "../rnug"
+            "discount": 0,
+            "productImage": "/img/pad.png"
         },
         {
             "id": 8,
             "productName": "RGB Liquid CPU Cooler",
             "price": 180,
             "rating": 4.7,
-            "productImage": "../rnug"
+            "discount": 2,
+            "productImage": "/img/pad.png"
         },
         {
             "id": 9,
             "productName": "Small Bookshelf",
             "price": 250,
             "rating": 4.5,
-            "productImage": "../rnug"
+            "discount": 8,
+            "productImage": "/img/pad.png"
         },
         {
             "id": 10,
             "productName": "AK-900 Wired Keyboard",
             "price": 150,
             "rating": 5,
-            "productImage": "../rnug"
+            "discount": 5,
+            "productImage": "/img/pad.png"
         }
     ]
 }

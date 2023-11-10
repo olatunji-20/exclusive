@@ -34,7 +34,7 @@
         <p style="font-size: 13px">Save $3 with app new user only.</p>
         <div class="app">
             <div class="qr">
-                <!-- <img src="/img/qrcode.svg" class="p-img" /> -->
+                <!-- <img src="/img/qrcode.svg" class="p-img2" /> -->
             </div>
             <div class="playstore1"></div>
             <div class="playstore2"></div>
@@ -110,7 +110,7 @@ section {
     border: 2px solid blue;
     grid-area: qr;
 }
-.p-img {
+.p-img2 {
     width: 100%;
     height: 100%;
     object-fit: cover;

@@ -55,5 +55,6 @@
     width: 100%;
     height: auto;
     margin: 30px auto;
+    overflow: auto;
   }  
   </style>
