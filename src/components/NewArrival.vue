@@ -114,7 +114,7 @@
   }
   .second {
     border: 4px solid blue;
-    width: 48%;
+    width: 50%;
     height: 100%;
     display: grid;
     grid-template-areas: 'one one' 'two three';

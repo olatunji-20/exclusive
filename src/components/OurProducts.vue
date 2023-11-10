@@ -45,7 +45,7 @@
   .sales {
     border: 3px solid green;
     width: 100%;
-    height: 650px;
+    height: 750px;
     margin: 30px auto;
   }
   .view {

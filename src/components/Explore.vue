@@ -17,9 +17,9 @@
   
   <style scoped>
   .flash {
-      border: 2px solid purple;
+      border: 4px solid yellowgreen;
       width: 950px;
-      height: 360px;
+      height: 100%;
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;

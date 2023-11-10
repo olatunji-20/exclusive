@@ -45,7 +45,7 @@ export default {
     text-align: center;
 }
 .buss {
-    border: 8px solid red;
+    border: 10px solid red;
     width: 70px;
     height: 70px;
     margin: 0px auto;

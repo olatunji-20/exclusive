@@ -2,6 +2,7 @@
     <div class="categories">
       <h1>This Month</h1>
       <h2>Best Selling Products</h2>
+      <div class="dir">View All</div>
       <div class="sales">
         <BestSelling />
       </div>
@@ -40,6 +41,13 @@
   h2 {
       font-size: 40px;
       display: inline;
+  }
+  .dir {
+    border: 1px solid firebrick;
+    width: 120px;
+    padding: 15px;
+    text-align: center;
+    float: right;
   }
   .sales {
     border: 3px solid green;

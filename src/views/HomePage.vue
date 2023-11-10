@@ -3,10 +3,15 @@
     <section>
         <aside>
             <ul>
-                <li>Woman's fashion</li>
-                <li>Woman's fashion</li>
-                <li>Woman's fashion</li>
-                <li>Woman's fashion</li>
+                <li>Women's fashion</li>
+                <li>Men's fashion</li>
+                <li>Electronics</li>
+                <li>Home & LifeStyle</li>
+                <li>Medicine</li>
+                <li>Sports & Outdoor</li>
+                <li>Baby's & Toys</li>
+                <li>Groceries & Pets</li>
+                <li>Health & Beauty</li>
             </ul>
         </aside>
         <aside class="hero">
@@ -64,6 +69,11 @@ aside {
     border: 2px solid red;
     width: 23%;
     height: 400px;
+    padding: 30px 20px;
+}
+aside ul li {
+    list-style-type: none;
+    line-height: 35px;
 }
 .hero {
     border: 2px solid green;
@@ -73,7 +83,7 @@ aside {
 }
 .main {
     border: 4px solid blue;
-    background: black;
+    background: burlywood;
     width: 100%;
     height: 350px;
 }

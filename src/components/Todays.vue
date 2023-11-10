@@ -3,6 +3,10 @@
       <h1>Today's</h1>
       <h2>Flash Sales</h2>
       <div class="time"></div>
+      <div class="dir">
+        <div class="arr"></div>
+        <div class="arr"></div>
+      </div>
       <div class="sales">
         <FlashSales />
       </div>
@@ -45,10 +49,26 @@
   }
   .time {
     border: 1px solid red;
-    width: 350px;
+    width: 300px;
     height: 60px;
     display: inline-block;
-    margin-left: 100px;
+    margin-left: 70px;
+  }
+  .dir {
+    border: 1px solid firebrick;
+    width: 120px;
+    height: 50px;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .arr {
+    border: 2px solid greenyellow;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: pink;
   }
   .sales {
     border: 3px solid green;

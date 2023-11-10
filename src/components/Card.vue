@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="product-card">
     <div class="image">
         <div class="discount">-35%</div>
         <div class="fave">8</div>
@@ -25,10 +25,11 @@ export default {
 </script>
 
 <style scoped>
-.card {
-    border: 2px solid blue;
-    width: 250px;
+.product-card {
+    border: 4px solid hotpink;
+    width: 230px;
     height: 360px;
+    cursor: pointer;
 }
 .image {
     border: 4px solid green;
@@ -38,7 +39,7 @@ export default {
     background: gray;
 }
 .discount {
-    border: 1px solid blue;
+    border: 1px solid brown;
     padding: 3px 10px;
     font-size: 14px;
     width: 55px;
@@ -57,7 +58,7 @@ export default {
     padding: 5px;
 }
 .watch {
-    border: 1px solid red;
+    border: 1px solid green;
     width: 35px;
     height: 35px;
     background: yellow;
@@ -80,13 +81,14 @@ export default {
     padding: 10px;
     position: absolute;
     bottom: 0;
+    left: 0;
     background: red;
     text-align: center;
-    visibility: hidden;
+    display: none;
+    cursor: grabbing;
 }
-.card:hover .add {
-    cursor: pointer;
-    visibility: visible;
+.product-card:hover .add {
+    display: inline-block;
 }
 .details {
     border: 1px solid red;
