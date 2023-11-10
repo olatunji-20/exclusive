@@ -5,6 +5,7 @@
         <div class="fave">8</div>
         <div class="watch">8</div>
         <img src="/img/pad.png" class="p-img" />
+        <div class="add">ADD TO CART</div>
     </div>
     
     <div class="details">
@@ -71,6 +72,21 @@ export default {
     height: 100%;
     object-fit: contain;
     padding: 5px;
+}
+.add {
+    border: 2px solid saddlebrown;
+    /* height: 40px; */
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    background: red;
+    text-align: center;
+    visibility: hidden;
+}
+.card:hover .add {
+    cursor: pointer;
+    visibility: visible;
 }
 .details {
     border: 1px solid red;
