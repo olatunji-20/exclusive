@@ -84,7 +84,7 @@ aside ul li {
 .main {
     border: 4px solid blue;
     background: burlywood;
-    width: 100%;
+    width: 97%;
     height: 350px;
 }
 </style>

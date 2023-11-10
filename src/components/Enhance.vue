@@ -2,7 +2,7 @@
   <section>
     <div class="enha">
         <div class="one">
-            <h5>Categories</h5>
+            <h4 style="color: lawngreen">Categories</h4>
             <h1>Enhance Your Music Experience</h1>
             <div class="time"></div>
             <div class="buy">BUY NOW</div>

@@ -43,10 +43,11 @@
       display: inline;
   }
   .dir {
-    border: 1px solid firebrick;
+    border: 3px solid firebrick;
     width: 120px;
     padding: 15px;
     text-align: center;
+    background: pink;
     float: right;
   }
   .sales {

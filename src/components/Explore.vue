@@ -18,7 +18,7 @@
   <style scoped>
   .flash {
       border: 4px solid yellowgreen;
-      width: 950px;
+      width: 100%;
       height: 100%;
       display: flex;
       flex-direction: row;

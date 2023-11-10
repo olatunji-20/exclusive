@@ -46,6 +46,7 @@ export default {
 }
 .buss {
     border: 10px solid red;
+    background: yellow;
     width: 70px;
     height: 70px;
     margin: 0px auto;
