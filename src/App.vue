@@ -13,4 +13,7 @@ import { RouterLink, RouterView } from 'vue-router'
 body {
   margin: 0px !important;
 }
+html {
+  scroll-behavior: smooth;
+}
 </style>

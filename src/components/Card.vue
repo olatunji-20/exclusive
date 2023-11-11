@@ -1,18 +1,20 @@
 <template>
   <div v-for="p in displayProducts" :key="p.id" class="product-card">
-    <div class="image">
-        <div class="discount">-{{ p.discount }}%</div>
-        <div class="fave">8</div>
-        <div class="watch">8</div>
-        <img :src="p.productImage" class="p-img" />
-        <div class="add">ADD TO CART</div>
-    </div>    
-    <div class="details">
-        <p style="font-weight: bold"> {{ p.productName }} </p>
-        <p style="display: inline; line-height: 10px">$350</p>
-        <p style="display: inline; margin-left: 15px; text-decoration: line-through;">$500</p>
-        <div class="star">{{ p.rating }}</div>
-    </div>
+    <router-link :to="'/product-page/' + p.id">
+        <div class="image">
+            <div v-if="p.discount > 0" class="discount">-{{ p.discount }}%</div>
+            <div class="fave">8</div>
+            <div class="watch">8</div>
+            <img :src="p.productImage" class="p-img" />
+            <div class="add">ADD TO CART</div>
+        </div>    
+        <div class="details">
+            <p style="font-weight: bold"> {{ p.productName }} </p>
+            <p style="display: inline; line-height: 10px">$350</p>
+            <p style="display: inline; margin-left: 15px; text-decoration: line-through;">${{ p.price }}</p>
+            <div class="star">{{ p.rating }}</div>
+        </div>
+    </router-link>
   </div>
 </template>
 
@@ -40,7 +42,7 @@ export default {
     width: 100%;
     height: 200px;
     position: relative;
-    background: gray;
+    background: powderblue;
 }
 .discount {
     border: 1px solid brown;

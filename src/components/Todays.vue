@@ -7,8 +7,8 @@
       <div class="arr"></div>
       <div @click="moveLeft" class="arr"></div>
     </div>
-    <div ref="flashsale" class="sales">
-      <FlashSales />
+    <div class="sales">
+      <FlashSales ref="flashsale" id="ooo" />
     </div>
     <div class="view">View All Products</div>
     
@@ -22,16 +22,24 @@ import { ref } from 'vue'
 export default {
     name: "Todays",
     setup() {
-      const flashsale = ref(null)
+      // const flashsale = ref(null)
 
-      const moveLeft = () => {
-        // flashsale.scrollLeft += 30
-        console.log(flashsale.value)
-      }
+      // // const moveLeft = () => {
+      // //   flashsale.scrollLeft;
+      // //   console.log(flashsale)
+      // // }
 
-      return {
-        moveLeft
-      }
+      // const moveLeft = () => {
+      //   document.querySelector('#ooo').scrollTo({
+      //     right: 500,
+      //     behavior: 'smooth'
+      //   })
+      // }
+
+      // return {
+      //   flashsale,
+      //   moveLeft
+      // }
     },
     components: {
       FlashSales
@@ -81,7 +89,7 @@ h2 {
   background: pink;
 }
 .sales {
-  border: 3px solid green;
+  border: 8px solid green;
   width: 100%;
   height: auto;
   margin: 30px auto;
