@@ -5,9 +5,9 @@
     <div class="time"></div>
     <div class="dir">
       <div class="arr"></div>
-      <div class="arr"></div>
+      <div @click="moveLeft" class="arr"></div>
     </div>
-    <div class="sales">
+    <div ref="flashsale" class="sales">
       <FlashSales />
     </div>
     <div class="view">View All Products</div>
@@ -17,11 +17,21 @@
 
 <script>
 import FlashSales from './FlashSales.vue'
+import { ref } from 'vue'
 
 export default {
     name: "Todays",
     setup() {
-      
+      const flashsale = ref(null)
+
+      const moveLeft = () => {
+        // flashsale.scrollLeft += 30
+        console.log(flashsale.value)
+      }
+
+      return {
+        moveLeft
+      }
     },
     components: {
       FlashSales
