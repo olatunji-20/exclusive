@@ -32,7 +32,7 @@ h1 {
 .related {
     border: 2px solid brown;
     width: 100%;
-    height: 250px;
+    height: 400px;
     margin: 50px auto;
 }
 

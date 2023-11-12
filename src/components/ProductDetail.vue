@@ -8,6 +8,28 @@
             <h1>{{ productInfo.productName }}</h1>
             <div class="star"></div>
             <p style="display: inline-block;"> In stock</p>
+            <p>${{ productInfo.price }}</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur dolore molestiae dolorem 
+                architecto recusandae dolores obcaecati fugit adipisci quod ducimus.</p>
+            <hr />
+            <p>Colors: </p>
+            <p>Size: </p>
+            <div class="ppp">
+                <div class="one"></div>
+                <div class="one"></div>
+                <div class="two"></div>
+            </div>
+            <div class="free">
+                <div class="aaa">
+                    <div class="icon"></div>
+                    <div class="wup"></div>
+                </div>
+                <hr />
+                <div class="aaa">
+                    <div class="icon"></div>
+                    <div class="wup"></div>
+                </div>
+            </div>
         </div>
 
     </div>
@@ -54,8 +76,8 @@ export default {
 }
 .det {
     border: 2px solid red;
-    width: 500px;
-    height: 500px;
+    width: 350px;
+    height: 600px;
 }
 .star {
     border: 1px solid pink;
@@ -64,5 +86,52 @@ export default {
     width: 120px;
     display: inline-block;
     margin-right: 20px;
+}
+hr {
+    border: 4px solid fuchsia
+}
+.ppp {
+    border: 2px solid blue;
+    width: 100%;
+    height: 44px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.one {
+    border: 2px solid green;
+    width: 38%;
+    height: 40px;
+}
+.two {
+    border: 2px solid red;
+    width: 40px;
+    height: 40px;
+}
+.free {
+    border: 2px solid chartreuse;
+    width: 100%;
+    height: auto;
+}
+.aaa {
+    border: 2px solid blue;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.icon {
+    border: 1px solid red;
+    width: 18%;
+    height: 100%;
+}
+.wup {
+    border: 1px solid red;
+    width: 78%;
+    height: 100%;
 }
 </style>
