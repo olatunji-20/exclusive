@@ -12,11 +12,17 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur dolore molestiae dolorem 
                 architecto recusandae dolores obcaecati fugit adipisci quod ducimus.</p>
             <hr />
-            <p>Colors: </p>
-            <p>Size: </p>
             <div class="ppp">
-                <div class="one"></div>
-                <div class="one"></div>
+                <div class="one">
+                    <div @click="decrease" class="plus">-</div>
+                    <div class="plus1">
+                        <input v-model="quantity" />
+                    </div>
+                    <div @click="increase" class="plus">+</div>
+                </div>
+                <div class="one">
+                    <AddToCart />
+                </div>
                 <div class="two"></div>
             </div>
             <div class="free">
@@ -37,13 +43,31 @@
 </template>
 
 <script>
+import { ref, watch } from 'vue'
+import AddToCart from './AddToCart.vue';
+
 export default {
     name: 'ProductDetail',
     setup() {
+        const quantity = ref(3);
+        const increase = () => {
+            quantity.value++
+        };
+        const decrease = () => {
+            quantity.value--
+        };
 
+        return {
+            quantity,
+            increase,
+            decrease
+        }
     },
     props: {
         productInfo: Object
+    },
+    components: {
+        AddToCart
     }
 }
 </script>
@@ -68,6 +92,7 @@ export default {
     border: 6px solid green;
     width: 450px;
     height: 450px;
+    background: pink;
 }
 .p-img {
     width: 100%;
@@ -88,7 +113,7 @@ export default {
     margin-right: 20px;
 }
 hr {
-    border: 4px solid fuchsia
+    border: 2px solid saddlebrown;
 }
 .ppp {
     border: 2px solid blue;
@@ -102,8 +127,28 @@ hr {
 }
 .one {
     border: 2px solid green;
-    width: 38%;
+    width: 40%;
     height: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.plus {
+    border: 2px solid yellowgreen;
+    width: 35px;
+    height: 35px;
+}
+.plus1 {
+    border: 2px solid yellowgreen;
+    width: 50px;
+    height: 35px;
+}
+input {
+    width: 45px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 23px;
 }
 .two {
     border: 2px solid red;
