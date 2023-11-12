@@ -1,7 +1,6 @@
 <template>
   <NavBar />
   <ProductDetail :productInfo="productStore.product" />
-  
   <RelatedItem />
   <FootBar />
 </template>
@@ -27,7 +26,8 @@ export default {
         })
 
         return {
-            productStore
+            productStore,
+            route
         }
 
     },

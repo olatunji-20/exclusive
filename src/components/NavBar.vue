@@ -5,16 +5,20 @@
     </div>
     <nav class="nav">
       <ul>
-        <li>Home</li>
-        <li>Contact</li>
-        <li>About</li>
+        <li><router-link to="/">Home</router-link></li>
+        <li><router-link to="/contact">Contact</router-link></li>
+        <li><router-link to="/about">About</router-link></li>
         <li>Sign Up</li>
       </ul>
     </nav>
     <div class="menu">
       <div class="search"></div>
       <div class="fave"></div>
-      <div class="cart"></div>
+      <router-link to="/cart-page">
+          <div class="cart">
+
+          </div>
+      </router-link>
     </div>
   </header>
 </template>

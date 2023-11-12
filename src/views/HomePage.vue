@@ -11,7 +11,7 @@
                 <li>Sports & Outdoor</li>
                 <li>Baby's & Toys</li>
                 <li>Groceries & Pets</li>
-                <li>Health & Beauty</li>
+                <li><router-link to="/checkout">Health & Beauty</router-link></li>
             </ul>
         </aside>
         <aside class="hero">
