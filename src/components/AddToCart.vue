@@ -1,18 +1,22 @@
 <template>
-  <div @click="loud" class="www">ADD TO CART</div>
+  <div @click="cartStore.addToCart({ product, quantity })" class="www">ADD TO CART</div>
 </template>
 
 <script>
+import { useCartStore } from '../stores/cartStore'
+
 export default {
     name: 'AddToCart',
     setup() {
-        const loud = () => {
-            alert("jdhdhd")
-        }
-
+        const cartStore = useCartStore();
+        
         return {
-            loud
+            cartStore
         }
+    },
+    props: {
+        quantity: Number,
+        product: Object
     }
 
 }

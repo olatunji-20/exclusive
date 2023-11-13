@@ -21,7 +21,7 @@
                     <div @click="increase" class="plus">+</div>
                 </div>
                 <div class="one">
-                    <AddToCart />
+                    <AddToCart :product="productInfo" :quantity="quantity" />
                 </div>
                 <div class="two"></div>
             </div>
