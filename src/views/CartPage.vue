@@ -1,7 +1,8 @@
 <template>
   <NavBar />
-  <Cart />
-  <h1>CARTPAGE</h1>
+  <div class="large">
+    <Cart />
+  </div>
   <FootBar />
 </template>
 
@@ -21,7 +22,10 @@ export default {
 </script>
 
 <style scoped>
-h1 {
-    margin: 200px;
+.large {
+  border: 6px solid palevioletred;
+  width: 100%;
+  height: auto;
+  padding: 80px 50px;
 }
 </style>
