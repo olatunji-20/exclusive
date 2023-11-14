@@ -17,7 +17,7 @@ export const useCartStore = defineStore('cartStore', {
                     item => item.productName === existingItem.productName
                 )
                 this.cartItems[existingItemIndex] = existingItem
-                existingItem.quantity = existingItem.quantity + payload.number
+                existingItem.quantity = existingItem.quantity + payload.quantity
             } else {
                 this.cartItems.push({
                     id: payload.product.id,

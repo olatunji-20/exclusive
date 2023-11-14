@@ -12,11 +12,11 @@
         <div class="img">
           <img :src="product.productImage" class="p-img" />
         </div>
-        <p style="width: 150px">{{ product.productName }}</p>
+        <p style="width: 150px"> {{ product.productName }} </p>
       </div>
-      <h4>${{ product.price }}</h4>
-      <h4>{{ product.quantity }}</h4>
-      <h4>${{ product.price * product.quantity }}</h4>
+      <p> ${{ product.price }} </p>
+      <p> {{ product.quantity }} </p>
+      <p> ${{ product.price * product.quantity }} </p>
     </div>
   </div>
 </template>
@@ -40,7 +40,7 @@ export default {
 .border {
     border: 4px solid red;
     width: 100%;
-    min-height: 300px;
+    height: auto;
     padding: 5px;
 }
 .headers {

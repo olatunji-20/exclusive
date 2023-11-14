@@ -1,6 +1,9 @@
 <template>
     <NavBar />
-    <h1>CHECKOUT</h1>
+    <h1>CHECKOUT PAGE</h1>
+    <div class="large">
+        <h1>BILLING DETAILS</h1>
+    </div>
     <FootBar />
   </template>
   
@@ -18,7 +21,10 @@
   </script>
   
   <style scoped>
-  h1 {
-      margin: 200px;
+  .large {
+    border: 5px solid blue;
+    width: 100%;
+    height: 500px;
+    padding: 50px;
   }
   </style>

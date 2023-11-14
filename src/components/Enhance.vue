@@ -42,7 +42,7 @@ section {
     border: 2px solid blue;
     width: 45%;
     height: 100%;
-    padding: 20px 50px;
+    padding: 20px 10px;
     color: white;
 }
 h1 {
@@ -67,7 +67,8 @@ h1 {
     width: 49%;
     height: 100%;
     background-image: url(/img/ellipse.png);
-    background-size: contain;
+    background-position: center;
+    /* background-size: contain; */
 }
 .p-img {
     width: 100%;
