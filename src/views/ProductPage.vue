@@ -1,14 +1,14 @@
 <template>
   <NavBar />
   <ProductDetail :productInfo="productStore.product" />
-  <RelatedItem />
+  <RelatedItem topic="Related Items" />
   <FootBar />
 </template>
 
 <script>
 import NavBar from '../components/NavBar.vue';
-import ProductDetail from '../components/ProductDetail.vue'
-import RelatedItem from '../components/RelatedItem.vue'
+import ProductDetail from '../components/ProductDetail.vue';
+import RelatedItem from '../components/RelatedItem.vue';
 import FootBar from '../components/FootBar.vue';
 
 import { useRoute } from 'vue-router';

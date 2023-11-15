@@ -6,7 +6,9 @@
             <div class="fave">8</div>
             <div class="watch">8</div>
             <img :src="p.productImage" class="p-img" />
-            <div class="add">ADD TO CART</div>
+            <!-- <div class="add">
+                <AddToCart :product="productInfo" :quantity="quantity" />
+            </div> -->
         </div>    
         <div class="details">
             <p style="font-weight: bold"> {{ p.productName }} </p>
@@ -19,6 +21,7 @@
 </template>
 
 <script>
+import AddToCart from './AddToCart.vue';
 export default {
     name: 'Card',
     setup() {
@@ -26,6 +29,9 @@ export default {
     },
     props: {
         displayProducts: Array
+    },
+    components: {
+        AddToCart
     }
 }
 </script>
@@ -80,22 +86,20 @@ export default {
     object-fit: contain;
     padding: 5px;
 }
-.add {
+/* .add {
     border: 2px solid saddlebrown;
-    /* height: 40px; */
+    height: 40px;
     width: 100%;
     padding: 10px;
     position: absolute;
     bottom: 0;
     left: 0;
-    background: red;
-    text-align: center;
     display: none;
     cursor: grabbing;
 }
 .product-card:hover .add {
     display: inline-block;
-}
+} */
 .details {
     border: 1px solid red;
     width: 100%;

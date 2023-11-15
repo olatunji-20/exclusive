@@ -1,18 +1,35 @@
 <template>
 <div class="categories">
-    <h1>Related Item</h1>
-    <div class="related"></div>
+    <h1>{{ topic }}</h1>
+    <div class="related">
+        <Card :displayProducts="relatedItems" />
+    </div>
     
 </div>
 </template>
 
 <script>
+import { computed } from 'vue'
+import { useProductStore } from '../stores/productStore';
+import Card from './Card.vue';
+
 export default {
     name: "RelatedItem",
     setup() {
-
+        const productStore = useProductStore();
+        productStore.getProducts();
+        const relatedItems = computed(() => {
+            const randomProducts = productStore.products.sort(() => 0.5 - Math.random());
+            return randomProducts.slice(0, 4);
+        });
+        return {
+            relatedItems
+        };
+    },
+    components: { Card },
+    props: {
+        topic: String
     }
-
 }
 </script>
 
@@ -32,8 +49,12 @@ h1 {
 .related {
     border: 2px solid brown;
     width: 100%;
-    height: 400px;
+    height: auto;
     margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
 </style>

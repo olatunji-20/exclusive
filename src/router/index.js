@@ -5,6 +5,10 @@ import CartPage from '../views/CartPage.vue'
 import About from '../views/About.vue'
 import Contact from '../views/Contact.vue'
 import Checkout from '../views/Checkout.vue'
+import WishList from '../views/WishList.vue'
+import SignUp from '../views/SignUp.vue'
+import LogIn from '../views/LogIn.vue'
+import NotFound from '../views/NotFound.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -38,6 +42,26 @@ const router = createRouter({
       path: '/checkout',
       name: 'Checkout',
       component: Checkout
+    },
+    {
+      path: '/wishlist',
+      name: 'WishList',
+      component: WishList
+    },
+    {
+      path: '/signup',
+      name: 'SignUp',
+      component: SignUp
+    },
+    {
+      path: '/login',
+      name: 'LogIn',
+      component: LogIn
+    },
+    {
+      path: '/:notFound',
+      name: 'NotFound',
+      component: NotFound
     }
   ],
   scrollBehavior(stand, homepage, savedPosition) {

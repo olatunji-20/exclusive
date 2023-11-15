@@ -8,12 +8,14 @@
         <li><router-link to="/">Home</router-link></li>
         <li><router-link to="/contact">Contact</router-link></li>
         <li><router-link to="/about">About</router-link></li>
-        <li>Sign Up</li>
+        <li><router-link to="/signup">Sign Up</router-link></li>
       </ul>
     </nav>
     <div class="menu">
       <div class="search"></div>
-      <div class="fave"></div>
+      <router-link to="/wishlist">
+        <div class="fave"></div>
+      </router-link>
       <router-link to="/cart-page">
           <div class="cart">
 

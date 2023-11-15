@@ -21,7 +21,7 @@
       <hr />
       <p style="display: inline-block; line-height: 0px;">Total:</p>
       <h3 style="display: inline-block; float: right; line-height: 0px;">${{ totalPrice }}</h3>
-      <router-link to="/checkout">
+      <router-link to="/">
         <div class="proceed">PLACE ORDER</div>
       </router-link>
     </div>
