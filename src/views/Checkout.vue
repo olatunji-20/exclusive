@@ -1,6 +1,5 @@
 <template>
     <NavBar />
-    <h1>CHECKOUT PAGE</h1>
     <div class="large">
         <h1>BILLING DETAILS</h1>
         <div class="standard">
