@@ -11,7 +11,7 @@
   </template>
   
   <script>
-  import Explore from './Explore.vue'
+  import Explore from './Explore.vue';
 
   export default {
       name: "OurProducts",
@@ -55,6 +55,5 @@
     padding: 15px 60px;
     text-align: center;
     margin: 10px auto;
-
   }
   </style>

@@ -1,11 +1,11 @@
 <template>
   <div v-for="p in displayProducts" :key="p.id" class="product-card">
-    <router-link :to="'/product-page/' + p.id" :key="p.id">
+    <router-link :to="'/product-page/' + `${p.id}`" :key="p.id">
         <div class="image">
             <div v-if="p.discount > 0" class="discount">-{{ p.discount }}%</div>
             <div class="fave">8</div>
             <div class="watch">8</div>
-            <img :src="p.productImage" class="p-img" />
+            <img :src="p.productImage" :alt="p.productName" class="p-img" />
             <!-- <div class="add">
                 <AddToCart :product="productInfo" :quantity="quantity" />
             </div> -->
@@ -33,8 +33,8 @@ export default {
             starStyle: {
                 fullStarColor: "#ed8a19",
                 emptyStarColor: "#737373",
-                starWidth: 15,
-                starHeight: 15
+                starWidth: 20,
+                starHeight: 20
             }
         }
     },
@@ -61,6 +61,7 @@ export default {
     height: 200px;
     position: relative;
     background: powderblue;
+    overflow: hidden;
 }
 .discount {
     border: 1px solid brown;
@@ -97,6 +98,10 @@ export default {
     height: 100%;
     object-fit: contain;
     padding: 5px;
+}
+.p-img:hover {
+    transform: scale(1.2);
+    transition: 0.2s linear;
 }
 /* .add {
     border: 2px solid saddlebrown;

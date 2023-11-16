@@ -4,7 +4,9 @@
         <div class="one">
             <h4 style="color: lawngreen">Categories</h4>
             <h1>Enhance Your Music Experience</h1>
-            <div class="time"></div>
+            <div class="time">
+                <CountDown />
+            </div>
             <div class="buy">BUY NOW</div>
         </div>
         <div class="two">
@@ -15,8 +17,13 @@
 </template>
 
 <script>
+import CountDown from './CountDown.vue';
+
 export default {
-    name: 'Enhance'
+    name: 'Enhance',
+    components: {
+        CountDown
+    }
 }
 </script>
 
@@ -50,8 +57,8 @@ h1 {
 }
 .time {
     border: 1px solid red;
-    width: 250px;
-    height: 50px;
+    width: 300px;
+    height: 70px;
 }
 .buy {
     border: 1px solid red;

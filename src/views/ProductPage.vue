@@ -24,10 +24,9 @@ export default {
         onMounted(async () => {
             await productStore.getProduct(route.params.id)
         })
-
+ 
         return {
-            productStore,
-            route
+            productStore
         }
 
     },

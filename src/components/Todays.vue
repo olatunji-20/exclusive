@@ -2,7 +2,9 @@
   <div class="categories">
     <h1>Today's</h1>
     <h2>Flash Sales</h2>
-    <div class="time"></div>
+    <div class="time">
+      <CountDown />
+    </div>
     <div class="dir">
       <div @click="x -= 200"  class="arr"></div>
       <div @click="x += 200" class="arr"></div>
@@ -19,6 +21,7 @@
 import { ref } from 'vue'
 import { useScroll } from '@vueuse/core';
 import FlashSales from '../components/FlashSales.vue';
+import CountDown from './CountDown.vue';
 
 export default {
     name: "Todays",
@@ -37,8 +40,9 @@ export default {
       }
     },
     components: {
-      FlashSales
-    }
+    FlashSales,
+    CountDown
+}
 
 }
 </script>
@@ -63,7 +67,7 @@ h2 {
 .time {
   border: 1px solid red;
   width: 300px;
-  height: 60px;
+  height: 70px;
   display: inline-block;
   margin-left: 70px;
 }
