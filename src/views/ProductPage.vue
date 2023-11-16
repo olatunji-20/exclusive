@@ -1,6 +1,6 @@
 <template>
   <NavBar />
-  <ProductDetail :productInfo="productStore.product" />
+  <ProductDetail :productInfo="productStore.product" :key="productStore.product.id" />
   <RelatedItem topic="Related Items" />
   <FootBar />
 </template>

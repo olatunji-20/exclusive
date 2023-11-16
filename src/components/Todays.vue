@@ -4,11 +4,11 @@
     <h2>Flash Sales</h2>
     <div class="time"></div>
     <div class="dir">
-      <div class="arr"></div>
-      <div @click="moveLeft" class="arr"></div>
+      <div @click="x -= 200"  class="arr"></div>
+      <div @click="x += 200" class="arr"></div>
     </div>
-    <div class="sales">
-      <FlashSales ref="flashsale" id="ooo" />
+    <div ref="el" class="sales">
+      <FlashSales />
     </div>
     <div class="view">View All Products</div>
     
@@ -16,30 +16,25 @@
 </template>
 
 <script>
-import FlashSales from './FlashSales.vue'
 import { ref } from 'vue'
+import { useScroll } from '@vueuse/core';
+import FlashSales from '../components/FlashSales.vue';
 
 export default {
     name: "Todays",
     setup() {
-      // const flashsale = ref(null)
+      const el = ref(null);
 
-      // // const moveLeft = () => {
-      // //   flashsale.scrollLeft;
-      // //   console.log(flashsale)
-      // // }
+      const { x, y } = useScroll(el, {
+        behavior: 'smooth'
+      });
 
-      // const moveLeft = () => {
-      //   document.querySelector('#ooo').scrollTo({
-      //     right: 500,
-      //     behavior: 'smooth'
-      //   })
-      // }
 
-      // return {
-      //   flashsale,
-      //   moveLeft
-      // }
+      return {
+        el,
+        x,
+        y
+      }
     },
     components: {
       FlashSales

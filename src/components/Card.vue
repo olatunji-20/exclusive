@@ -1,6 +1,6 @@
 <template>
   <div v-for="p in displayProducts" :key="p.id" class="product-card">
-    <router-link :to="'/product-page/' + p.id">
+    <router-link :to="'/product-page/' + p.id" :key="p.id">
         <div class="image">
             <div v-if="p.discount > 0" class="discount">-{{ p.discount }}%</div>
             <div class="fave">8</div>
@@ -14,24 +14,36 @@
             <p style="font-weight: bold"> {{ p.productName }} </p>
             <p style="display: inline; line-height: 10px">$350</p>
             <p style="display: inline; margin-left: 15px; text-decoration: line-through;">${{ p.price }}</p>
-            <div class="star">{{ p.rating }}</div>
+            <div class="star">
+                <star-rating :rating="p.rating" :starStyle="starStyle" :key="p.id"></star-rating>
+            </div>
         </div>
     </router-link>
   </div>
 </template>
 
 <script>
-import AddToCart from './AddToCart.vue';
+import StarRating from "vue-dynamic-star-rating";
+
+// import AddToCart from './AddToCart.vue';
 export default {
     name: 'Card',
     setup() {
-        
+        return {
+            starStyle: {
+                fullStarColor: "#ed8a19",
+                emptyStarColor: "#737373",
+                starWidth: 15,
+                starHeight: 15
+            }
+        }
     },
     props: {
         displayProducts: Array
     },
     components: {
-        AddToCart
+        // AddToCart
+        StarRating
     }
 }
 </script>

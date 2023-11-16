@@ -6,7 +6,9 @@
         </div>
         <div class="det">
             <h1>{{ productInfo.productName }}</h1>
-            <div class="star">{{ productInfo.rating }}</div>
+            <div class="star">
+                <star-rating :rating="productInfo.rating" :starStyle="starStyle" :key="productInfo.id"></star-rating>
+            </div>
             <p style="display: inline-block;"> In stock</p>
             <p>${{ productInfo.price }}</p>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur dolore molestiae dolorem 
@@ -45,6 +47,7 @@
 <script>
 import { ref, watch } from 'vue'
 import AddToCart from './AddToCart.vue';
+import StarRating from 'vue-dynamic-star-rating';
 
 export default {
     name: 'ProductDetail',
@@ -60,14 +63,21 @@ export default {
         return {
             quantity,
             increase,
-            decrease
+            decrease,
+            starStyle: {
+                fullStarColor: "#ed8a19",
+                emptyStarColor: "#737373",
+                starWidth: 15,
+                starHeight: 15,
+            }
         }
     },
     props: {
         productInfo: Object
     },
     components: {
-        AddToCart
+        AddToCart,
+        StarRating
     }
 }
 </script>
