@@ -2,7 +2,9 @@
     <div class="categories">
       <h1>This Month</h1>
       <h2>Best Selling Products</h2>
-      <div class="dir">View All</div>
+      <div class="dir">
+        <button>View All</button>
+      </div>
       <div class="sales">
         <BestSelling />
       </div>
@@ -45,10 +47,14 @@
   .dir {
     border: 3px solid firebrick;
     width: 120px;
-    padding: 15px;
+    height: 50px;
     text-align: center;
     background: pink;
     float: right;
+  }
+  button {
+    width: 100%;
+    height: 100%;
   }
   .sales {
     border: 3px solid green;
@@ -56,5 +62,5 @@
     height: auto;
     margin: 30px auto;
     overflow: auto;
-  }  
+  }
   </style>

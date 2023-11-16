@@ -148,6 +148,7 @@ hr {
     border: 2px solid yellowgreen;
     width: 35px;
     height: 35px;
+    cursor: pointer;
 }
 .plus1 {
     border: 2px solid yellowgreen;

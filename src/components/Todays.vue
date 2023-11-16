@@ -6,13 +6,15 @@
       <CountDown />
     </div>
     <div class="dir">
-      <div @click="x -= 200"  class="arr"></div>
-      <div @click="x += 200" class="arr"></div>
+      <div @click="x -= 500"  class="arr"></div>
+      <div @click="x += 500" class="arr"></div>
     </div>
     <div ref="el" class="sales">
       <FlashSales />
     </div>
-    <div class="view">View All Products</div>
+    <div class="view">
+      <button>View All Products</button>
+    </div>
     
   </div>
 </template>
@@ -97,11 +99,13 @@ h2 {
 .view {
   border: 1px solid blue;
   width: 250px;
-  height: auto;
-  padding: 15px 60px;
+  height: 45px;
   text-align: center;
   margin: 10px auto;
-
+}
+button {
+  width: 100%;
+  height: 100%;
 }
 
 </style>

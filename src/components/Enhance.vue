@@ -70,7 +70,7 @@ h1 {
     margin: 20px 0;
 }
 .enha .two {
-    border: 4px solid green;
+    border: 2px solid green;
     width: 49%;
     height: 100%;
     background-image: url(/img/ellipse.png);

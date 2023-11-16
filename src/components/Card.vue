@@ -6,13 +6,10 @@
             <div class="fave">8</div>
             <div class="watch">8</div>
             <img :src="p.productImage" :alt="p.productName" class="p-img" />
-            <!-- <div class="add">
-                <AddToCart :product="productInfo" :quantity="quantity" />
-            </div> -->
         </div>    
         <div class="details">
             <p style="font-weight: bold"> {{ p.productName }} </p>
-            <p style="display: inline; line-height: 10px">$350</p>
+            <p style="display: inline; line-height: 10px">${{ p.price - (p.discount / 100 * p.price) }}</p>
             <p style="display: inline; margin-left: 15px; text-decoration: line-through;">${{ p.price }}</p>
             <div class="star">
                 <star-rating :rating="p.rating" :starStyle="starStyle" :key="p.id"></star-rating>
@@ -25,7 +22,6 @@
 <script>
 import StarRating from "vue-dynamic-star-rating";
 
-// import AddToCart from './AddToCart.vue';
 export default {
     name: 'Card',
     setup() {
@@ -42,7 +38,6 @@ export default {
         displayProducts: Array
     },
     components: {
-        // AddToCart
         StarRating
     }
 }
@@ -56,7 +51,7 @@ export default {
     cursor: pointer;
 }
 .image {
-    border: 4px solid green;
+    border: 2px solid green;
     width: 100%;
     height: 200px;
     position: relative;
@@ -67,10 +62,12 @@ export default {
     border: 1px solid brown;
     padding: 3px 10px;
     font-size: 14px;
-    width: 55px;
+    width: 50px;
     background: pink;
     color: white;
     position: absolute;
+    z-index: 2;
+    border-radius: 4px;
 }
 .fave {
     border: 1px solid red;
@@ -81,6 +78,7 @@ export default {
     right: 0;
     border-radius: 50%;
     padding: 5px;
+    z-index: 2;
 }
 .watch {
     border: 1px solid green;
@@ -92,6 +90,7 @@ export default {
     right: 0;
     border-radius: 50%;
     padding: 5px;
+    z-index: 2;
 }
 .p-img {
     width: 100%;

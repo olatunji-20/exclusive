@@ -15,7 +15,9 @@
             </ul>
         </aside>
         <aside class="hero">
-            <div class="main"></div>
+            <div class="main">
+                <SubMain />
+            </div>
         </aside>
     </section>
     <Todays />
@@ -30,6 +32,7 @@
 
 <script>
 import NavBar from '../components/NavBar.vue'
+import SubMain from '../components/SubMain.vue'
 import Todays from '../components/Todays.vue'
 import Categories from '../components/Categories.vue'
 import Month from '../components/Month.vue' 
@@ -45,6 +48,7 @@ export default {
     },
     components: {
     NavBar,
+    SubMain,
     Todays, 
     Categories,
     Month,

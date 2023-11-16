@@ -5,7 +5,9 @@
       <div class="sales">
         <Explore />
       </div>
-      <div class="view">View All Products</div>
+      <div class="view">
+        <button>View All Products</button>
+      </div>
       
     </div>
   </template>
@@ -51,9 +53,12 @@
   .view {
     border: 1px solid blue;
     width: 250px;
-    height: auto;
-    padding: 15px 60px;
+    height: 50px;
     text-align: center;
     margin: 10px auto;
+  }
+  button {
+    width: 100%;
+    height: 100%;
   }
   </style>
