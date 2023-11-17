@@ -96,7 +96,7 @@ export default {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    padding: 5px;
+    transform: scale(0.8)
 }
 .p-img:hover {
     transform: scale(1.2);
