@@ -1,6 +1,7 @@
 <template>
   <NavBar />
   <div class="large">
+    <h2> CART ({{ cartStore.cartItems.length }})</h2>
     <Cart />
     <div class="last">
       <h4>Cart Total</h4>

@@ -1,18 +1,18 @@
 <template>
   <div v-for="p in displayProducts" :key="p.id" class="product-card">
+    <div class="watch">
+        <AddWish :product="p" />
+    </div>
     <router-link :to="'/product-page/' + `${p.id}`" :key="p.id">
         <div class="image">
             <div v-if="p.discount > 0" class="discount">-{{ p.discount }}%</div>
             <div class="fave">8</div>
-            <div class="watch">
-                <AddWish :product="p" />
-            </div>
             <img :src="p.productImage" :alt="p.productName" class="p-img" />
         </div>    
         <div class="details">
             <p style="font-weight: bold"> {{ p.productName }} </p>
             <p style="display: inline; line-height: 10px">${{ p.price - (p.discount / 100 * p.price) }}</p>
-            <p style="display: inline; margin-left: 15px; text-decoration: line-through;">${{ p.price }}</p>
+            <p v-if="p.discount > 0" style="display: inline; margin-left: 15px; text-decoration: line-through;">${{ p.price }}</p>
             <div class="star">
                 <star-rating :rating="p.rating" :starStyle="starStyle" :key="p.id"></star-rating>
             </div>
@@ -52,6 +52,7 @@ export default {
     border: 2px solid hotpink;
     width: 220px;
     height: 350px;
+    position: relative;
     cursor: pointer;
 }
 .image {

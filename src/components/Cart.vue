@@ -17,12 +17,16 @@
       <p> ${{ product.price }} </p>
       <p> {{ product.quantity }} </p>
       <p> ${{ product.price * product.quantity }} </p>
+      <div class="rem">
+        <RemoveCart :product="product" />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import { useCartStore } from '../stores/cartStore';
+import RemoveCart from './RemoveCart.vue';
 
 export default {
     name: 'Cart',
@@ -30,9 +34,9 @@ export default {
         const cartStore = useCartStore();
         return {
             cartStore
-        }
-    }
-
+        };
+    },
+    components: { RemoveCart }
 }
 </script>
 
@@ -46,6 +50,7 @@ export default {
 .headers {
   border: 2px solid yellowgreen;
   width: 100%;
+  padding: 5px 60px 5px 0px;
   /* height: 100px; */
   margin: 0px auto;
   display: flex;
@@ -62,9 +67,10 @@ h1 {
 .cart {
   border: 2px solid green;
   width: 100%;
+  position: relative;
   /* height: 100px; */
   margin: 20px auto;
-  padding: 5px;
+  padding: 5px 60px 5px 0px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -90,5 +96,12 @@ h1 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.rem {
+  border: 2px solid blue;
+  width: 30px;
+  height: 60px;
+  position: absolute;
+  right: 0px
 }
 </style>

@@ -32,6 +32,10 @@ export const useCartStore = defineStore('cartStore', {
             
             console.log("lala", payload.quantity)
             console.log("lalawq", payload.product.productName)
+        },
+
+        removeCart(id) {
+            this.cartItems = this.cartItems.filter(c => c.id !== id)
         }
     }
 })
