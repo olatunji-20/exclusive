@@ -4,7 +4,9 @@
         <div class="image">
             <div v-if="p.discount > 0" class="discount">-{{ p.discount }}%</div>
             <div class="fave">8</div>
-            <div class="watch">8</div>
+            <div class="watch">
+                <AddWish :product="p" />
+            </div>
             <img :src="p.productImage" :alt="p.productName" class="p-img" />
         </div>    
         <div class="details">
@@ -21,6 +23,7 @@
 
 <script>
 import StarRating from "vue-dynamic-star-rating";
+import AddWish from "./AddWish.vue";
 
 export default {
     name: 'Card',
@@ -38,7 +41,8 @@ export default {
         displayProducts: Array
     },
     components: {
-        StarRating
+        StarRating,
+        AddWish
     }
 }
 </script>
@@ -88,8 +92,8 @@ export default {
     position: absolute;
     top: 50px;
     right: 0;
-    border-radius: 50%;
-    padding: 5px;
+    /* border-radius: 50%; */
+    padding: 2px;
     z-index: 2;
 }
 .p-img {
@@ -99,7 +103,7 @@ export default {
     transform: scale(0.8)
 }
 .p-img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: 0.2s linear;
 }
 /* .add {

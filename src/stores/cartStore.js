@@ -29,19 +29,6 @@ export const useCartStore = defineStore('cartStore', {
                     quantity: payload.quantity
                 })
             }
-
-
-
-
-
-
-
-
-
-
-
-
-
             
             console.log("lala", payload.quantity)
             console.log("lalawq", payload.product.productName)

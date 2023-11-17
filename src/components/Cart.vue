@@ -6,7 +6,7 @@
       <h4>Quantity</h4>
       <h4>Subtotal</h4>
     </div>
-
+    <h1 v-if="cartStore.cartItems.length === 0">Your shopping cart is currently empty.</h1>
     <div v-for="product in cartStore.cartItems" :key="product.id" class="cart">
       <div class="det">
         <div class="img">
@@ -52,6 +52,12 @@ export default {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
+}
+h1 {
+  font-size: 50px;
+  text-align: center;
+  margin: 80px auto;
+  width: 400px;
 }
 .cart {
   border: 2px solid green;

@@ -1,5 +1,5 @@
 <template>
-  <div class="form">
+  <div class="formc">
     <form>
         <label>First Name:</label>
         <input placeholder="" type="text" />
@@ -26,11 +26,11 @@ export default {
 </script>
 
 <style scoped>
-.form {
-    border: 2px solid lime;
+.formc {
+    border: 4px solid lime;
     width: 100%;
     height: auto;
-    padding: 30px 0px;
+    padding: 30px 5px;
 }
 label {
     font-size: 18px;

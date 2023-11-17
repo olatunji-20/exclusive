@@ -11,7 +11,7 @@
       <p style="display: inline-block; float: right; line-height: 0px">Free</p>
       <hr />
       <p style="display: inline-block; line-height: 0px;">Total:</p>
-      <h3 style="display: inline-block; float: right; line-height: 0px;">${{ totalPrice }}</h3>
+      <h3 style="display: inline-block; float: right; line-height: 0px; color: green;">${{ totalPrice }}</h3>
       <router-link to="/checkout">
         <div class="proceed">PROCEED TO CHECKOUT</div>
       </router-link>

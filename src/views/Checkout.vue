@@ -41,7 +41,7 @@
   .standard {
     border: 4px solid green;
     width: 100%;
-    height: 700px;
+    height: auto;
     margin: 40px auto;
     display: flex;
     flex-direction: row;
@@ -49,14 +49,14 @@
     justify-content: space-between;
   }
   .form {
-    border: 2px solid red;
+    border: 4px solid red;
     width: 500px;
-    height: 600px;
+    height: auto;
     /* padding: 20px 0px; */
   }
   .cart2 {
     border: 2px solid blue;
     width: 450px;
-    height: 600px;
+    height: auto;
   }
   </style>

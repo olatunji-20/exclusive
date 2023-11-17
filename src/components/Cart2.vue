@@ -1,15 +1,16 @@
 <template>
-  <div class="main">
+  <div class="main">    
     <div class="cart2">
-        <div v-for="product in cartStore.cartItems" :key="product.id" class="cart">
-            <div class="det">
-                <div class="img">
-                    <img :src="product.productImage" class="p-img" />
-                </div>
-                <p style="width: 150px"> {{ product.productName }} </p>
-            </div>
-            <p> ${{ product.price * product.quantity }} </p>
-        </div>
+      <h2 v-if="cartStore.cartItems.length === 0">Your shopping cart is currently empty.</h2>
+      <div v-else v-for="product in cartStore.cartItems" :key="product.id" class="cart">
+          <div class="det">
+              <div class="img">
+                  <img :src="product.productImage" class="p-img" />
+              </div>
+              <p style="width: 150px"> {{ product.productName }} </p>
+          </div>
+          <p> ${{ product.price * product.quantity }} </p>
+      </div>
     </div>
 
     <div class="last">
@@ -20,7 +21,7 @@
       <p style="display: inline-block; float: right; line-height: 0px">Free</p>
       <hr />
       <p style="display: inline-block; line-height: 0px;">Total:</p>
-      <h3 style="display: inline-block; float: right; line-height: 0px;">${{ totalPrice }}</h3>
+      <h3 style="display: inline-block; float: right; line-height: 0px; color: green;">${{ totalPrice }}</h3>
       <router-link to="/">
         <div class="proceed">PLACE ORDER</div>
       </router-link>
@@ -55,15 +56,22 @@ export default {
 
 <style scoped>
 .main {
-    border: 6px solid salmon;
+    border: 4px solid salmon;
     width: 100%;
     height: auto;
+    margin-top: 30px;
 }
 .cart2 {
     border: 2px solid blue;
     width: 100%;
-    max-height: 300px;
+    max-height: 250px;
     overflow: auto;
+}
+h2 {
+  font-size: 30px;
+  text-align: center;
+  margin: 50px auto;
+  width: 250px;
 }
 .cart {
   border: 2px solid green;
