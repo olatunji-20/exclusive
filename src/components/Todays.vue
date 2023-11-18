@@ -13,7 +13,9 @@
       <FlashSales />
     </div>
     <div class="view">
-      <button>View All Products</button>
+      <router-link to="/all-products">
+        <button>View All Products</button>
+      </router-link>
     </div>
     
   </div>

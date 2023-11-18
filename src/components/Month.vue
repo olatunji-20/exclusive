@@ -2,8 +2,10 @@
     <div class="categories">
       <h1>This Month</h1>
       <h2>Best Selling Products</h2>
-      <div class="dir">
-        <button>View All</button>
+      <div class="dir">        
+        <router-link to="/all-products">
+          <button>View All</button>
+        </router-link>
       </div>
       <div class="sales">
         <BestSelling />

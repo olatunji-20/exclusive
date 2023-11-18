@@ -9,6 +9,7 @@ import WishList from '../views/WishList.vue'
 import SignUp from '../views/SignUp.vue'
 import LogIn from '../views/LogIn.vue'
 import NotFound from '../views/NotFound.vue'
+import AllProducts from '../views/AllProducts.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -62,6 +63,11 @@ const router = createRouter({
       path: '/:notFound',
       name: 'NotFound',
       component: NotFound
+    },
+    {
+      path: '/all-products',
+      name: 'AllProducts',
+      component: AllProducts
     }
   ],
   scrollBehavior(stand, homepage, savedPosition) {

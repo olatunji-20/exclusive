@@ -18,8 +18,7 @@
           }
       },
       props: {
-        //   quantity: Number,
-          product: Object
+          product: Object,
       }
   
   }

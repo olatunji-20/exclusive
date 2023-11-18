@@ -6,7 +6,7 @@
     <router-link :to="'/product-page/' + `${p.id}`" :key="p.id">
         <div class="image">
             <div v-if="p.discount > 0" class="discount">-{{ p.discount }}%</div>
-            <div class="fave">8</div>
+            <div class="fave">{{ p.id }}</div>
             <img :src="p.productImage" :alt="p.productName" class="p-img" />
         </div>    
         <div class="details">
@@ -28,12 +28,13 @@ import AddWish from "./AddWish.vue";
 export default {
     name: 'Card',
     setup() {
+
         return {
             starStyle: {
                 fullStarColor: "#ed8a19",
                 emptyStarColor: "#737373",
-                starWidth: 20,
-                starHeight: 20
+                starWidth: 15,
+                starHeight: 15
             }
         }
     },
