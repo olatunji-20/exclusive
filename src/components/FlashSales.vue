@@ -35,9 +35,4 @@ export default {
     justify-content: space-between;
 
 }
-.card {
-    border: 2px solid red;
-    width: 250px;
-    height: 360px;
-}
 </style>

@@ -49,7 +49,7 @@
   .sales {
     border: 3px solid green;
     width: 100%;
-    height: 800px;
+    height: auto;
     margin: 30px auto;
   }
   .view {

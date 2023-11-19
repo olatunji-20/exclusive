@@ -1,25 +1,26 @@
 <template>
   <div class="large">
-    <swiper
-     class="low"
+    <swiper 
+    class="low"
     :modules="modules"
-    :slides-per-page="3"
-    :space-between="20"
+    :slidesPerView="4"
     :loop="true"
     navigation
+    :spaceBetween="20"
     :pagination="{ clickable: true }"
     @swiper="onSwiper"
     @slideChange="onSlideChange"
     :autoplay="{
-    delay: 500,
+    delay: 2000,
     disableOnInteraction: false,
     pauseOnMouseEnter: true,
     }"     
-     >
-        <swiper-slide v-for="staff in staffs" :key="staff.id" class="card">
+    >
+        <swiper-slide v-for="staff in staffs" :key="staff.id" class="staff-card">
             <h2>{{ staff.name }}</h2>
             <h1>{{ staff.position }}</h1>
         </swiper-slide>
+        
     </swiper>
   </div>
 </template>
@@ -40,38 +41,56 @@ export default {
         const staffs = ref([
             {
                 id: 1,
-                name: "nfuiofrwa",
-                position: "nwgonre",
+                name: "nfuiofrwa111",
+                position: "nwgonre111",
                 imageUrl: "knbrgr"
             },
             {
                 id: 2,
-                name: "nfuiofrwa",
-                position: "nwgonre",
+                name: "nfuiofrwa222",
+                position: "nwgonre222",
                 imageUrl: "knbrgr"
             },
             {
                 id: 3,
-                name: "nfuiofrwa",
-                position: "nwgonre",
+                name: "nfuio333frwa",
+                position: "nw3333gonre",
                 imageUrl: "knbrgr"
             },
             {
                 id: 4,
-                name: "nfuiofrwa",
-                position: "nwgonre",
+                name: "nfui444ofrwa",
+                position: "nw444gonre",
                 imageUrl: "knbrgr"
             },
             {
                 id: 5,
-                name: "nfuiofrwa",
-                position: "nwgonre",
+                name: "nfuio555frwa",
+                position: "nw555gonre",
                 imageUrl: "knbrgr"
             },
             {
                 id: 6,
-                name: "nfuiofrwa",
-                position: "nwgonre",
+                name: "nfuiof666rwa",
+                position: "nw666gonre",
+                imageUrl: "knbrgr"
+            },
+            {
+                id: 7,
+                name: "nfuiof777rwa",
+                position: "nw7777gonre",
+                imageUrl: "knbrgr"
+            },
+            {
+                id: 8,
+                name: "nfuiof888rwa",
+                position: "nw888gonre",
+                imageUrl: "knbrgr"
+            },
+            {
+                id: 9,
+                name: "nfuiof999rwa",
+                position: "nw999gonre",
                 imageUrl: "knbrgr"
             }
         ]);
@@ -105,17 +124,16 @@ export default {
     padding: 50px;
 }
 .low {
-    border: 3px solid green;
+    border: 6px solid green;
     width: 100%;
-    height: 410px;
+    height: auto;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
-.card {
-    border: 6px solid red;
-    width: 300px;
+.staff-card {
+    border: 4px solid purple;
+    width: 250px;
     height: 400px;
 }
 </style>

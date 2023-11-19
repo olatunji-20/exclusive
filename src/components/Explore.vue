@@ -35,9 +35,4 @@
       justify-content: space-around;
   
   }
-  .card {
-      border: 2px solid red;
-      width: 250px;
-      height: 360px;
-  }
   </style>
