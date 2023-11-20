@@ -18,7 +18,7 @@
                 <div class="one">
                     <div @click="decrease" class="plus">-</div>
                     <div class="plus1">
-                        <input v-model="quantity" />
+                        <input v-model="quantity" type="number" />
                     </div>
                     <div @click="increase" class="plus">+</div>
                 </div>
@@ -52,7 +52,7 @@ import StarRating from 'vue-dynamic-star-rating';
 export default {
     name: 'ProductDetail',
     setup() {
-        const quantity = ref(3);
+        const quantity = ref(1);
         const increase = () => {
             quantity.value++
         };
@@ -78,7 +78,14 @@ export default {
     components: {
         AddToCart,
         StarRating
-    }
+    },
+    watch: {
+        quantity(val) {
+        if (val <= 0) {
+            quantity.value = 1;
+        }
+        },
+    },
 }
 </script>
 
@@ -160,6 +167,10 @@ input {
     text-align: center;
     font-weight: bolder;
     font-size: 23px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 .two {
     border: 2px solid red;

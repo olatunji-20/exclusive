@@ -10,7 +10,7 @@
     @swiper="onSwiper"
     @slideChange="onSlideChange"
     :autoplay="{
-    delay: 2000,
+    delay: 1500,
     disableOnInteraction: false,
     pauseOnMouseEnter: true,
     }"     
@@ -108,15 +108,16 @@ p {
 }
 .social {
     border: 1px solid blue;
-    width: 130px;
-    height: 30px;
+    width: 100px;
+    height: 25px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 .media {
     border: 1px solid red;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
 }
+
 </style>

@@ -5,15 +5,16 @@
     </div>
     <nav class="nav">
       <ul>
-        <li><router-link to="/">Home</router-link></li>
-        <li><router-link to="/contact">Contact</router-link></li>
-        <li><router-link to="/about">About</router-link></li>
-        <li><router-link to="/signup">Sign Up</router-link></li>
+        <li><router-link to="/" class="rlink">Home</router-link></li>
+        <li><router-link to="/contact" class="rlink">Contact</router-link></li>
+        <li><router-link to="/about" class="rlink">About</router-link></li>
+        <router-link to="/signup" class="rlink"><li>Sign Up</li></router-link>
       </ul>
     </nav>
     <div class="menu">
       <div class="search">
         <input v-on:input="search" v-model="searchText" placeholder="search" type="text" />
+        <div v-if="showClose" @click="closeSearch" class="cl">S</div>
       </div>
       <router-link to="/wishlist">
         <div class="fave"></div>
@@ -25,7 +26,7 @@
       </router-link>
     </div>
   </header>
-  <div v-if="showBoard" class="search-board">
+  <div v-if="showBoard" class="search-board" v-on:click-outside="closeSearch">
     <p v-for="product in filteredProducts" :key="product.id"><router-link :to="'/product-page/' + `${product.id}`"> {{ product.productName }} </router-link></p>
   </div>
 </template>
@@ -39,6 +40,7 @@ export default {
   setup() {
     const searchText = ref("");
     const showBoard = ref(false);
+    const showClose = ref(false);
 
 
     const productStore = useProductStore();
@@ -46,7 +48,12 @@ export default {
 
     const search = () => {
       showBoard.value = true;
-      // console.log("AAAAAAAAAHHHHHHHHHH")
+      showClose.value = true;
+    }
+
+    const closeSearch = () => {
+      showBoard.value = false;
+      showClose.value = false;
     }
 
 
@@ -58,7 +65,9 @@ export default {
       searchText,
       filteredProducts,
       showBoard,
-      search
+      search,
+      closeSearch,
+      showClose
     }
   }
 
@@ -106,12 +115,23 @@ ul li {
   border: 2px solid fuchsia;
   height: 40px;
   width: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
 }
 input {
   width: 100%;
   height: 100%;
-  border: 4px solid tomato;
+  border: 2px solid tomato;
   text-indent: 10px;
+}
+.cl {
+  border: 4px solid green;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
 }
 .fave {
   border: 1px solid green;

@@ -13,7 +13,7 @@
       <hr />
       <p style="display: inline-block; line-height: 0px;">Total:</p>
       <h3 style="display: inline-block; float: right; line-height: 0px; color: green;">${{ totalPrice }}</h3>
-      <router-link to="/checkout">
+      <router-link to="/checkout" class="rlink">
         <div class="proceed">PROCEED TO CHECKOUT</div>
       </router-link>
     </div>

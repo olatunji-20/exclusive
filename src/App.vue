@@ -16,4 +16,12 @@ body {
 html {
   scroll-behavior: smooth;
 }
+.router-link-exact-active {
+  font-weight: 600;
+  text-decoration: none;
+}
+.rlink {
+  text-decoration: none;
+  color: black;
+}
 </style>
