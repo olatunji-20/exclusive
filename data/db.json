@@ -80,5 +80,61 @@
             "discount": 5,
             "productImage": "/img/pad.png"
         }
+    ],
+    "staffs": [
+            {
+                "id": 1,
+                "name": "Falana Sheriff",
+                "position": "C.E.O",
+                "imageUrl": "/img/sheriff.png"
+            },
+            {
+                "id": 2,
+                "name": "nfuiofrwa222",
+                "position": "nwgonre222",
+                "imageUrl": "knbrgr"
+            },
+            {
+                "id": 3,
+                "name": "jngjnr",
+                "position": "wengwg",
+                "imageUrl": "jgnrjn"
+            },
+            {
+                "id": 4,
+                "name": "nfui444ofrwa",
+                "position": "nw444gonre",
+                "imageUrl": "knbrgr"
+            },
+            {
+                "id": 5,
+                "name": "nfuio555frwa",
+                "position": "nw555gonre",
+                "imageUrl": "knbrgr"
+            },
+            {
+                "id": 6,
+                "name": "nfuiof666rwa",
+                "position": "nw666gonre",
+                "imageUrl": "knbrgr"
+            },
+            {
+                "id": 7,
+                "name": "Will Smith",
+                "position": "Manager",
+                "imageUrl": "/img/frame.png"
+            },
+            {
+                "id": 8,
+                "name": "nfuiof888rwa",
+                "position": "nw888gonre",
+                "imageUrl": "knbrgr"
+            },
+            {
+                "id": 9,
+                "name": "nfuiof999rwa",
+                "position": "nw999gonre",
+                "imageUrl": "knbrgr"
+            }
     ]
 }

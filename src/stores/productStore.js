@@ -4,6 +4,7 @@ import axios from 'axios'
 export const useProductStore = defineStore('productStore', {
     state: () => {
         return {
+            staffs: [],
             products: [],
             product: {}
         }
@@ -12,11 +13,11 @@ export const useProductStore = defineStore('productStore', {
         async getProducts() {
             try {
                 const res = await axios.get("http://localhost:5000/products");
-                this.products = res.data;
+                this.products = await res.data;
             } catch (err) {
                 console.log("ERROR IN FECTHING PRODUCTS", err);
             }
-            },
+        },
 
         async getProduct(id) {
             try {
@@ -26,6 +27,15 @@ export const useProductStore = defineStore('productStore', {
             } catch(err) {
                 console.log("ihcsduvvfu")
             }
-        }
+        },
+
+        async getStaffs() {
+            try {
+                const res = await axios.get("http://localhost:5000/staffs");
+                this.staffs = await res.data;
+            } catch (err) {
+                console.log("ERROR IN FECTHING PRODUCTS", err);
+            }
+            },
     }
 })

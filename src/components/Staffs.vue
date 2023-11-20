@@ -4,7 +4,6 @@
     class="low"
     :modules="modules"
     :slidesPerView="4"
-    :loop="true"
     navigation
     :spaceBetween="20"
     :pagination="{ clickable: true }"
@@ -16,9 +15,17 @@
     pauseOnMouseEnter: true,
     }"     
     >
-        <swiper-slide v-for="staff in staffs" :key="staff.id" class="staff-card">
+        <swiper-slide v-for="staff in productStore.staffs" :key="staff.id" class="staff-card">
+            <div class="image">
+                <img :src="staff.imageUrl" :alt="staff.name" class="p-img" />
+            </div>
             <h2>{{ staff.name }}</h2>
-            <h1>{{ staff.position }}</h1>
+            <p>{{ staff.position }}</p>
+            <div class="social">
+                <div class="media"></div>
+                <div class="media"></div>
+                <div class="media"></div>
+            </div>
         </swiper-slide>
         
     </swiper>
@@ -34,66 +41,13 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 import { ref } from 'vue';
+import { useProductStore } from "../stores/productStore";
 
 export default {
     name: 'Staffs',
     setup() {
-        const staffs = ref([
-            {
-                id: 1,
-                name: "nfuiofrwa111",
-                position: "nwgonre111",
-                imageUrl: "knbrgr"
-            },
-            {
-                id: 2,
-                name: "nfuiofrwa222",
-                position: "nwgonre222",
-                imageUrl: "knbrgr"
-            },
-            {
-                id: 3,
-                name: "nfuio333frwa",
-                position: "nw3333gonre",
-                imageUrl: "knbrgr"
-            },
-            {
-                id: 4,
-                name: "nfui444ofrwa",
-                position: "nw444gonre",
-                imageUrl: "knbrgr"
-            },
-            {
-                id: 5,
-                name: "nfuio555frwa",
-                position: "nw555gonre",
-                imageUrl: "knbrgr"
-            },
-            {
-                id: 6,
-                name: "nfuiof666rwa",
-                position: "nw666gonre",
-                imageUrl: "knbrgr"
-            },
-            {
-                id: 7,
-                name: "nfuiof777rwa",
-                position: "nw7777gonre",
-                imageUrl: "knbrgr"
-            },
-            {
-                id: 8,
-                name: "nfuiof888rwa",
-                position: "nw888gonre",
-                imageUrl: "knbrgr"
-            },
-            {
-                id: 9,
-                name: "nfuiof999rwa",
-                position: "nw999gonre",
-                imageUrl: "knbrgr"
-            }
-        ]);
+        const productStore = useProductStore();
+        productStore.getStaffs();
         
         const onSwiper = (swiper) => {
             console.log(swiper);
@@ -103,10 +57,10 @@ export default {
         };
         
         return {
-            staffs,
             modules: [Autoplay, Navigation, Pagination, Scrollbar, A11y],
             onSwiper,
             onSlideChange,
+            productStore
         }
     },
     components: {
@@ -134,6 +88,35 @@ export default {
 .staff-card {
     border: 4px solid purple;
     width: 250px;
-    height: 400px;
+    height: 420px;
+}
+.staff-card .image {
+    border: 3px solid blue;
+    width: 100%;
+    height: 300px;
+}
+.p-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+h2 {
+    line-height: 5px;
+}
+p {
+    line-height: 10px;
+}
+.social {
+    border: 1px solid blue;
+    width: 130px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.media {
+    border: 1px solid red;
+    width: 30px;
+    height: 30px;
 }
 </style>
