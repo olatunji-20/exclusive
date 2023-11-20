@@ -12,7 +12,9 @@
       </ul>
     </nav>
     <div class="menu">
-      <div class="search"></div>
+      <div class="search">
+        <input v-on:input="search" v-model="searchText" placeholder="search" type="text" />
+      </div>
       <router-link to="/wishlist">
         <div class="fave"></div>
       </router-link>
@@ -23,10 +25,42 @@
       </router-link>
     </div>
   </header>
+  <div v-if="showBoard" class="search-board">
+    <p v-for="product in filteredProducts" :key="product.id"><router-link :to="'/product-page/' + `${product.id}`"> {{ product.productName }} </router-link></p>
+  </div>
 </template>
 
 <script>
+import { ref, computed } from 'vue';
+import { useProductStore } from '../stores/productStore';
+
 export default {
+  name: 'NavBar',
+  setup() {
+    const searchText = ref("");
+    const showBoard = ref(false);
+
+
+    const productStore = useProductStore();
+    productStore.getProducts();
+
+    const search = () => {
+      showBoard.value = true;
+      // console.log("AAAAAAAAAHHHHHHHHHH")
+    }
+
+
+    const filteredProducts = computed(() => {
+      return productStore.products.filter((product) =>
+      product.productName.toLowerCase().includes(searchText.value.toLowerCase()))
+    })
+    return {
+      searchText,
+      filteredProducts,
+      showBoard,
+      search
+    }
+  }
 
 }
 </script>
@@ -69,9 +103,15 @@ ul li {
   justify-content: space-between;
 }
 .search {
-  border: 1px solid green;
+  border: 2px solid fuchsia;
   height: 40px;
   width: 200px;
+}
+input {
+  width: 100%;
+  height: 100%;
+  border: 4px solid tomato;
+  text-indent: 10px;
 }
 .fave {
   border: 1px solid green;
@@ -82,5 +122,13 @@ ul li {
   border: 1px solid green;
   height: 40px;
   width: 40px;
+}
+.search-board {
+  border: 4px solid brown;
+  width: 100%;
+  height: auto;
+  z-index: 9;
+  background: hotpink;
+  position: absolute;
 }
 </style>
