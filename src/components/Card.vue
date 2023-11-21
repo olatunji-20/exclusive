@@ -3,7 +3,7 @@
     <div class="watch">
         <AddWish :product="p" />
     </div>
-    <router-link class="rlink" :to="'/product-page/' + `${p.id}`" :key="p.id">
+    <router-link class="rlink" :to="link + `${p.id}`" :key="p.id">
         <div class="image">
             <div v-if="p.discount > 0" class="discount">-{{ p.discount }}%</div>
             <div class="fave">{{ p.id }}</div>
@@ -39,7 +39,8 @@ export default {
         }
     },
     props: {
-        displayProducts: Array
+        displayProducts: Array,
+        link: String
     },
     components: {
         StarRating,

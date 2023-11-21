@@ -1,94 +1,186 @@
 {
-    "products": [
+    "flash-products": [
         {
             "id": 1,
-            "productName": "CANON EOS DSLR Camera",
-            "price": 360,
+            "productName": "HAVIT HV-G92 Gamepad",
+            "price": 160,
             "rating": 4.6,
             "discount": 5,
-            "productImage": "/img/pad.png",
-            "productDescription": "Lorem ipsum dolor s111111111it amet consectetur adipisicing elit. Officiis obcaecati consequatur iste! In, illo? Corrupti dicta ex adipisci illo praesentium facilis?"
+            "productImage": "/img/exclusive-images/havit.png",
+            "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis obcaecati consequatur iste! In, illo? Corrupti dicta ex adipisci tenetur ea possimus necessitatibus quia optio doloremque? Neque itaque illo praesentium facilis?"
         },
         {
             "id": 2,
-            "productName": "ASUS FHD Gaming Laptop",
-            "price": 700,
+            "productName": "AK-900 Wired Keyboard",
+            "price": 1160,
             "rating": 5,
             "discount": 3,
-            "productImage": "/img/pad.png",
-            "productDescription": "Lorem ipsum dolor si22222222222t amet consectetur adipisicing elit. Officiis obcaecati consequatur iste! In, illo? Corrupti dicta ex adipisci illo praesentium facilis?"
+            "productImage": "/img/exclusive-images/ak-900.png",
+            "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis obcaecati consequatur iste! In, illo? Corrupti dicta ex adipisci tenetur ea possimus necessitatibus quia optio doloremque? Neque itaque illo praesentium facilis?"
         },
         {
             "id": 3,
-            "productName": "Curology Product Set",
+            "productName": "IPS LCD Gaming Monitor",
             "price": 500,
             "rating": 4.3,
             "discount": 9,
-            "productImage": "/img/pad.png",
-            "productDescription": "Lorem ipsum dolor sit amet c33333333333onsectetur adipisicing elit. Officiis obcaecati consequatur iste! In, illo? Corrupti dicta ex adipisci illo praesentium facilis?"
+            "productImage": "/img/exclusive-images/ips.png",
+            "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis obcaecati consequatur iste! In, illo? Corrupti dicta ex adipisci tenetur ea possimus necessitatibus quia optio doloremque? Neque itaque illo praesentium facilis?"
         },
         {
             "id": 4,
-            "productName": "Kids Electric car",
+            "productName": "S-SERIES Comfort Chair",
             "price": 950,
             "rating": 4.6,
             "discount": 6,
-            "productImage": "/img/pad.png",
-            "productDescription": "Lorem ipsum dolor sit amet4444444444 consectetur adipisicing elit. Officiis obcaecati consequatur iste! In, illo? Corrupti dicta ex adipisci illo praesentium facilis?"
+            "productImage": "/img/exclusive-images/comfort.png",
+            "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis obcaecati consequatur iste! In, illo? Corrupti dicta ex adipisci tenetur ea possimus necessitatibus quia optio doloremque? Neque itaque illo praesentium facilis?"
         },
         {
             "id": 5,
-            "productName": "Jr. Zoom Soccer Cleats",
+            "productName": "BREED Dry Dog Food",
             "price": 1180,
             "rating": 5,
             "discount": 5,
-            "productImage": "/img/pad.png",
-            "productDescription": "Lorem ipsum dolor sit amet consectetur adi5555555pisicing elit. Officiis obcaecati consequatur iste! In, illo? Corrupti dicta ex adipisci illo praesentium facilis?"
+            "productImage": "/img/exclusive-images/dog-food.png",
+            "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis obcaecati consequatur iste! In, illo? Corrupti dicta ex adipisci tenetur ea possimus necessitatibus quia optio doloremque? Neque itaque illo praesentium facilis?"
         },
         {
             "id": 6,
-            "productName": "GP11 Shooter USB Gamepad",
+            "productName": "CANON EOS DSLR Camera",
             "price": 650,
             "rating": 3.7,
             "discount": 2,
-            "productImage": "/img/pad.png",
-            "productDescription": "Lorem ipsum dolor666666666 sit amet consectetur adipisicing elit. Officiis obcaecati consequatur iste! In, illo? Corrupti dicta ex adipisci illo praesentium facilis?"
+            "productImage": "/img/exclusive-images/camera.png",
+            "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis obcaecati consequatur iste! In, illo? Corrupti dicta ex adipisci tenetur ea possimus necessitatibus quia optio doloremque? Neque itaque illo praesentium facilis?"
         },
         {
             "id": 7,
-            "productName": "Quilted Satin Jacket",
+            "productName": "GP11 Shooter USB Gamepad",
             "price": 240,
             "rating": 4.1,
             "discount": 0,
-            "productImage": "/img/pad.png",
-            "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis obcaecati consequatur iste! In, illo? Corrupti dicta ex adipisci illo praesentium facilis?"
+            "productImage": "/img/exclusive-images/pad.png",
+            "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis obcaecati consequatur iste! In, illo? Corrupti dicta ex adipisci tenetur ea possimus necessitatibus quia optio doloremque? Neque itaque illo praesentium facilis?"
         },
         {
             "id": 8,
             "productName": "RGB Liquid CPU Cooler",
-            "price": 180,
+            "price": 480,
             "rating": 4.7,
             "discount": 2,
-            "productImage": "/img/pad.png",
-            "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis obcaecati consequatur iste! In, illo? Corrupti dicta ex adipisci illo praesentium facilis?"
+            "productImage": "/img/exclusive-images/rgb.png",
+            "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis obcaecati consequatur iste! In, illo? Corrupti dicta ex adipisci tenetur ea possimus necessitatibus quia optio doloremque? Neque itaque illo praesentium facilis?"
         },
         {
             "id": 9,
             "productName": "Small Bookshelf",
-            "price": 250,
+            "price": 850,
             "rating": 4.5,
             "discount": 8,
-            "productImage": "/img/pad.png",
-            "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis obcaecati consequatur iste! In, illo? Corrupti dicta ex adipisci illo praesentium facilis?"
+            "productImage": "/img/exclusive-images/small.png",
+            "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis obcaecati consequatur iste! In, illo? Corrupti dicta ex adipisci tenetur ea possimus necessitatibus quia optio doloremque? Neque itaque illo praesentium facilis?"
         },
         {
             "id": 10,
-            "productName": "AK-900 Wired Keyboard",
+            "productName": "CUROLOGY Product Set",
+            "price": 650,
+            "rating": 5,
+            "discount": 5,
+            "productImage": "/img/exclusive-images/curology.png",
+            "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis obcaecati consequatur iste! In, illo? Corrupti dicta ex adipisci tenetur ea possimus necessitatibus quia optio doloremque? Neque itaque illo praesentium facilis?"
+        }
+    ],
+    "best-products": [
+        {
+            "id": 11,
+            "productName": "The NORTH Coat",
+            "price": 360,
+            "rating": 4.6,
+            "discount": 5,
+            "productImage": "/img/exclusive-images/north-coat.png",
+            "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis obcaecati consequatur iste! In, illo? Corrupti dicta ex adipisci tenetur ea possimus necessitatibus quia optio doloremque? Neque itaque illo praesentium facilis?"
+        },
+        {
+            "id": 12,
+            "productName": "GUCCI duffle bag",
+            "price": 700,
+            "rating": 5,
+            "discount": 3,
+            "productImage": "/img/exclusive-images/gucci-bag.png",
+            "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis obcaecati consequatur iste! In, illo? Corrupti dicta ex adipisci tenetur ea possimus necessitatibus quia optio doloremque? Neque itaque illo praesentium facilis?"
+        },
+        {
+            "id": 13,
+            "productName": "RGB Liquid CPU Cooler",
+            "price": 500,
+            "rating": 4.3,
+            "discount": 9,
+            "productImage": "/img/exclusive-images/dog-food.png",
+            "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis obcaecati consequatur iste! In, illo? Corrupti dicta ex adipisci tenetur ea possimus necessitatibus quia optio doloremque? Neque itaque illo praesentium facilis?"
+        },
+        {
+            "id": 14,
+            "productName": "SMALL Bookshelf",
+            "price": 950,
+            "rating": 4.6,
+            "discount": 6,
+            "productImage": "/img/exclusive-images/dog-food.png",
+            "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis obcaecati consequatur iste! In, illo? Corrupti dicta ex adipisci tenetur ea possimus necessitatibus quia optio doloremque? Neque itaque illo praesentium facilis?"
+        },
+        {
+            "id": 15,
+            "productName": "Jr. Zoom Soccer Cleats",
+            "price": 1180,
+            "rating": 5,
+            "discount": 5,
+            "productImage": "/img/exclusive-images/cleats.png",
+            "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis obcaecati consequatur iste! In, illo? Corrupti dicta ex adipisci tenetur ea possimus necessitatibus quia optio doloremque? Neque itaque illo praesentium facilis?"
+        },
+        {
+            "id": 16,
+            "productName": "GP11 Shooter USB Gamepad",
+            "price": 650,
+            "rating": 3.7,
+            "discount": 2,
+            "productImage": "/img/exclusive-images/dog-food.png",
+            "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis obcaecati consequatur iste! In, illo? Corrupti dicta ex adipisci tenetur ea possimus necessitatibus quia optio doloremque? Neque itaque illo praesentium facilis?"
+        },
+        {
+            "id": 17,
+            "productName": "Quilted Satin Jacket",
+            "price": 240,
+            "rating": 4.1,
+            "discount": 0,
+            "productImage": "/img/exclusive-images/satin-jacket.png",
+            "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis obcaecati consequatur iste! In, illo? Corrupti dicta ex adipisci tenetur ea possimus necessitatibus quia optio doloremque? Neque itaque illo praesentium facilis?"
+        },
+        {
+            "id": 18,
+            "productName": "KIDS electric car",
+            "price": 180,
+            "rating": 4.7,
+            "discount": 2,
+            "productImage": "/img/exclusive-images/car.png",
+            "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis obcaecati consequatur iste! In, illo? Corrupti dicta ex adipisci tenetur ea possimus necessitatibus quia optio doloremque? Neque itaque illo praesentium facilis?"
+        },
+        {
+            "id": 19,
+            "productName": "Small Bookshelf",
+            "price": 250,
+            "rating": 4.5,
+            "discount": 8,
+            "productImage": "/img/exclusive-images/dog-food.png",
+            "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis obcaecati consequatur iste! In, illo? Corrupti dicta ex adipisci tenetur ea possimus necessitatibus quia optio doloremque? Neque itaque illo praesentium facilis?"
+        },
+        {
+            "id": 20,
+            "productName": "ASUS FHD Gaming Laptop",
             "price": 150,
             "rating": 5,
             "discount": 5,
-            "productImage": "/img/pad.png",
-            "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis obcaecati consequatur iste! In, illo? Corrupti dicta ex adipisci illo praesentium facilis?"
+            "productImage": "/img/exclusive-images/laptop.png",
+            "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis obcaecati consequatur iste! In, illo? Corrupti dicta ex adipisci tenetur ea possimus necessitatibus quia optio doloremque? Neque itaque illo praesentium facilis?"
         }
     ],
     "staffs": [

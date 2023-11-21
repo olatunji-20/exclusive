@@ -1,6 +1,6 @@
 <template>
   <div class="flash">
-    <Card :displayProducts="productStore.products" />
+    <Card :link="'/product-page/'" :displayProducts="productStore.flashProducts" />
   </div>
 </template>
 
@@ -12,7 +12,7 @@ export default {
     name: 'FlashSales',
     setup() {
       const productStore = useProductStore();
-      productStore.getProducts();
+      productStore.getFlashProducts();
 
       return {
         productStore

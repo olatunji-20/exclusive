@@ -1,6 +1,6 @@
 <template>
   <NavBar />
-  <ProductDetail :productInfo="productStore.product" :key="productStore.product.id" />
+  <ProductDetail :productInfo="productStore.flashProduct" />
   <RelatedItem topic="Related Items" />
   <FootBar />
 </template>
@@ -22,7 +22,7 @@ export default {
         const productStore = useProductStore();
 
         onMounted(async () => {
-            await productStore.getProduct(route.params.id)
+            await productStore.getFlashProduct(route.params.id)
         })
  
         return {

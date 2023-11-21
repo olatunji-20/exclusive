@@ -1,6 +1,7 @@
 <template>
     <div class="flash">
-      <Card :displayProducts="productStore.products" />
+      <Card :link="'/all-product-page/'" :displayProducts="productStore.bestProducts.concat(productStore.flashProducts)
+      .sort(() => 0.5 - Math.random()).slice(0,10)" />
     </div>
   </template>
   
@@ -12,10 +13,11 @@
       name: 'Explore',
       setup() {
       const productStore = useProductStore();
-      productStore.getProducts();
+      productStore.getBestProducts();
+      productStore.getFlashProducts();
 
       return {
-        productStore
+        productStore,
       }
     },
     components: {

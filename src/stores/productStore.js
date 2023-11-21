@@ -5,25 +5,46 @@ export const useProductStore = defineStore('productStore', {
     state: () => {
         return {
             staffs: [],
-            products: [],
-            product: {}
+            flashProducts: [],
+            flashProduct: {},
+            bestProducts: [],
+            bestProduct: {}
         }
     },
     actions: {
-        async getProducts() {
+        async getFlashProducts() {
             try {
-                const res = await axios.get("http://localhost:5000/products");
-                this.products = await res.data;
+                const res = await axios.get("http://localhost:5000/flash-products");
+                this.flashProducts = await res.data;
             } catch (err) {
                 console.log("ERROR IN FECTHING PRODUCTS", err);
             }
         },
 
-        async getProduct(id) {
+        async getFlashProduct(id) {
             try {
-                const res = await axios.get("http://localhost:5000/products/" + id);
+                const res = await axios.get("http://localhost:5000/flash-products/" + id);
                 const reqProduct = await res.data;
-                this.product = reqProduct
+                this.flashProduct = reqProduct
+            } catch(err) {
+                console.log("ihcsduvvfu")
+            }
+        },
+
+        async getBestProducts() {
+            try {
+                const res = await axios.get("http://localhost:5000/best-products");
+                this.bestProducts = await res.data;
+            } catch (err) {
+                console.log("ERROR IN FECTHING PRODUCTS", err);
+            }
+        },
+
+        async getBestProduct(id) {
+            try {
+                const res = await axios.get("http://localhost:5000/best-products/" + id);
+                const reqProduct = await res.data;
+                this.bestProduct = reqProduct
             } catch(err) {
                 console.log("ihcsduvvfu")
             }

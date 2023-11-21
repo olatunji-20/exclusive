@@ -17,9 +17,10 @@ export default {
     name: "RelatedItem",
     setup() {
         const productStore = useProductStore();
-        productStore.getProducts();
+        productStore.getFlashProducts();
+
         const relatedItems = computed(() => {
-            const randomProducts = productStore.products.sort(() => 0.5 - Math.random());
+            const randomProducts = productStore.flashProducts.sort(() => 0.5 - Math.random());
             return randomProducts.slice(0, 4);
         });
         return {

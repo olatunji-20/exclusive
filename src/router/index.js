@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from '../views/HomePage.vue'
 import ProductPage from '../views/ProductPage.vue'
+import BestProductPage from '../views/BestProductPage.vue'
+import AllProductPage from '../views/AllProductPage.vue'
 import CartPage from '../views/CartPage.vue'
 import About from '../views/About.vue'
 import Contact from '../views/Contact.vue'
@@ -23,6 +25,16 @@ const router = createRouter({
       path: '/product-page/:id',
       name: 'ProductPage',
       component: ProductPage
+    },
+    {
+      path: '/best-product-page/:id',
+      name: 'BestProductPage',
+      component: BestProductPage
+    },
+    {
+      path: '/all-product-page/:id',
+      name: 'AllProductPage',
+      component: AllProductPage
     },
     {
       path: '/cart-page',
