@@ -2,7 +2,7 @@
 <div class="categories">
     <h1>{{ topic }}</h1>
     <div class="related">
-        <Card :displayProducts="relatedItems" />
+        <Card :link="'/all-product-page/'" :displayProducts="relatedItems" />
     </div>
     
 </div>
@@ -17,10 +17,10 @@ export default {
     name: "RelatedItem",
     setup() {
         const productStore = useProductStore();
-        productStore.getFlashProducts();
+        productStore.getAllProducts();
 
         const relatedItems = computed(() => {
-            const randomProducts = productStore.flashProducts.sort(() => 0.5 - Math.random());
+            const randomProducts = productStore.allProducts.sort(() => 0.5 - Math.random());
             return randomProducts.slice(0, 4);
         });
         return {

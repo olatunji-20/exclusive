@@ -1,7 +1,7 @@
 <template>
     <NavBar />
     <!-- <h1>{{ searchedProduct }}</h1> -->
-    <ProductDetail :productInfo="searchedProduct" />
+    <ProductDetail :productInfo="productStore.allProduct" />
     <RelatedItem topic="Related Items" />
     <FootBar />
   </template>
@@ -13,15 +13,16 @@
   import FootBar from '../components/FootBar.vue';
   
   import { useRoute } from 'vue-router';
-  import { ref } from 'vue';
+  // import { ref } from 'vue';
   import { useProductStore } from '../stores/productStore';
   
   export default {
       name: 'AllProductPage',
       setup() {
+        const productStore = useProductStore();
         
         return {
-            searchedProduct: {}
+            productStore
           }
   
       },
@@ -29,11 +30,7 @@
         const route = useRoute();
 
         const productStore = useProductStore();
-        productStore.getBestProducts();
-        productStore.getFlashProducts();
-  
-        const allProducts = productStore.bestProducts.concat(productStore.flashProducts)
-        this.searchedProduct = allProducts.find((product) => product.id == route.params.id)
+        productStore.getAllProduct(route.params.id)
       },
       components: {
           NavBar,

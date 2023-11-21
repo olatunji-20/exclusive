@@ -116,7 +116,7 @@
             "price": 500,
             "rating": 4.3,
             "discount": 9,
-            "productImage": "/img/exclusive-images/dog-food.png",
+            "productImage": "/img/exclusive-images/rgb.png",
             "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis obcaecati consequatur iste! In, illo? Corrupti dicta ex adipisci tenetur ea possimus necessitatibus quia optio doloremque? Neque itaque illo praesentium facilis?"
         },
         {
@@ -125,7 +125,7 @@
             "price": 950,
             "rating": 4.6,
             "discount": 6,
-            "productImage": "/img/exclusive-images/dog-food.png",
+            "productImage": "/img/exclusive-images/small.png",
             "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis obcaecati consequatur iste! In, illo? Corrupti dicta ex adipisci tenetur ea possimus necessitatibus quia optio doloremque? Neque itaque illo praesentium facilis?"
         },
         {
@@ -143,7 +143,7 @@
             "price": 650,
             "rating": 3.7,
             "discount": 2,
-            "productImage": "/img/exclusive-images/dog-food.png",
+            "productImage": "/img/exclusive-images/pad.png",
             "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis obcaecati consequatur iste! In, illo? Corrupti dicta ex adipisci tenetur ea possimus necessitatibus quia optio doloremque? Neque itaque illo praesentium facilis?"
         },
         {
@@ -170,7 +170,7 @@
             "price": 250,
             "rating": 4.5,
             "discount": 8,
-            "productImage": "/img/exclusive-images/dog-food.png",
+            "productImage": "/img/exclusive-images/small.png",
             "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis obcaecati consequatur iste! In, illo? Corrupti dicta ex adipisci tenetur ea possimus necessitatibus quia optio doloremque? Neque itaque illo praesentium facilis?"
         },
         {

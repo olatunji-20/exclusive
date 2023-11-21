@@ -77,10 +77,10 @@ export default {
             }
         ]);
         const onSwiper = (swiper) => {
-            console.log(swiper);
+            // console.log(swiper);
         };
         const onSlideChange = () => {
-            console.log("slide change");
+            // console.log("slide change");
         };
         return {
             modules: [Autoplay, Navigation, Pagination, Scrollbar, A11y],

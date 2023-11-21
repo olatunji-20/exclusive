@@ -7,7 +7,9 @@
             <div class="time">
                 <CountDown />
             </div>
-            <div class="buy">BUY NOW</div>
+            <router-link to="/all-products" class="rlink">
+                <div class="buy">BUY NOW</div>
+            </router-link>
         </div>
         <div class="two">
             <img src="/img/jbl.png" class="p-img" />

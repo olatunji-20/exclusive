@@ -8,7 +8,9 @@ export const useProductStore = defineStore('productStore', {
             flashProducts: [],
             flashProduct: {},
             bestProducts: [],
-            bestProduct: {}
+            bestProduct: {},
+            allProducts: [],
+            allProduct: {}
         }
     },
     actions: {
@@ -39,7 +41,7 @@ export const useProductStore = defineStore('productStore', {
                 console.log("ERROR IN FECTHING PRODUCTS", err);
             }
         },
-
+        
         async getBestProduct(id) {
             try {
                 const res = await axios.get("http://localhost:5000/best-products/" + id);
@@ -49,7 +51,33 @@ export const useProductStore = defineStore('productStore', {
                 console.log("ihcsduvvfu")
             }
         },
+        
+        async getAllProducts() {
+            await this.getFlashProducts();
+            await this.getBestProducts();
 
+            try {
+                const res = this.flashProducts.concat(this.bestProducts);
+                this.allProducts = res;
+            } catch (err) {
+                console.log("ERROR IN FECTHING PRODUCTS", err);
+            }
+        },
+        
+        async getAllProduct(id) {
+            await this.getFlashProducts();
+            await this.getBestProducts();
+
+            try {
+                const allProducts = this.flashProducts.concat(this.bestProducts);
+                this.allProduct = allProducts.find((product) => product.id == id);
+
+                console.log("ded", this.allProduct);
+            } catch(err) {
+                console.log("ihcsduvvfu")
+            }
+        },
+        
         async getStaffs() {
             try {
                 const res = await axios.get("http://localhost:5000/staffs");

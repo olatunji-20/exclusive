@@ -1,13 +1,13 @@
 <template>
   <NavBar />
   <section class="all-products">
-    <h1>ALL PRODUCTS</h1>
+    <h1>ALL PRODUCTS ({{ productStore.allProducts.length }})</h1>
     <div class="all">
       <All :allProducts="displayedPosts" />
 
       <div class="page">
         <vue-awesome-paginate
-        :total-items="productStore.products.length"
+        :total-items="productStore.allProducts.length"
         :items-per-page="perPage"
         v-model="currentPage"
         :on-click="onClickHandler"
@@ -31,19 +31,19 @@ export default {
     name: 'AllProducts',
     setup() {
       const currentPage = ref(1);
-      const perPage = ref(3);
+      const perPage = ref(10);
       const onClickHandler = (page) => {
         console.log(page)
       }
 
         const productStore = useProductStore();
-        productStore.getProducts();
+        productStore.getAllProducts();
 
 
         const displayedPosts = computed(() => {
           let startIndex = perPage.value * (currentPage.value - 1);
           let endIndex = startIndex + perPage.value;
-          return productStore.products.slice(startIndex, endIndex);
+          return productStore.allProducts.slice(startIndex, endIndex);
         })
 
         return {
@@ -76,8 +76,8 @@ export default {
   height: auto;
 }
 .page {
-  border: 4px solid darkblue;
-  width: 270px;
+  border: 2px solid darkblue;
+  width: 250px;
   height: auto;
   margin: 40px auto;
   text-align: center;

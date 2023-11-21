@@ -44,7 +44,7 @@ export default {
 
 
     const productStore = useProductStore();
-    productStore.getFlashProducts();
+    productStore.getAllProducts();
 
     const search = () => {
       showBoard.value = true;
@@ -58,7 +58,7 @@ export default {
 
 
     const filteredProducts = computed(() => {
-      return productStore.flashProducts.filter((product) =>
+      return productStore.allProducts.filter((product) =>
       product.productName.toLowerCase().includes(searchText.value.toLowerCase()))
     })
     return {

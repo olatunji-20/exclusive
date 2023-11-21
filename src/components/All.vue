@@ -1,6 +1,6 @@
 <template>
     <div class="all-p">
-        <Card :displayProducts="allProducts" />
+        <Card :link="'/all-product-page/'" :displayProducts="allProducts" />
     </div>
 </template>
 

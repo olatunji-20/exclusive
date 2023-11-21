@@ -53,7 +53,7 @@ export default {
 .product-card {
     border: 2px solid hotpink;
     width: 220px;
-    height: 350px;
+    height: auto;
     margin: 10px 0px;
     position: relative;
     cursor: pointer;
@@ -63,7 +63,7 @@ export default {
     width: 100%;
     height: 200px;
     position: relative;
-    background: powderblue;
+    background: gray;
     overflow: hidden;
 }
 .discount {
@@ -79,8 +79,8 @@ export default {
 }
 .fave {
     border: 1px solid red;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     background: powderblue;
     position: absolute;
     right: 0;
@@ -90,8 +90,9 @@ export default {
 }
 .watch {
     border: 1px solid green;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
     background: yellow;
     position: absolute;
     top: 50px;
@@ -127,12 +128,12 @@ export default {
 .details {
     border: 1px solid red;
     width: 100%;
-    height: 140px;
+    height: 120px;
 }
 .star {
     border: 1px solid green;
-    width: 200px;
-    height: 30px;
+    width: auto;
+    height: 20px;
     margin-top: 20px;
 }
 </style>
