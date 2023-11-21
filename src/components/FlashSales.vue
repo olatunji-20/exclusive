@@ -28,7 +28,7 @@ export default {
 .flash {
     border: 4px solid purple;
     width: 3000px;
-    height: 370px;
+    height: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;

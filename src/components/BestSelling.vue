@@ -27,16 +27,11 @@
   .flash {
       border: 2px solid purple;
       width: 3000px;
-      height: 370px;
+      height: auto;
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
       justify-content: space-between;
   
-  }
-  .card {
-      border: 2px solid red;
-      width: 250px;
-      height: 360px;
   }
   </style>

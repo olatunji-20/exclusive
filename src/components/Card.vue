@@ -53,7 +53,7 @@ export default {
     border: 2px solid hotpink;
     width: 220px;
     height: 350px;
-    margin: 10px auto;
+    margin: 10px 0px;
     position: relative;
     cursor: pointer;
 }

@@ -92,6 +92,12 @@
     position: absolute;
     bottom: 10px;
     color: white;
+    bottom: 0px;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+  }
+  .play:hover {
+    bottom: 15px;
   }
   .p-img {
     width: 100%;
@@ -110,7 +116,13 @@
     height: auto;
     position: absolute;
     bottom: 10px;
-    color: white
+    color: white;
+    bottom: 0px;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+  }
+  .play1:hover {
+    bottom: 15px;
   }
   .second {
     border: 4px solid blue;

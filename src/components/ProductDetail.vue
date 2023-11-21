@@ -11,8 +11,7 @@
             </div>
             <p style="display: inline-block;"> In stock</p>
             <p>${{ productInfo.price }}</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur dolore molestiae dolorem 
-                architecto recusandae dolores obcaecati fugit adipisci quod ducimus.</p>
+            <p class="description">{{ productInfo.productDescription }}.</p>
             <hr />
             <div class="ppp">
                 <div class="one">
@@ -131,6 +130,9 @@ export default {
 }
 hr {
     border: 2px solid saddlebrown;
+}
+.description {
+    font-size: 14px;
 }
 .ppp {
     border: 2px solid blue;

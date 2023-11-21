@@ -16,18 +16,22 @@
     </section>
     <section class="account">
         <h2>Account</h2>
-        <p>My Account</p>
-        <p>Login/Register</p>
-        <p>Cart</p>
-        <p>Wishlist</p>
-        <p>Shop</p>
+        <ul>
+            <li>My Account</li>
+            <li>Login/Register</li>
+            <li>Cart</li>
+            <li>Wishlist</li>
+            <li>Shop</li>
+        </ul>
     </section>
     <section class="quick">
         <h2>Quick Link</h2>
-        <p>Privacy Policy</p>
-        <p>Terms of Use</p>
-        <p>FAQ</p>
-        <p>Contact</p>
+        <ul>
+            <li>Privacy Policy</li>
+            <li>Terms of Use</li>
+            <li>FAQ</li>
+            <li>Contact</li>
+        </ul>
     </section>
     <section class="download">
         <h2>Download App</h2>
@@ -95,6 +99,20 @@ section {
     border: 4px solid green;
     width: 180px;
     height: 350px;
+}
+ul li {
+    position: relative;
+    left: -35px;
+    line-height: 30px;
+    list-style-type: none;
+    transition: 0.1s ease-in;
+}
+ul li:hover {
+    left: -25px;
+    cursor: pointer;
+}
+.account p:hover {
+    left: 20px;
 }
 .quick {
     border: 4px solid green;
