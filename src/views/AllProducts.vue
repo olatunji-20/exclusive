@@ -3,7 +3,8 @@
   <section class="all-products">
     <h1>ALL PRODUCTS ({{ productStore.allProducts.length }})</h1>
     <div class="all">
-      <All :allProducts="displayedPosts" />
+      <Preloader v-if="productStore.isLoading" />
+      <All v-else :allProducts="displayedPosts" />
 
       <div class="page">
         <vue-awesome-paginate
@@ -26,6 +27,7 @@ import All from '../components/All.vue';
 
 import { useProductStore } from '../stores/productStore';
 import { ref, computed } from 'vue';
+import Preloader from '../components/Preloader.vue';
 
 export default {
     name: 'AllProducts',
@@ -57,7 +59,8 @@ export default {
     components: {
     NavBar,
     FootBar,
-    All
+    All,
+    Preloader
 }
 
 }

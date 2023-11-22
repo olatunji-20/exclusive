@@ -4,6 +4,7 @@ import axios from 'axios'
 export const useProductStore = defineStore('productStore', {
     state: () => {
         return {
+            isLoading: true,
             staffs: [],
             flashProducts: [],
             flashProduct: {},
@@ -16,8 +17,10 @@ export const useProductStore = defineStore('productStore', {
     actions: {
         async getFlashProducts() {
             try {
+                this.isLoading = true;
                 const res = await axios.get("http://localhost:5000/flash-products");
                 this.flashProducts = await res.data;
+                this.isLoading = false;
             } catch (err) {
                 console.log("ERROR IN FECTHING PRODUCTS", err);
             }
@@ -35,8 +38,10 @@ export const useProductStore = defineStore('productStore', {
 
         async getBestProducts() {
             try {
+                this.isLoading = true;
                 const res = await axios.get("http://localhost:5000/best-products");
                 this.bestProducts = await res.data;
+                this.isLoading = false;
             } catch (err) {
                 console.log("ERROR IN FECTHING PRODUCTS", err);
             }
@@ -57,8 +62,10 @@ export const useProductStore = defineStore('productStore', {
             await this.getBestProducts();
 
             try {
+                this.isLoading = true;
                 const res = this.flashProducts.concat(this.bestProducts);
                 this.allProducts = res;
+                this.isLoading = false;
             } catch (err) {
                 console.log("ERROR IN FECTHING PRODUCTS", err);
             }

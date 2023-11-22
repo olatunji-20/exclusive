@@ -109,6 +109,7 @@ export default {
     height: 200px;
     padding: 35px 5px;
     text-align: center;
+    transition: .3s ease;
 }
 .val:hover {
     background: tomato;

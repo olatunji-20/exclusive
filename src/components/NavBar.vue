@@ -27,7 +27,7 @@
     </div>
   </header>
   <div v-if="showBoard" class="search-board" v-on:click-outside="closeSearch">
-    <p v-for="product in filteredProducts" :key="product.id"><router-link :to="'/product-page/' + `${product.id}`"> {{ product.productName }} </router-link></p>
+    <p v-for="product in filteredProducts" :key="product.id"><router-link :to="'/all-product-page/' + `${product.id}`"> {{ product.productName }} </router-link></p>
   </div>
 </template>
 

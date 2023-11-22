@@ -1,5 +1,6 @@
 <template>
-    <div class="flash">
+  <Preloader v-if="productStore.isLoading" />
+    <div v-else class="flash">
       <Card :link="'/all-product-page/'" :displayProducts="slicedProducts" />
     </div>
   </template>
@@ -8,6 +9,7 @@
   import { useProductStore } from '../stores/productStore';
   import Card from './Card.vue';
   import { computed } from 'vue';
+import Preloader from './Preloader.vue';
 
   export default {
       name: 'Explore',
@@ -24,8 +26,9 @@
       }
     },
     components: {
-       Card
-    }
+    Card,
+    Preloader
+}
   }
   </script>
   

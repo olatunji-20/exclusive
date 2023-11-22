@@ -43,6 +43,12 @@ export default {
     height: 200px;
     padding: 35px 5px;
     text-align: center;
+    position: relative;
+    bottom: 0px;
+    transition: 0.3s ease;
+}
+.val:hover {
+    bottom: 10px;
 }
 .buss {
     border: 10px solid red;

@@ -1,5 +1,6 @@
 <template>
-  <div class="flash">
+  <Preloader v-if="productStore.isLoading" />
+  <div v-else class="flash">
     <Card :link="'/best-product-page/'" :displayProducts="productStore.bestProducts" />
   </div>
 </template>
@@ -7,6 +8,7 @@
 <script>
 import { useProductStore } from '../stores/productStore';
 import Card from './Card.vue';
+import Preloader from './Preloader.vue';
 
 export default {
     name: 'BestSelling',
@@ -19,8 +21,9 @@ export default {
       }
     },
     components: {
-      Card
-    }
+    Card,
+    Preloader
+}
 }
 </script>
 
