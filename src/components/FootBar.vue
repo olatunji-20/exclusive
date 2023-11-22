@@ -187,9 +187,15 @@ ul li:hover {
     }
     section {
         width: 100%;
+        height: auto;
+        padding-bottom: 50px;
     }
     .account, .download, .quick {
         width: 100%;
+        height: auto;
+    }
+    .app {
+        height: 200px;
     }
 }
 

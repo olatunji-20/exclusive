@@ -11,7 +11,7 @@
                 <li>Sports & Outdoor</li>
                 <li>Baby's & Toys</li>
                 <li>Groceries & Pets</li>
-                <li><router-link to="/checkout">Health & Beauty</router-link></li>
+                <li>Health & Beauty</li>
             </ul>
         </aside>
         <aside class="hero">
@@ -67,7 +67,8 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 500px;
+    height: auto;
+    border: 4px solid firebrick;
 }
 .left {
     border: 2px solid red;
@@ -82,11 +83,11 @@ aside ul li {
 .hero {
     border: 2px solid green;
     width: 75%;
-    height: 400px;
+    height: auto;
     padding: 30px;
 }
 .main {
-    border: 4px solid blue;
+    border: 3px solid blue;
     background: burlywood;
     width: 97%;
     height: 350px;
@@ -99,6 +100,10 @@ aside ul li {
     .hero {
         width: 100%;
         padding: 0px;
+    }
+    .main {
+        width: 100%;
+        height: 600px;
     }
 }
 

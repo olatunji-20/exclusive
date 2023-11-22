@@ -59,4 +59,10 @@
     width: 450px;
     height: auto;
   }
+
+  @media screen and (max-width: 480px) {
+    .large {
+      padding: 20px 5px;
+    }
+  }
   </style>

@@ -57,18 +57,20 @@ export default {
 
 <style scoped>
 .large {
-  /* border: 6px solid palevioletred; */
+  border: 6px solid palevioletred;
   width: 100%;
   height: auto;
-  padding: 80px 50px;
+  padding: 50px;
 }
 .last {
   border: 3px solid green;
   width: 400px;
   height: auto;
-  float: right;
+  /* float: right; */
   padding: 0px 20px;
-  margin: 20px auto 100px;
+  position: relative;
+  left: calc(100% - 400px);
+  margin: 20px 0px 50px;
 }
 .proceed {
   border: 1px solid brown;
@@ -77,5 +79,15 @@ export default {
   margin: 40px auto 0px;
   text-align: center;
   background: pink;
+}
+
+@media screen and (max-width: 480px) {
+  .large {
+    padding: 20px 5px;
+  }
+  .last {
+    width: 100%;
+    left: 0;
+  }
 }
 </style>

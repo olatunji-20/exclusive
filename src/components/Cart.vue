@@ -1,7 +1,7 @@
 <template>
   <div class="border">
     <div class="headers">
-      <h4 style="width: 250px">Product</h4>
+      <h4 class="pqp">Product</h4>
       <h4>Price</h4>
       <h4>Quantity</h4>
       <h4>Subtotal</h4>
@@ -12,7 +12,7 @@
         <div class="img">
           <img :src="product.productImage" class="p-img" />
         </div>
-        <p style="width: 150px"> {{ product.productName }} </p>
+        <p> {{ product.productName }} </p>
       </div>
       <p> ${{ product.price }} </p>
       <p> {{ product.quantity }} </p>
@@ -58,6 +58,9 @@ export default {
   flex-wrap: nowrap;
   justify-content: space-between;
 }
+.headers .pqp {
+  width: 240px;
+}
 h1 {
   font-size: 50px;
   text-align: center;
@@ -78,18 +81,21 @@ h1 {
 }
 .det {
   border: 2px solid blue;
-  width: 220px;
+  width: 200px;
   height: 60px;
   overflow: hidden;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
 }
+/* .det p {
+  width: 100px;
+} */
 .img {
   border: 2px solid darkblue;
   width: 60px;
   height: 100%;
-  margin-right: 10px;
+  margin-right: 5px;
   padding: 5px;
 }
 .p-img {
@@ -103,5 +109,17 @@ h1 {
   height: 60px;
   position: absolute;
   right: 0px
+}
+
+@media screen and (max-width: 480px) {
+  .headers {
+    padding-right: 10px;
+  }
+  .headers .pqp {
+    width: 120px;
+  }
+  .det {
+    width: 140px;
+  }
 }
 </style>

@@ -47,7 +47,7 @@
       display: inline;
   }
   .sales {
-    border: 3px solid green;
+    border: 6px solid green;
     width: 100%;
     height: auto;
     margin: 30px auto;
@@ -62,5 +62,30 @@
   button {
     width: 100%;
     height: 100%;
+    cursor: pointer;
+    background: pink;
   }
+
+  @media screen and (max-width: 480px) {
+    .categories {
+      padding: 20px 5px;
+    }
+    h2 {
+      font-size: 35px;
+    }
+    .sales {
+      overflow: auto;
+    }
+
+
+
+
+
+
+
+
+  }
+
+
+
   </style>

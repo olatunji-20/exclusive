@@ -1,4 +1,5 @@
 <template>
+  <br />
   <div class="categories">
     <h1>Today's</h1>
     <h2>Flash Sales</h2>
@@ -53,7 +54,7 @@ export default {
 
 <style scoped>
 .categories {
-    border: 3px solid blue;
+    border: 6px solid red;
     width: 100%;
     height: auto;
     padding: 50px;
@@ -90,6 +91,7 @@ h2 {
   height: 50px;
   border-radius: 50%;
   background: pink;
+  cursor: pointer;
 }
 .sales {
   border: 8px solid green;
@@ -106,8 +108,21 @@ h2 {
   margin: 10px auto;
 }
 button {
+  cursor: pointer;
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .categories {
+    padding: 20px 5px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  .time {
+    display: none;
+  }
 }
 
 </style>

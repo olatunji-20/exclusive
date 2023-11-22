@@ -29,12 +29,18 @@
             <div class="free">
                 <div class="aaa">
                     <div class="icon"></div>
-                    <div class="wup"></div>
+                    <div class="wup">
+                        <h4>Free Delivery</h4>
+                        <p>Enter your postal code for delivery availability.</p>
+                    </div>
                 </div>
                 <hr />
                 <div class="aaa">
                     <div class="icon"></div>
-                    <div class="wup"></div>
+                    <div class="wup">
+                        <h4>Return Delivery</h4>
+                        <p>Free 30 days delivery return.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -92,13 +98,13 @@ export default {
 .qqq {
     border: 4px solid yellow;
     width: 100%;
-    height: 700px;
-    padding: 50px;
+    height: auto;
+    padding: 80px 50px;
 }
 .details {
     border: 6px solid blue;
     width: 100%;
-    height: 600px;
+    height: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -116,9 +122,9 @@ export default {
     object-fit: contain;
 }
 .det {
-    border: 2px solid red;
+    border: 5px solid red;
     width: 350px;
-    height: 600px;
+    height: auto;
 }
 .star {
     border: 1px solid pink;
@@ -202,5 +208,22 @@ input::-webkit-inner-spin-button {
     border: 1px solid red;
     width: 78%;
     height: 100%;
+}
+.wup h4 {
+    line-height: 0px;
+}
+.wup p {
+    font-size: 13px;
+}
+
+@media screen and (max-width: 480px) {
+    .qqq {
+        padding: 30px 5px;
+    }
+
+    .det {
+        width: 100%;
+        margin-top: 20px;
+    }
 }
 </style>

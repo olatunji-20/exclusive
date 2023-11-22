@@ -58,4 +58,15 @@ export default {
     margin: 0px auto;
     border-radius: 50%;
 }
+
+
+@media screen and (max-width: 480px) {
+    .values {
+        flex-direction: column;
+        padding: 50px;
+    }
+    .val {
+        margin: 20px auto;
+    }
+}
 </style>

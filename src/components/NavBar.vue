@@ -149,6 +149,7 @@ input {
 @media screen and (max-width: 768px) {
   header {
     justify-content: flex-start;
+    padding-left: 20px;
   }
   .nav {
     display: none;

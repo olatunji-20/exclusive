@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="eeee">
     <div class="enha">
         <div class="one">
             <h4 style="color: lawngreen">Categories</h4>
@@ -30,8 +30,8 @@ export default {
 </script>
 
 <style scoped>
-section {
-    border: 4px solid pink;
+.eeee {
+    border: 8px solid pink;
     width: 100%;
     height: 500px;
     padding: 50px 80px;
@@ -83,5 +83,11 @@ h1 {
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+@media screen and (max-width: 480px) {
+    .eeee {
+        display: none;
+    }
 }
 </style>

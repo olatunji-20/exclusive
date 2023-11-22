@@ -98,7 +98,7 @@ export default {
 
 <style scoped>
 .swippp {
-    border: 6px solid tomato;
+    border: 3px solid tomato;
     width: 100%;
     height: 100%;
 }
@@ -113,7 +113,7 @@ export default {
     justify-content: center;
 }
 .sub1 {
-    border: 2px solid red;
+    border: 4px solid brown;
     width: 350px;
     height: 300px;
     padding: 20px 50px 0px 0px;
@@ -135,7 +135,7 @@ export default {
     display: inline-block;
 }
 .sub2 {
-    border: 2px solid red;
+    border: 4px solid brown;
     width: 400px;
     height: 300px;
 }
@@ -149,4 +149,28 @@ export default {
     height: 100%;
     object-fit: contain;
 }
+
+@media screen and (max-width: 480px) {
+    .sub-main{
+        flex-direction: column;
+        height: 100%;
+    }
+    .sub1 {
+        height: 50%;
+        width: 100%;
+        text-align: center;
+    }
+    .sub1 h1 {
+        font-size: 30px;
+    }
+    .sub2 {
+        height: 50%;
+        width: 100%;
+    }
+    .sub2 .image {
+        margin: 0px auto;
+    }
+}
+
+
 </style>

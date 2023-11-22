@@ -69,7 +69,7 @@
       font-size: 45px;
   }
   .new {
-    border: 4px solid red;
+    border: 6px solid green;
     width: 100%;
     height: 500px;
     display: flex;
@@ -152,4 +152,39 @@
     grid-area: three;
     background: black;
   }
+
+  @media screen and (max-width: 480px) {
+    .categories {
+      padding: 20px 5px;
+    }
+    h2 {
+      font-size: 35px;
+    }
+    .new {
+      height: auto;
+      flex-direction: column;
+    }
+    .first {
+      width: 100%;
+      height: 400px;
+    }
+    .second {
+      width: 100%;
+      height: 500px;
+    }
+
+
+
+
+
+
+
+
+
+
+    
+  }
+
+
+
   </style>

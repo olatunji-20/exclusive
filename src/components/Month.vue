@@ -57,6 +57,7 @@
   button {
     width: 100%;
     height: 100%;
+    cursor: pointer;
   }
   .sales {
     border: 3px solid green;
@@ -65,4 +66,28 @@
     margin: 30px auto;
     overflow: auto;
   }
+
+
+  @media screen and (max-width: 480px) {
+    .categories {
+      padding: 20px 5px;
+      position: relative;
+    }
+    h2 {
+      font-size: 35px;
+    }
+    .dir {
+      position: absolute;
+      bottom: 0;
+      right: calc(50% - 60px);
+      margin-top: 120px;
+    }
+
+
+
+
+
+  }
+
+
   </style>

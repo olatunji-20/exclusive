@@ -1,11 +1,12 @@
 <template>
-<div class="categories">
-    <h1>{{ topic }}</h1>
-    <div class="related">
-        <Card :link="'/all-product-page/'" :displayProducts="relatedItems" />
+    <div class="categories">
+        <h1>{{ topic }}</h1>
+        <div class="related">
+            <div class="related-card">
+                <Card :link="'/all-product-page/'" :displayProducts="relatedItems" />
+            </div>
+        </div>        
     </div>
-    
-</div>
 </template>
 
 <script>
@@ -48,14 +49,30 @@ h1 {
     padding: 15px;
 }
 .related {
-    border: 2px solid brown;
+    border: 4px solid brown;
     width: 100%;
     height: auto;
     margin: 50px auto;
+}
+.related-card {
+    border: 4px solid green;
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
 }
 
+@media screen and (max-width: 480px) {
+    .categories {
+        padding: 20px 5px;
+    }
+    .related {
+        overflow: auto;
+    }
+    .related-card {
+        width: 1200px;
+    }
+}
 </style>

@@ -41,6 +41,15 @@ import Preloader from './Preloader.vue';
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-around;
-  
+  }
+
+
+
+  @media screen and (max-width: 480px) {
+    .flash {
+      height: 700px;
+      width: 1300px;
+      justify-content: space-between;
+    }
   }
   </style>
