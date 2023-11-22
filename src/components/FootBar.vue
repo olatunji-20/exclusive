@@ -159,9 +159,18 @@ ul li:hover {
     justify-content: space-between;
 }
 .social {
-    border: 1px solid blue;
+    border: 2px solid blue;
     height: 40px;
     width: 40px;
+    position: relative;
+    border-radius: 50%;
+    background: powderblue;
+    bottom: 0px;
+    transition: .2s ease;
+    cursor: pointer;
+}
+.social:hover {
+    bottom: 10px;
 }
 .copy {
     border: 2px solid red;
@@ -171,4 +180,18 @@ ul li:hover {
     display: block;
     text-align: center;
 }
+
+@media screen and (max-width: 480px) {
+    footer {
+        padding: 40px 5px;
+    }
+    section {
+        width: 100%;
+    }
+    .account, .download, .quick {
+        width: 100%;
+    }
+}
+
+
 </style>

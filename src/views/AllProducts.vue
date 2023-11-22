@@ -80,9 +80,9 @@ export default {
 }
 .page {
   border: 2px solid darkblue;
-  width: 250px;
+  width: 200px;
   height: auto;
-  margin: 40px auto;
+  margin: 40px auto 10px;
   text-align: center;
 }
 .pagination-container {

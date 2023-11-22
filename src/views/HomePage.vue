@@ -1,7 +1,7 @@
 <template>
     <NavBar />
     <section>
-        <aside>
+        <aside class="left">
             <ul>
                 <li>Women's fashion</li>
                 <li>Men's fashion</li>
@@ -69,7 +69,7 @@ section {
     justify-content: space-between;
     height: 500px;
 }
-aside {
+.left {
     border: 2px solid red;
     width: 23%;
     height: 400px;
@@ -91,4 +91,15 @@ aside ul li {
     width: 97%;
     height: 350px;
 }
+
+@media screen and (max-width: 480px) {
+    .left {
+        display: none;
+    }
+    .hero {
+        width: 100%;
+        padding: 0px;
+    }
+}
+
 </style>

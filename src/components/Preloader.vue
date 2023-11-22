@@ -18,7 +18,7 @@ export default {
 .pre {
     border: 4px solid red;
     width: 100%;
-    height: auto;
+    height: 400px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -26,7 +26,8 @@ export default {
     align-items: center;
 }
 .sub {
-    border: 6px solid green;
+    border: 10px solid green;
+    border-top: 10px solid blue;
     width: 100px;
     height: 100px;
     border-radius: 50%;

@@ -19,9 +19,9 @@
       <router-link to="/wishlist">
         <div class="fave"></div>
       </router-link>
-      <router-link to="/cart-page">
+      <router-link to="/cart-page" class="rlink">
           <div class="cart">
-
+            <CartCard />
           </div>
       </router-link>
     </div>
@@ -34,43 +34,37 @@
 <script>
 import { ref, computed } from 'vue';
 import { useProductStore } from '../stores/productStore';
+import CartCard from './CartCard.vue';
 
 export default {
-  name: 'NavBar',
-  setup() {
-    const searchText = ref("");
-    const showBoard = ref(false);
-    const showClose = ref(false);
-
-
-    const productStore = useProductStore();
-    productStore.getAllProducts();
-
-    const search = () => {
-      showBoard.value = true;
-      showClose.value = true;
-    }
-
-    const closeSearch = () => {
-      showBoard.value = false;
-      showClose.value = false;
-    }
-
-
-    const filteredProducts = computed(() => {
-      return productStore.allProducts.filter((product) =>
-      product.productName.toLowerCase().includes(searchText.value.toLowerCase()))
-    })
-    return {
-      searchText,
-      filteredProducts,
-      showBoard,
-      search,
-      closeSearch,
-      showClose
-    }
-  }
-
+    name: 'NavBar',
+    setup() {
+        const searchText = ref("");
+        const showBoard = ref(false);
+        const showClose = ref(false);
+        const productStore = useProductStore();
+        productStore.getAllProducts();
+        const search = () => {
+            showBoard.value = true;
+            showClose.value = true;
+        };
+        const closeSearch = () => {
+            showBoard.value = false;
+            showClose.value = false;
+        };
+        const filteredProducts = computed(() => {
+            return productStore.allProducts.filter((product) => product.productName.toLowerCase().includes(searchText.value.toLowerCase()));
+        });
+        return {
+            searchText,
+            filteredProducts,
+            showBoard,
+            search,
+            closeSearch,
+            showClose
+        };
+    },
+    components: { CartCard }
 }
 </script>
 
@@ -150,5 +144,24 @@ input {
   z-index: 9;
   background: hotpink;
   position: absolute;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    justify-content: flex-start;
+  }
+  .nav {
+    display: none;
+  }
+
+
+
+}
+
+
+@media screen and (max-width: 480px) {
+  .menu {
+    display: none;
+  }
 }
 </style>
