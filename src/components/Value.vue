@@ -1,19 +1,19 @@
 <template>
-  <div class="values">
-    <div class="val">
-        <div class="buss"></div>
+  <div class="values1">
+    <div class="val1">
+        <div class="buss1"></div>
         <h4 style="line-height: 3px">FREE AND FAST DELIVERY</h4>
         <p style="font-size: 13px; line-height: 0px;">Free delivery for al orders above $140</p>
     </div>
     
-    <div class="val">
-        <div class="buss"></div>
+    <div class="val1">
+        <div class="buss1"></div>
         <h4 style="line-height: 3px">24/7 CUSTOMER SERVICE</h4>
         <p style="font-size: 13px; line-height: 0px;">Friendly 24/7 customer support</p>
     </div>
     
-    <div class="val">
-        <div class="buss"></div>
+    <div class="val1">
+        <div class="buss1"></div>
         <h4 style="line-height: 3px">MONEY BACK GUARANTY</h4>
         <p style="font-size: 13px; line-height: 0px;">We return money within 30 days</p>
     </div>
@@ -28,7 +28,7 @@ export default {
 </script>
 
 <style scoped>
-.values {
+.values1 {
     border: 4px solid green;
     width: 100%;
     height: auto;
@@ -37,7 +37,7 @@ export default {
     flex-direction: row;
     justify-content: space-around;
 }
-.val {
+.val1 {
     border: 2px solid purple;
     width: 300px;
     height: 200px;
@@ -47,10 +47,10 @@ export default {
     bottom: 0px;
     transition: 0.3s ease;
 }
-.val:hover {
+.val1:hover {
     bottom: 10px;
 }
-.buss {
+.buss1 {
     border: 10px solid red;
     background: yellow;
     width: 70px;
@@ -60,12 +60,12 @@ export default {
 }
 
 
-@media screen and (max-width: 480px) {
-    .values {
+@media screen and (max-width: 768px) {
+    .values1 {
         flex-direction: column;
         padding: 50px;
     }
-    .val {
+    .val1 {
         margin: 20px auto;
     }
 }

@@ -85,7 +85,7 @@ h1 {
     object-fit: contain;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .eeee {
         display: none;
     }

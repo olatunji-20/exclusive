@@ -120,4 +120,10 @@ p {
     height: 25px;
 }
 
+@media screen and (max-width: 768px) {
+    .large {
+        display: none;
+    }
+}
+
 </style>

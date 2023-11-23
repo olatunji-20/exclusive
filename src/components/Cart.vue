@@ -111,7 +111,7 @@ h1 {
   right: 0px
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .headers {
     padding-right: 10px;
   }

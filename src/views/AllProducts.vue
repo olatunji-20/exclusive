@@ -6,14 +6,14 @@
       <Preloader v-if="productStore.isLoading" />
       <All v-else :allProducts="displayedPosts" />
 
-      <div class="page">
-        <vue-awesome-paginate
-        :total-items="productStore.allProducts.length"
-        :items-per-page="perPage"
-        v-model="currentPage"
-        :on-click="onClickHandler"
-      />
-      </div>
+    </div>
+    <div class="page">
+      <vue-awesome-paginate
+      :total-items="productStore.allProducts.length"
+      :items-per-page="perPage"
+      v-model="currentPage"
+      :on-click="onClickHandler"
+    />
     </div>
 
   </section>
@@ -112,4 +112,13 @@ export default {
   background-color: #2988c8;
 }
 
+
+@media screen and (max-width: 768px) {
+  .all-products {
+    padding: 20px 5px;
+  }
+  .all {
+    overflow: auto;
+  }
+}
 </style>

@@ -181,7 +181,7 @@ ul li:hover {
     text-align: center;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     footer {
         padding: 40px 5px;
     }

@@ -140,6 +140,7 @@ input {
 .search-board {
   border: 4px solid brown;
   width: 100%;
+  padding: 20px 10px;
   height: auto;
   z-index: 9;
   background: hotpink;
@@ -148,7 +149,7 @@ input {
 
 @media screen and (max-width: 768px) {
   header {
-    justify-content: flex-start;
+    justify-content: space-between;
     padding-left: 20px;
   }
   .nav {

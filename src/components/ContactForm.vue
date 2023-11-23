@@ -1,5 +1,5 @@
 <template>
-    <div class="large">
+    <div class="larges">
         <form>
             <input placeholder="Your Name" />
             <input placeholder="Your Email" />
@@ -22,10 +22,11 @@ export default {
 </script>
 
 <style scoped>
-.large {
-    border: 2px solid red;
+.larges {
+    border: 2px solid blue;
     width: 100%;
-    height: auto;
+    height: 100%;
+    padding: 50px;
 }
 input {
     width: 31%;
@@ -39,9 +40,21 @@ textarea {
     margin: 30px auto 10px;
 }
 button {
-    float: right;
+    /* float: right; */
     padding: 10px 30px;
     background: tomato;
     color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .larges {
+        padding: 10px 2px;
+    }
+    input {
+        width: 100%;
+        margin: 10px auto;
+        text-indent: 10px;
+    }
 }
 </style>

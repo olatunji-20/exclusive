@@ -113,7 +113,7 @@ button {
   height: 100%;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .categories {
     padding: 20px 5px;
   }

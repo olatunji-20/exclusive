@@ -29,4 +29,11 @@ export default {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+@media screen and (max-width: 768px) {
+    .all-p {
+        height: 700px;
+        width: 1300px;
+    }
+}
 </style>

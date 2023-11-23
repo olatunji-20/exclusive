@@ -43,7 +43,7 @@
   .large {
     border: 4px solid red;
     width: 100%;
-    height: 500px;
+    height: auto;
     padding: 50px;
     display: flex;
     flex-direction: row;
@@ -77,6 +77,21 @@
   .contact-form {
     border: 4px solid green;
     width: 750px;
-    height: 400px;
+    height: auto;
+  }
+
+  @media screen and (max-width: 768px) {
+    .large {
+      padding: 20px 5px;
+      flex-direction: column-reverse;
+    }
+    .call {
+      width: 100%;
+      margin-top: 30px;
+      padding: 30px 5px;
+    }
+    .contact-form {
+      width: 100%;
+    }
   }
   </style>

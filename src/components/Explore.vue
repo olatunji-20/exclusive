@@ -45,7 +45,7 @@ import Preloader from './Preloader.vue';
 
 
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     .flash {
       height: 700px;
       width: 1300px;

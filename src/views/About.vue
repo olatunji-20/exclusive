@@ -125,4 +125,28 @@ export default {
     border-radius: 50%;
 }
 
+@media screen and (max-width: 768px) {
+    .about {
+        padding: 10px 5px;
+    }
+    .story1 {
+        padding: 20px 0px;
+        height: auto;
+    }
+    .story {
+        margin-top: 20px;
+        height: 400px;
+    }
+    .values {
+        flex-direction: column;
+        padding: 50px;
+    }
+    .val {
+        margin: 20px auto;
+    }
+
+
+
+}
+
   </style>

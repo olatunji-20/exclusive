@@ -81,7 +81,7 @@ export default {
   background: pink;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .large {
     padding: 20px 5px;
   }

@@ -63,7 +63,7 @@ export default {
     width: 100%;
     height: 200px;
     position: relative;
-    background: gray;
+    background: #cccccc;
     overflow: hidden;
 }
 .discount {

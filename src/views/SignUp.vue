@@ -50,4 +50,17 @@ export default {
     height: 570px;
 }
 
+@media screen and (max-width: 768px) {
+    .large {
+        padding: 20px 5px;
+        flex-direction: column-reverse;
+    }
+    .image {
+        width: 100%;
+        height: 400px;
+    }
+    .form {
+        width: 100%;
+    }
+}
 </style>

@@ -216,7 +216,7 @@ input::-webkit-inner-spin-button {
     font-size: 13px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .qqq {
         padding: 30px 5px;
     }
