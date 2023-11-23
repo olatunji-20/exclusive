@@ -14,13 +14,16 @@
     <div class="menu">
       <div class="search">
         <input v-on:input="search" v-model="searchText" placeholder="search" type="text" />
-        <div v-if="showClose" @click="closeSearch" class="cl">S</div>
+        <div v-if="showClose" @click="closeSearch" class="cl"><i class="material-symbols-outlined">search_off</i></div>
       </div>
       <router-link to="/wishlist">
-        <div class="fave"></div>
+        <div class="fave">
+          <i class="material-symbols-outlined">favorite</i>
+        </div>
       </router-link>
       <router-link to="/cart-page" class="rlink">
           <div class="cart">
+            <i class="material-symbols-outlined">shopping_cart</i>
             <CartCard />
           </div>
       </router-link>
@@ -122,20 +125,26 @@ input {
   text-indent: 10px;
 }
 .cl {
-  border: 4px solid green;
+  border: 2px solid black;
   width: 30px;
   height: 30px;
+  border-radius: 50%;
+  background: #cccccc;
   cursor: pointer;
 }
 .fave {
-  border: 1px solid green;
-  height: 40px;
-  width: 40px;
+  border: 2px solid green;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  padding: 4px;
 }
 .cart {
-  border: 1px solid green;
-  height: 40px;
-  width: 40px;
+  border: 2px solid green;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  padding: 4px;
 }
 .search-board {
   border: 4px solid brown;

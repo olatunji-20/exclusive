@@ -3,14 +3,18 @@
     <div class="large">
         <div class="call">
             <div class="to">
-                <div class="icon"></div>
+                <div class="icon">
+                  <i class="material-symbols-outlined">add_call</i>
+                </div>
                 <h4 style="display:inline-block; position: relative; bottom: 20px">Call Us</h4>
             </div>
             <p>We are available 24/7, 7 days a week.</p>
             <p>Phone: +8801 6111 2222</p>
             <hr />
             <div class="to">
-                <div class="icon"></div>
+                <div class="icon">
+                  <i class="material-symbols-outlined">mail</i>
+                </div>
                 <h4 style="display:inline-block; position: relative; bottom: 20px">Write To Us</h4>
             </div>
             <p>Fill out our form and we will contact you within 24 hours.</p>

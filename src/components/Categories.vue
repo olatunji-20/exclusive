@@ -5,27 +5,39 @@
     <div class="content">
         <div class="sub-content">
             <div class="cat">
-                <div class="icon"></div>
+                <div class="icon">
+                    <i class="material-symbols-outlined">smartphone</i>
+                </div>
                 <p>Phones</p>
             </div>
             <div class="cat">
-                <div class="icon"></div>
+                <div class="icon">
+                    <i class="material-symbols-outlined">computer</i>
+                </div>
                 <p>Computers</p>
             </div>
             <div class="cat">
-                <div class="icon"></div>
+                <div class="icon">
+                    <i class="material-symbols-outlined">watch</i>
+                </div>
                 <p>SmartWatch</p>
             </div>
             <div class="cat">
-                <div class="icon"></div>
+                <div class="icon">
+                    <i class="material-symbols-outlined">photo_camera</i>
+                </div>
                 <p>Camera</p>
             </div>
             <div class="cat">
-                <div class="icon"></div>
+                <div class="icon">
+                    <i class="material-symbols-outlined">headphones</i>
+                </div>
                 <p>HeadPhones</p>
             </div>
             <div class="cat">
-                <div class="icon"></div>
+                <div class="icon">
+                    <i class="material-symbols-outlined">stadia_controller</i>
+                </div>
                 <p>Gaming</p>
             </div>
         </div>

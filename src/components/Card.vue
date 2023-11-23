@@ -6,7 +6,9 @@
     <router-link class="rlink" :to="link + `${p.id}`" :key="p.id">
         <div class="image">
             <div v-if="p.discount > 0" class="discount">-{{ p.discount }}%</div>
-            <div class="fave">{{ p.id }}</div>
+            <div class="fave">
+                <i class="material-symbols-outlined">favorite</i>
+            </div>
             <img :src="p.productImage" :alt="p.productName" class="p-img" />
         </div>    
         <div class="details">
@@ -85,7 +87,7 @@ export default {
     position: absolute;
     right: 0;
     border-radius: 50%;
-    padding: 5px;
+    padding: 3px 2.5px;
     z-index: 2;
 }
 .watch {
@@ -96,9 +98,9 @@ export default {
     background: yellow;
     position: absolute;
     top: 50px;
-    right: 0;
+    right: 2px;
     /* border-radius: 50%; */
-    padding: 2px;
+    /* padding: 2px; */
     z-index: 2;
 }
 .p-img {

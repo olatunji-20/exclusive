@@ -1,5 +1,7 @@
 <template>
-  <div @click="wishStore.addToWish({product, quantity})" class="www">W</div>
+  <div @click="wishStore.addToWish({product, quantity})" class="www">
+    <i class="material-symbols-outlined">visibility</i>
+  </div>
 </template>
   
   <script>
@@ -26,19 +28,21 @@
   
   <style scoped>
   .www {
-      border: 3px solid purple;
-      background: darkcyan;
-      width: 100%;
-      height: 100%;
+      border: 1px solid purple;
+      background: yellow;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      padding-top: 2px;
       text-align: center;
       cursor: pointer;
   }
-  .xxx {
+  /* .xxx {
       border: 3px solid purple;
       background: blueviolet;
       width: 100%;
       height: 100%;
       text-align: center;
       cursor: pointer;
-  }
+  } */
   </style>

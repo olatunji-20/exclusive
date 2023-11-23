@@ -25,11 +25,9 @@ p {
     text-align: center;
     padding-top: 5px;
     border-radius: 50%;
-    /* padding: 4px; */
-    /* font-size: 14px; */
     position: relative;
-    left: 25px;
-    bottom: 30px;
+    left: 15px;
+    bottom: 65px;
     background: powderblue;
 }
 </style>

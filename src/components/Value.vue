@@ -1,19 +1,25 @@
 <template>
   <div class="values1">
     <div class="val1">
-        <div class="buss1"></div>
+        <div class="buss1">
+            <i class="material-symbols-outlined">departure_board</i>
+        </div>
         <h4 style="line-height: 3px">FREE AND FAST DELIVERY</h4>
         <p style="font-size: 13px; line-height: 0px;">Free delivery for al orders above $140</p>
     </div>
     
     <div class="val1">
-        <div class="buss1"></div>
+        <div class="buss1">
+            <i class="material-symbols-outlined">headset_mic</i>
+        </div>
         <h4 style="line-height: 3px">24/7 CUSTOMER SERVICE</h4>
         <p style="font-size: 13px; line-height: 0px;">Friendly 24/7 customer support</p>
     </div>
     
     <div class="val1">
-        <div class="buss1"></div>
+        <div class="buss1">
+            <i class="material-symbols-outlined">verified_user</i>
+        </div>
         <h4 style="line-height: 3px">MONEY BACK GUARANTY</h4>
         <p style="font-size: 13px; line-height: 0px;">We return money within 30 days</p>
     </div>

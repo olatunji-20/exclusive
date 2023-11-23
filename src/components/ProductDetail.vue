@@ -15,20 +15,28 @@
             <hr />
             <div class="ppp">
                 <div class="one">
-                    <div @click="decrease" class="plus">-</div>
+                    <div @click="decrease" class="plus">
+                        <i class="material-symbols-outlined">remove</i>
+                    </div>
                     <div class="plus1">
                         <input v-model="quantity" type="number" />
                     </div>
-                    <div @click="increase" class="plus">+</div>
+                    <div @click="increase" class="plus">
+                        <i class="material-symbols-outlined">add</i>
+                    </div>
                 </div>
                 <div class="one">
                     <AddToCart :product="productInfo" :quantity="quantity" />
                 </div>
-                <div class="two"></div>
+                <div class="two">
+                    <i class="material-symbols-outlined">favorite</i>
+                </div>
             </div>
             <div class="free">
                 <div class="aaa">
-                    <div class="icon"></div>
+                    <div class="icon">
+                        <i class="material-symbols-outlined">departure_board</i>
+                    </div>
                     <div class="wup">
                         <h4>Free Delivery</h4>
                         <p>Enter your postal code for delivery availability.</p>
@@ -36,7 +44,9 @@
                 </div>
                 <hr />
                 <div class="aaa">
-                    <div class="icon"></div>
+                    <div class="icon">
+                        <i class="material-symbols-outlined">change_circle</i>
+                    </div>
                     <div class="wup">
                         <h4>Return Delivery</h4>
                         <p>Free 30 days delivery return.</p>
@@ -163,6 +173,7 @@ hr {
     border: 2px solid yellowgreen;
     width: 35px;
     height: 35px;
+    padding: 3px;
     cursor: pointer;
 }
 .plus1 {
@@ -184,6 +195,7 @@ input::-webkit-inner-spin-button {
     border: 2px solid red;
     width: 40px;
     height: 40px;
+    padding: 7px 6px;
 }
 .free {
     border: 2px solid chartreuse;

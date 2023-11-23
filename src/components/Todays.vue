@@ -7,8 +7,12 @@
       <CountDown />
     </div>
     <div class="dir">
-      <div @click="x -= 500"  class="arr"></div>
-      <div @click="x += 500" class="arr"></div>
+      <div @click="x -= 500"  class="arr">
+        <i class="material-symbols-outlined">arrow_back</i>
+      </div>
+      <div @click="x += 500" class="arr">
+        <i class="material-symbols-outlined">arrow_forward</i>
+      </div>
     </div>
     <div ref="el" class="sales">
       <FlashSales />
@@ -89,6 +93,7 @@ h2 {
   border: 2px solid greenyellow;
   width: 50px;
   height: 50px;
+  padding: 10px;
   border-radius: 50%;
   background: pink;
   cursor: pointer;

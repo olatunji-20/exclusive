@@ -1,5 +1,7 @@
 <template>
-    <div @click="cartStore.removeCart(product.id)" class="www">X</div>
+    <div @click="cartStore.removeCart(product.id)" class="www">
+        <i class="material-symbols-outlined">delete</i>
+    </div>
   </template>
   
   <script>

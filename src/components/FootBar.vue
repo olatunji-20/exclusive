@@ -44,10 +44,18 @@
             <div class="playstore2"></div>
         </div>
         <div class="socials">
-            <div class="social"></div>
-            <div class="social"></div>
-            <div class="social"></div>
-            <div class="social"></div>
+            <div class="social">
+                <i class="material-symbols-outlined">expand_more</i>
+            </div>
+            <div class="social">
+                <i class="material-symbols-outlined">expand_more</i>
+            </div>
+            <div class="social">
+                <i class="material-symbols-outlined">expand_more</i>
+            </div>
+            <div class="social">
+                <i class="material-symbols-outlined">expand_more</i>
+            </div>
         </div>
     </section>
     <section class="copy">
