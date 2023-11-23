@@ -54,13 +54,13 @@
   
   <style scoped>
   .categories {
-      border: 3px solid blue;
+      /* border: 3px solid blue; */
       width: 100%;
       height: auto;
       padding: 50px 80px;
   }
   h1 {
-      border-left: 20px solid blue;
+      border-left: 20px solid #DB4444;
       width: auto;
       height: 60px;
       padding: 15px;
@@ -69,7 +69,7 @@
       font-size: 45px;
   }
   .new {
-    border: 6px solid green;
+    /* border: 6px solid green; */
     width: 100%;
     height: 500px;
     display: flex;
@@ -78,7 +78,7 @@
     
   }
   .first {
-    border: 4px solid salmon;
+    /* border: 4px solid salmon; */
     width: 48%;
     height: 100%;
     position: relative;
@@ -86,9 +86,10 @@
     background: black;
   }
   .play {
-    border: 1px solid green;
+    /* border: 1px solid #CCCCCC; */
     width: 250px;
     height: auto;
+    padding-left: 3px;
     position: absolute;
     bottom: 10px;
     color: white;
@@ -111,10 +112,11 @@
     object-fit: contain;
 }
   .play1 {
-    border: 1px solid red;
+    /* border: 1px solid #CCCCCC; */
     width: 180px;
     height: auto;
     position: absolute;
+    padding-left: 3px;
     bottom: 10px;
     color: white;
     bottom: 0px;
@@ -125,7 +127,7 @@
     bottom: 15px;
   }
   .second {
-    border: 4px solid blue;
+    /* border: 4px solid blue; */
     width: 50%;
     height: 100%;
     display: grid;
@@ -133,20 +135,20 @@
     gap: 5px;
   }
   .one {
-    border: 4px solid red;
+    /* border: 4px solid red; */
     position: relative;
     height: 240px;
     grid-area: one;
   }
   .two {
-    border: 4px solid green;
+    /* border: 4px solid green; */
     position: relative;
     height: 240px;
     grid-area: two;
     background: black;
   }
   .three {
-    border: 4px solid purple;
+    /* border: 4px solid purple; */
     position: relative;
     height: 240px;
     grid-area: three;

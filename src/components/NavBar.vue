@@ -73,7 +73,7 @@ export default {
 
 <style scoped>
 header {
-    border: 2px solid green;
+    border-bottom: 2px solid green;
     width: 100%;
     height: 100px;
     padding: 25px 0px;
@@ -82,7 +82,7 @@ header {
     justify-content: space-around;
 }
 .logo {
-  border: 1px solid pink;
+  /* border: 1px solid pink; */
   width: 200px;
   height: 50px;
 }
@@ -92,7 +92,7 @@ header {
     object-fit: contain;
 }
 .nav {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: auto;
   height: 50px;
 }
@@ -101,15 +101,18 @@ ul li {
   padding: 0px 20px;
 }
 .menu {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
+  /* background: blue; */
   width: 320px;
   height: 44px;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
 }
 .search {
-  border: 2px solid fuchsia;
+  /* border: 1px solid black; */
+  /* background: #F5F5F5; */
   height: 40px;
   width: 200px;
   display: flex;
@@ -121,8 +124,10 @@ ul li {
 input {
   width: 100%;
   height: 100%;
-  border: 2px solid tomato;
+  background: #F5F5F5;
+  border: 1px solid #F5F5F5;
   text-indent: 10px;
+  border-radius: 5px;
 }
 .cl {
   border: 2px solid black;
@@ -133,18 +138,18 @@ input {
   cursor: pointer;
 }
 .fave {
-  border: 2px solid green;
+  /* border: 2px solid green; */
   height: 35px;
   width: 35px;
   border-radius: 50%;
-  padding: 4px;
+  padding: 5px 4px;
 }
 .cart {
-  border: 2px solid green;
+  /* border: 2px solid green; */
   height: 35px;
   width: 35px;
   border-radius: 50%;
-  padding: 4px;
+  padding: 5px 4px;
 }
 .search-board {
   border: 4px solid brown;

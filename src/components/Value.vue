@@ -35,7 +35,7 @@ export default {
 
 <style scoped>
 .values1 {
-    border: 4px solid green;
+    /* border: 4px solid green; */
     width: 100%;
     height: auto;
     padding: 100px 80px;
@@ -44,7 +44,7 @@ export default {
     justify-content: space-around;
 }
 .val1 {
-    border: 2px solid purple;
+    border: 1px solid #CCCCCC;
     width: 300px;
     height: 200px;
     padding: 35px 5px;
@@ -57,8 +57,9 @@ export default {
     bottom: 10px;
 }
 .buss1 {
-    border: 10px solid red;
-    background: yellow;
+    border: 10px solid #CCCCCC;
+    background: black;
+    color: white;
     width: 70px;
     height: 70px;
     margin: 0px auto;

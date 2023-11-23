@@ -98,13 +98,13 @@ export default {
 
 <style scoped>
 .swippp {
-    border: 3px solid tomato;
+    /* border: 3px solid tomato; */
     width: 100%;
     height: 100%;
 }
 .sub-main {
-    border: 4px solid greenyellow;
-    background: black;
+    /* border: 4px solid greenyellow; */
+    /* background: black; */
     width: 100%;
     height: 93%;
     display: flex;
@@ -113,7 +113,7 @@ export default {
     justify-content: center;
 }
 .sub1 {
-    border: 4px solid brown;
+    /* border: 4px solid brown; */
     width: 350px;
     height: 300px;
     padding: 20px 50px 0px 0px;
@@ -135,14 +135,14 @@ export default {
     display: inline-block;
 }
 .sub2 {
-    border: 4px solid brown;
+    /* border: 4px solid brown; */
     width: 400px;
     height: 300px;
 }
 .sub2 .image {
-    border: 2px solid blueviolet;
-    width: 300px;
-    height: 250px;
+    /* border: 2px solid blueviolet; */
+    width: 350px;
+    height: 300px;
 }
 .p-img {
     width: 100%;

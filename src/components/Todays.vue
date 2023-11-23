@@ -58,13 +58,13 @@ export default {
 
 <style scoped>
 .categories {
-    border: 6px solid red;
+    /* border: 6px solid red; */
     width: 100%;
     height: auto;
     padding: 50px;
 }
 h1 {
-    border-left: 20px solid blue;
+    border-left: 20px solid #DB4444;
     width: auto;
     height: 60px;
     padding: 15px;
@@ -74,14 +74,14 @@ h2 {
     display: inline;
 }
 .time {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 300px;
   height: 70px;
   display: inline-block;
   margin-left: 70px;
 }
 .dir {
-  border: 1px solid firebrick;
+  /* border: 1px solid firebrick; */
   width: 120px;
   height: 50px;
   float: right;
@@ -90,23 +90,26 @@ h2 {
   justify-content: space-between;
 }
 .arr {
-  border: 2px solid greenyellow;
+  /* border: 2px solid greenyellow; */
   width: 50px;
   height: 50px;
-  /* padding: 10px; */
+  padding: 4px 2px;
   border-radius: 50%;
-  background: pink;
+  background: #F5F5F5;
   cursor: pointer;
 }
+.arr:hover {
+  background: #cccccc;
+}
 .sales {
-  border: 8px solid green;
+  /* border: 1px solid green; */
   width: 100%;
   height: auto;
   margin: 30px auto;
   overflow: auto;
 }
 .view {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   width: 250px;
   height: 45px;
   text-align: center;
@@ -116,6 +119,13 @@ button {
   cursor: pointer;
   width: 100%;
   height: 100%;
+  border: 0px;
+  background: #DB4444;
+  color: white;
+  border-radius: 4px;
+}
+button:hover {
+  background: #E07575;
 }
 
 .font-inc {

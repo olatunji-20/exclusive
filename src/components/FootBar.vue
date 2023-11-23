@@ -2,11 +2,16 @@
   <footer>
     <section>
         <div class="logo">
-            <img src="/img/exclusive.svg" class="p-img" />
+            <img src="/img/exclusive2.svg" class="p-img" />
         </div>
         <h2>Subscribe</h2>
         <p style="font-size: 13px">Get 10% off your first order</p>
-        <div class="mail"></div>
+        <div class="mail">
+            <input />
+            <div class="sddd">
+                <i class="material-symbols-outlined font-inc">send</i>
+            </div>
+        </div>
     </section>
     <section>
         <h2>Support</h2>
@@ -38,23 +43,27 @@
         <p style="font-size: 13px">Save $3 with app new user only.</p>
         <div class="app">
             <div class="qr">
-                <!-- <img src="/img/qrcode.svg" class="p-img2" /> -->
+                <img src="/img/qrcode.svg" class="p-img2" />
             </div>
-            <div class="playstore1"></div>
-            <div class="playstore2"></div>
+            <div class="playstore1">
+                <img src="/img/appstore.svg" class="p-img2" />
+            </div>
+            <div class="playstore2">
+                <img src="/img/googleplay.svg" class="p-img2" />
+            </div>
         </div>
         <div class="socials">
             <div class="social">
-                <i class="material-symbols-outlined">expand_more</i>
+                <img src="/img/twitter.svg" class="p-img2" />
             </div>
             <div class="social">
-                <i class="material-symbols-outlined">expand_more</i>
+                <img src="/img/linkedin.svg" class="p-img2" />
             </div>
             <div class="social">
-                <i class="material-symbols-outlined">expand_more</i>
+                <img src="/img/facebook.svg" class="p-img2" />
             </div>
             <div class="social">
-                <i class="material-symbols-outlined">expand_more</i>
+                <img src="/img/twitter.svg" class="p-img2" />
             </div>
         </div>
     </section>
@@ -72,10 +81,11 @@ export default {
 
 <style scoped>
 footer {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 100%;
     height: auto;
-    background: purple;
+    background: black;
+    color: white;
     padding: 80px 60px 0px;
     display: flex;
     flex-wrap: wrap;
@@ -83,7 +93,7 @@ footer {
     justify-content: space-between;
 }
 section {
-    border: 4px solid green;
+    /* border: 4px solid green; */
     width: 200px;
     height: 350px;
 }
@@ -99,12 +109,29 @@ section {
     padding: 5px;
 }
 .mail {
-    border: 1px solid blue;
+    border: 2px solid blue;
     height: 45px;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.mail input {
+    width: 70%;
+    height: 40px;
+}
+.sddd {
+    border: 2px solid red;
+    width: 45px;
+    height: 40px;
+}
+.font-inc {
+    font-size: 50px;
+    line-height: 35px;
 }
 .account {
-    border: 4px solid green;
+    /* border: 4px solid green; */
     width: 180px;
     height: 350px;
 }
@@ -123,34 +150,40 @@ ul li:hover {
     left: 20px;
 }
 .quick {
-    border: 4px solid green;
+    /* border: 4px solid green; */
     width: 180px;
     height: 350px;
 }
 .download {
-    border: 4px solid green;
+    /* border: 4px solid green; */
     width: 220px;
     height: 350px;
 }
 .qr {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
+    height: 100px;
+    width: 100px;
     grid-area: qr;
 }
 .p-img2 {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 .playstore1 {
-    border: 2px solid green;
+    /* border: 2px solid green; */
+    height: 45px;
+    width: 100px;
     grid-area: store1;
 }
 .playstore2 {
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
+    height: 48px;
+    width: 100px;
     grid-area: store2;
 }
 .app {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100%;
     height: 100px;
     display: grid;
@@ -158,7 +191,7 @@ ul li:hover {
     gap: 2px
 }
 .socials {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     height: 40px;
     width: 90%;
     margin-top: 20px;
@@ -167,12 +200,13 @@ ul li:hover {
     justify-content: space-between;
 }
 .social {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     height: 40px;
     width: 40px;
     position: relative;
+    font-size: 12px;
     border-radius: 50%;
-    background: powderblue;
+    background: black;
     bottom: 0px;
     transition: .2s ease;
     cursor: pointer;
@@ -181,7 +215,7 @@ ul li:hover {
     bottom: 10px;
 }
 .copy {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 100%;
     height: 50px;
     margin-top: 20px;

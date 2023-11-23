@@ -31,13 +31,13 @@
   
   <style scoped>
   .categories {
-      border: 3px solid blue;
+      /* border: 3px solid blue; */
       width: 100%;
       height: auto;
       padding: 50px;
   }
   h1 {
-      border-left: 20px solid blue;
+      border-left: 20px solid #DB4444;
       width: auto;
       height: 60px;
       padding: 15px;
@@ -47,20 +47,27 @@
       display: inline;
   }
   .dir {
-    border: 3px solid firebrick;
+    /* border: 3px solid firebrick; */
     width: 120px;
     height: 50px;
     text-align: center;
-    background: pink;
+    /* background: pink; */
     float: right;
   }
   button {
     width: 100%;
     height: 100%;
     cursor: pointer;
+    border: 0px;
+    background: #DB4444;
+    color: white;
+    border-radius: 4px;
+  }
+  button:hover {
+    background: #E07575;
   }
   .sales {
-    border: 3px solid green;
+    /* border: 3px solid green; */
     width: 100%;
     height: auto;
     margin: 30px auto;

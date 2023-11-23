@@ -42,9 +42,10 @@ export default {
 
 <style scoped>
 .count {
-    border: 3px solid green;
+    /* border: 3px solid green; */
     width: 100%;
     height: 100%;
+    color: black;
 }
 .ddd {    
     display: flex;
@@ -55,10 +56,10 @@ export default {
 .sub-ddd {
     width: 65px;
     height: 100%;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     text-align: center;
     border-radius: 50%;
-    background: hotpink;
+    background: #F5F5F5;
 }
 .sub-ddd h3 {
     font-size: 25px;

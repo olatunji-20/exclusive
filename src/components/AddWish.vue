@@ -28,8 +28,8 @@
   
   <style scoped>
   .www {
-      border: 1px solid purple;
-      background: yellow;
+      /* border: 1px solid purple; */
+      background: #FFF;
       width: 30px;
       height: 30px;
       border-radius: 50%;

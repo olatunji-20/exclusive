@@ -140,7 +140,7 @@ export default {
     border: 1px solid pink;
     border-right: 4px solid blue;
     height: 20px;
-    width: 120px;
+    width: 140px;
     display: inline-block;
     margin-right: 20px;
 }

@@ -57,13 +57,13 @@ export default {
 
 <style scoped>
 .categories {
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
     width: 100%;
     height: auto;
     padding: 50px;
 }
 h1 {
-    border-left: 20px solid blue;
+    border-left: 20px solid #DB4444;
     width: auto;
     height: 60px;
     padding: 15px;
@@ -72,7 +72,7 @@ h2 {
     font-size: 45px;
 }
 .content {
-    border: 4px solid brown;
+    /* border: 4px solid brown; */
     width: 100%;
     height: auto;
     margin: 30px auto;
@@ -82,7 +82,7 @@ h2 {
     justify-content: space-between; */
 }
 .sub-content {
-    border: 4px solid blue;
+    /* border: 4px solid blue; */
     height: auto;
     width: 100%;
     display: flex;
@@ -92,20 +92,21 @@ h2 {
 
 }
 .cat {
-    border: 2px solid green;
+    border: 1px solid black;
     width: 180px;
     height: 150px;
+    border-radius: 5px;
     padding: 30px;
     text-align: center;
 }
 .cat:hover {
-    background: tomato;
+    background: #DB4444;
     cursor: pointer;
     transition: .3s;
     color: white;
 }
 .icon {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 50px;
     height: 50px;
     margin: 0px auto;

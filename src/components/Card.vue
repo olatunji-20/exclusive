@@ -33,7 +33,7 @@ export default {
 
         return {
             starStyle: {
-                fullStarColor: "#ed8a19",
+                fullStarColor: "#FFAD33",
                 emptyStarColor: "#737373",
                 starWidth: 15,
                 starHeight: 15
@@ -53,52 +53,55 @@ export default {
 
 <style scoped>
 .product-card {
-    border: 2px solid hotpink;
+    border: 1px solid hotpink;
     width: 220px;
     height: auto;
     margin: 10px 0px;
+    border-radius: 4px;
     position: relative;
     cursor: pointer;
 }
 .image {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     width: 100%;
     height: 200px;
     position: relative;
-    background: #cccccc;
+    border-radius: 4px;
+    background: #F5F5F5;
     overflow: hidden;
+    padding: 5px;
 }
 .discount {
-    border: 1px solid brown;
+    /* border: 1px solid brown; */
     padding: 3px 10px;
     font-size: 14px;
     width: 50px;
-    background: pink;
+    background: #DB4444;
     color: white;
     position: absolute;
     z-index: 2;
     border-radius: 4px;
 }
 .fave {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 30px;
     height: 30px;
-    background: powderblue;
+    background: #FFF;
     position: absolute;
-    right: 0;
+    right: 5px;
     border-radius: 50%;
     padding: 3px 2.5px;
     z-index: 2;
 }
 .watch {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background: yellow;
+    background: #FFF;
     position: absolute;
     top: 50px;
-    right: 2px;
+    right: 5px;
     /* border-radius: 50%; */
     /* padding: 2px; */
     z-index: 2;
@@ -128,12 +131,13 @@ export default {
     display: inline-block;
 } */
 .details {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100%;
     height: 120px;
+    padding: 0px 5px;
 }
 .star {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: auto;
     height: 20px;
     margin-top: 20px;
