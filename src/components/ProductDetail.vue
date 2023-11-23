@@ -35,7 +35,7 @@
             <div class="free">
                 <div class="aaa">
                     <div class="icon">
-                        <i class="material-symbols-outlined">departure_board</i>
+                        <i class="material-symbols-outlined font-inc">departure_board</i>
                     </div>
                     <div class="wup">
                         <h4>Free Delivery</h4>
@@ -45,7 +45,7 @@
                 <hr />
                 <div class="aaa">
                     <div class="icon">
-                        <i class="material-symbols-outlined">change_circle</i>
+                        <i class="material-symbols-outlined font-inc">change_circle</i>
                     </div>
                     <div class="wup">
                         <h4>Return Delivery</h4>
@@ -215,6 +215,7 @@ input::-webkit-inner-spin-button {
     border: 1px solid red;
     width: 18%;
     height: 100%;
+    padding: 8px 4px;
 }
 .wup {
     border: 1px solid red;
@@ -226,6 +227,10 @@ input::-webkit-inner-spin-button {
 }
 .wup p {
     font-size: 13px;
+}
+
+.font-inc {
+    font-size: 50px;
 }
 
 @media screen and (max-width: 768px) {

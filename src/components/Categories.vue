@@ -6,37 +6,37 @@
         <div class="sub-content">
             <div class="cat">
                 <div class="icon">
-                    <i class="material-symbols-outlined">smartphone</i>
+                    <i class="material-symbols-outlined font-inc">smartphone</i>
                 </div>
                 <p>Phones</p>
             </div>
             <div class="cat">
                 <div class="icon">
-                    <i class="material-symbols-outlined">computer</i>
+                    <i class="material-symbols-outlined font-inc">computer</i>
                 </div>
                 <p>Computers</p>
             </div>
             <div class="cat">
                 <div class="icon">
-                    <i class="material-symbols-outlined">watch</i>
+                    <i class="material-symbols-outlined font-inc">watch</i>
                 </div>
                 <p>SmartWatch</p>
             </div>
             <div class="cat">
                 <div class="icon">
-                    <i class="material-symbols-outlined">photo_camera</i>
+                    <i class="material-symbols-outlined font-inc">photo_camera</i>
                 </div>
                 <p>Camera</p>
             </div>
             <div class="cat">
                 <div class="icon">
-                    <i class="material-symbols-outlined">headphones</i>
+                    <i class="material-symbols-outlined font-inc">headphones</i>
                 </div>
                 <p>HeadPhones</p>
             </div>
             <div class="cat">
                 <div class="icon">
-                    <i class="material-symbols-outlined">stadia_controller</i>
+                    <i class="material-symbols-outlined font-inc">stadia_controller</i>
                 </div>
                 <p>Gaming</p>
             </div>
@@ -112,6 +112,9 @@ h2 {
 }
 .cat p {
     margin-top: 25px;
+}
+.font-inc {
+    font-size: 45px;
 }
 
 @media screen and (max-width: 768px) {

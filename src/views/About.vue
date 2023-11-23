@@ -18,7 +18,7 @@
 <div class="values">
     <div class="val">
         <div class="buss">
-            <i class="material-symbols-outlined">local_convenience_store</i>
+            <i class="material-symbols-outlined font-inc">local_convenience_store</i>
         </div>
         <h2 style="line-height: 15px">10.5K</h2>
         <p style="font-size: 13px; line-height: 0px;">Sellers active on our site</p>
@@ -26,7 +26,7 @@
     
     <div class="val">
         <div class="buss">
-            <i class="material-symbols-outlined">monetization_on</i>
+            <i class="material-symbols-outlined font-inc">monetization_on</i>
         </div>
         <h2 style="line-height: 15px">30K</h2>
         <p style="font-size: 13px; line-height: 0px;">Monthly product sale</p>
@@ -34,7 +34,7 @@
     
     <div class="val">
         <div class="buss">
-            <i class="material-symbols-outlined">featured_seasonal_and_gifts</i>
+            <i class="material-symbols-outlined font-inc">featured_seasonal_and_gifts</i>
         </div>
         <h2 style="line-height: 15px">45.5K</h2>
         <p style="font-size: 13px; line-height: 0px;">Customers active on our site</p>
@@ -42,7 +42,7 @@
     
     <div class="val">
         <div class="buss">
-            <i class="material-symbols-outlined">send_money</i>
+            <i class="material-symbols-outlined font-inc">send_money</i>
         </div>
         <h2 style="line-height: 15px">350K</h2>
         <p style="font-size: 13px; line-height: 0px;">Annual gross sale on our site</p>
@@ -131,6 +131,10 @@ export default {
     height: 70px;
     margin: 0px auto;
     border-radius: 50%;
+}
+
+.font-inc {
+    font-size: 45px;
 }
 
 @media screen and (max-width: 768px) {
