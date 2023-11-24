@@ -105,7 +105,7 @@ h2 {
 }
 .sales {
   /* border: 3px solid green; */
-  width: 1100px;
+  width: 100%;
   height: auto;
   margin: 30px auto;
   overflow: auto;
@@ -142,7 +142,7 @@ button:hover {
 
 @media screen and (max-width: 768px) {
   .categories {
-    padding: 20px 5px;
+    padding: 50px 8px;
   }
   h2 {
     font-size: 35px;

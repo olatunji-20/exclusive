@@ -89,7 +89,7 @@ export default {
 .pagination-container {
   display: flex;
   column-gap: 10px;
-  border: 1px solid #f5f5f5;
+  border: 2px solid #f5f5f5;
   margin: 0px auto;
 }
 .paginate-buttons {

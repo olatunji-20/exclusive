@@ -157,7 +157,7 @@
 
   @media screen and (max-width: 768px) {
     .categories {
-      padding: 20px 5px;
+      padding: 50px 8px;
     }
     h2 {
       font-size: 35px;

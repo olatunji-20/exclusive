@@ -68,7 +68,7 @@
   }
   .sales {
     /* border: 3px solid green; */
-    width: 1100px;
+    width: 100%;
     height: auto;
     margin: 30px auto;
     overflow: auto;
@@ -77,7 +77,7 @@
 
   @media screen and (max-width: 768px) {
     .categories {
-      padding: 20px 5px;
+      padding: 50px 8px;
       position: relative;
     }
     h2 {

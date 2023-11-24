@@ -34,7 +34,7 @@
       /* border: 3px solid blue; */
       width: 100%;
       height: auto;
-      padding: 80px;
+      padding: 80px 100px;
   }
   h1 {
       border-left: 20px solid #DB4444;
@@ -74,7 +74,7 @@
 
   @media screen and (max-width: 768px) {
     .categories {
-      padding: 20px 5px;
+      padding: 50px 8px;
     }
     h2 {
       font-size: 35px;

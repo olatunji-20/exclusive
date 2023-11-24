@@ -66,7 +66,7 @@ h1 {
 
 @media screen and (max-width: 768px) {
     .categories {
-        padding: 20px 5px;
+        padding: 50px 8px;
     }
     .related {
         overflow: auto;

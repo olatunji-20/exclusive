@@ -197,18 +197,18 @@ ul li:hover {
     gap: 2px
 }
 .socials {
-    /* border: 1px solid green; */
-    height: 40px;
-    width: 90%;
-    margin-top: 20px;
+    /* border: 2px solid green; */
+    height: 35px;
+    width: 200px;
+    margin-top: 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 .social {
     /* border: 2px solid blue; */
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     position: relative;
     font-size: 12px;
     border-radius: 50%;

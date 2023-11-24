@@ -176,7 +176,7 @@ export default {
         text-align: center;
     }
     .sub1 h1 {
-        font-size: 30px;
+        /* font-size: 40px; */
     }
     .sub2 {
         height: 50%;

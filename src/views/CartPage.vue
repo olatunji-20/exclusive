@@ -90,7 +90,7 @@ export default {
 
 @media screen and (max-width: 768px) {
   .large {
-    padding: 20px 5px;
+    padding: 50px 8px;
   }
   .last {
     width: 100%;

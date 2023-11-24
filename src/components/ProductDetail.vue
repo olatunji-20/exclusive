@@ -245,7 +245,7 @@ input::-webkit-inner-spin-button {
 
 @media screen and (max-width: 768px) {
     .qqq {
-        padding: 30px 5px;
+        padding: 50px 8px;
     }
 
     .det {

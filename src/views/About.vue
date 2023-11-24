@@ -142,7 +142,7 @@ export default {
 
 @media screen and (max-width: 768px) {
     .about {
-        padding: 10px 5px;
+        padding: 50px 8px;
     }
     .story1 {
         padding: 20px 0px;

@@ -30,7 +30,7 @@
     </div>
   </header>
   <div v-if="showBoard" class="search-board" v-on:click-outside="closeSearch">
-    <p v-for="product in filteredProducts" :key="product.id"><router-link :to="'/all-product-page/' + `${product.id}`"> {{ product.productName }} </router-link></p>
+    <p v-for="product in filteredProducts" :key="product.id"><router-link class="rlink" :to="'/all-product-page/' + `${product.id}`"> {{ product.productName }} </router-link></p>
   </div>
 </template>
 
@@ -154,12 +154,12 @@ input {
   padding: 5px 4px;
 }
 .search-board {
-  border: 4px solid brown;
+  border: 2px solid #808080;
   width: 100%;
   padding: 20px 10px;
   height: auto;
   z-index: 9;
-  background: hotpink;
+  background: #F5F5F5;
   position: absolute;
 }
 

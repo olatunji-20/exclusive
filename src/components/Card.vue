@@ -54,9 +54,9 @@ export default {
 <style scoped>
 .product-card {
     border: 1px solid #F5F5F5;
-    width: 220px;
+    width: 14rem;
     height: auto;
-    margin: 10px 0px;
+    margin: 10px auto;
     border-radius: 4px;
     position: relative;
     cursor: pointer;
