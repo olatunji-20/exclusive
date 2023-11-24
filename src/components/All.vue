@@ -21,7 +21,7 @@ export default {
 
 <style scoped>
 .all-p {
-    border: 6px solid darkgoldenrod;
+    /* border: 6px solid darkgoldenrod; */
     width: 100%;
     height: 100%;
     display: flex;

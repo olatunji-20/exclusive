@@ -98,7 +98,7 @@ section {
     height: 350px;
 }
 .logo {
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     height: 50px;
     width: 160px;
 }
@@ -109,22 +109,28 @@ section {
     padding: 5px;
 }
 .mail {
-    border: 2px solid blue;
-    height: 45px;
+    border: 1px solid white;
+    height: 42px;
     width: 100%;
+    margin-top: 40px;
+    border-radius: 4px;
+    padding-left: 2px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+    align-items: center;
 }
 .mail input {
     width: 70%;
-    height: 40px;
+    height: 35px;
+    background: #F5F5F5;
+    border: 0px;
 }
 .sddd {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 45px;
-    height: 40px;
+    height: 35px;
 }
 .font-inc {
     font-size: 50px;

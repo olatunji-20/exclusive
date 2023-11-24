@@ -19,15 +19,15 @@ export default {
 
 <style scoped>
 p {
-    border: 2px solid brown;
+    border: 1px solid brown;
     width: 30px;
     height: 30px;
     text-align: center;
-    padding-top: 5px;
+    padding-top: 4px;
     border-radius: 50%;
     position: relative;
     left: 15px;
     bottom: 65px;
-    background: powderblue;
+    background: #00ff66;
 }
 </style>

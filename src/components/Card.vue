@@ -53,7 +53,7 @@ export default {
 
 <style scoped>
 .product-card {
-    border: 1px solid hotpink;
+    border: 1px solid #F5F5F5;
     width: 220px;
     height: auto;
     margin: 10px 0px;

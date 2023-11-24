@@ -17,8 +17,12 @@
     >
         <swiper-slide v-for="top in tops" :key="top.id" class="sub-main">
           <div class="sub1">
-              <div class="logo"></div>
-              <p style="position: relative; bottom: 15px">{{ top.productName }}</p>
+            <div class="logo-box">
+                <div class="logo">
+                  <i class="material-symbols-outlined font-inc">{{ top.logo }}</i>
+                </div>
+                <p>{{ top.productName }}</p>
+            </div>
               <h1>Up to 10%</h1>
               <h1>off Voucher</h1>
               <p>Shop Now</p>
@@ -49,31 +53,31 @@ export default {
                 id: 1,
                 productName: "iPhone",
                 image: "/img/endframe.png",
-                logo: "dsnvnn"
+                logo: "phone_iphone"
             },
             {
                 id: 2,
-                productName: "Gaming Laptops",
+                productName: "Laptops",
                 image: "/img/laptop.png",
-                logo: "/frifi/"
+                logo: "keyboard"
             },
             {
                 id: 3,
                 productName: "Speakers",
                 image: "/img/speakers.png",
-                logo: "/frifi/"
+                logo: "volume_up"
             },
             {
                 id: 4,
                 productName: "Perfumes",
                 image: "/img/perf.png",
-                logo: "/frifi/"
+                logo: "cleaning"
             },
             {
                 id: 5,
                 productName: "Play Station",
                 image: "/img/ps5.png",
-                logo: "/frifi/"
+                logo: "stadia_controller"
             }
         ]);
         const onSwiper = (swiper) => {
@@ -119,12 +123,23 @@ export default {
     padding: 20px 50px 0px 0px;
     color: white;
 }
+.logo-box {
+    /* border: 2px solid blue; */
+    /* width: 150px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.font-inc {
+    font-size: 40px;
+}
 .logo {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 45px;
     height: 45px;
     margin-right: 10px;
-    display: inline-block;
+    /* display: inline-block; */
 }
 .sub1 h1 {
     font-size: 50px;

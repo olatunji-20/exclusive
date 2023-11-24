@@ -57,28 +57,35 @@ export default {
 
 <style scoped>
 .large {
-  border: 6px solid palevioletred;
+  /* border: 6px solid palevioletred; */
   width: 100%;
   height: auto;
-  padding: 50px;
+  padding: 80px 50px;
 }
 .last {
-  border: 3px solid green;
+  /* border: 3px solid green; */
   width: 400px;
   height: auto;
   /* float: right; */
-  padding: 0px 20px;
+  padding: 20px 20px 10px;
   position: relative;
   left: calc(100% - 400px);
-  margin: 20px 0px 50px;
+  margin: 40px 0px 50px;
+  border-radius: 4px;
+  box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
 }
 .proceed {
-  border: 1px solid brown;
+  /* border: 1px solid brown; */
   width: 250px;
   padding: 10px;
+  border-radius: 4px;
   margin: 40px auto 0px;
   text-align: center;
-  background: pink;
+  background: #DB4444;
+  color: white;
+}
+.proceed:hover {
+  background: #E07575;
 }
 
 @media screen and (max-width: 768px) {

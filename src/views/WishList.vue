@@ -4,7 +4,7 @@
         <h2> WISHLIST ({{ wishStore.wishItems.length }})</h2>
         <div class="wishlist">
             <h3 v-if="wishStore.wishItems.length === 0">You haven't added any of our products to your wishlist.</h3>
-            <Card :displayProducts="wishStore.wishItems" />
+            <Card :link="'/all-product-page/'" :displayProducts="wishStore.wishItems" />
         </div>
     </div>
     <RelatedItem topic="Just For You" />
@@ -35,15 +35,16 @@ export default {
 
 <style scoped>
 .gogo {
-    border: 4px solid peru;
+    /* border: 4px solid peru; */
     width: 100%;
     height: auto;
     padding: 50px;
 }
 .wishlist {
-    border: 5px solid saddlebrown;
+    /* border: 5px solid saddlebrown; */
     width: auto;
     height: auto;
+    box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

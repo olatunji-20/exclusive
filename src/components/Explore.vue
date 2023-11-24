@@ -18,7 +18,7 @@ import Preloader from './Preloader.vue';
         productStore.getAllProducts();
 
         const slicedProducts = computed(() => {
-          return productStore.allProducts.sort(() => 0.5 - Math.random()).slice(0, 10);
+          return productStore.allProducts.sort(() => 0.5 - Math.random()).slice(0, 8);
         })
       return {
         productStore,
@@ -34,9 +34,10 @@ import Preloader from './Preloader.vue';
   
   <style scoped>
   .flash {
-      border: 4px solid yellowgreen;
-      width: 100%;
+      /* border: 4px solid yellowgreen; */
+      width: 68rem;
       height: 100%;
+      margin: 0px auto;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;

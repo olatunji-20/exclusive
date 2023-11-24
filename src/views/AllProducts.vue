@@ -33,7 +33,7 @@ export default {
     name: 'AllProducts',
     setup() {
       const currentPage = ref(1);
-      const perPage = ref(10);
+      const perPage = ref(8);
       const onClickHandler = (page) => {
         console.log(page)
       }
@@ -71,15 +71,16 @@ export default {
   /* border: 4px solid firebrick; */
   width: 100%;
   height: auto;
-  padding: 80px 50px;
+  padding: 80px;
 }
 .all {
   /* border: 3px solid blue; */
-  width: 100%;
+  width: 1100px;
   height: auto;
+  margin: 40px auto 20px;
 }
 .page {
-  border: 2px solid darkblue;
+  /* border: 2px solid darkblue; */
   width: 200px;
   height: auto;
   margin: 40px auto 10px;
@@ -88,7 +89,7 @@ export default {
 .pagination-container {
   display: flex;
   column-gap: 10px;
-  border: 2px solid purple;
+  border: 1px solid #f5f5f5;
   margin: 0px auto;
 }
 .paginate-buttons {
@@ -104,12 +105,12 @@ export default {
   background-color: #d8d8d8;
 }
 .active-page {
-  background-color: #0063f7;
-  border: 1px solid #3498db;
+  background-color: #db4444;
+  border: 1px solid red;
   color: white;
 }
 .active-page:hover {
-  background-color: #2988c8;
+  background-color: #e07575;
 }
 
 

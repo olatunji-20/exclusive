@@ -59,7 +59,8 @@
     width: 350px;
     height: auto;
     padding: 30px 20px;
-    box-shadow: 2px 2px 2px 2px;
+    border-radius: 4px;
+    box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
   }
   .to {
     /* border: 2px solid pink; */
@@ -93,9 +94,11 @@
   }
   .contact-form {
     /* border: 4px solid green; */
-    width: 750px;
+    width: 700px;
     height: auto;
-    box-shadow: 2px 2px 2px 2px;
+    border-radius: 4px;
+    /* box-shadow: 2px 2px 2px 2px; */
+    box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
   }
 
   @media screen and (max-width: 768px) {

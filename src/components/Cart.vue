@@ -42,13 +42,16 @@ export default {
 
 <style scoped>
 .border {
-    border: 4px solid red;
+    /* border: 1px solid red; */
     width: 100%;
     height: auto;
-    padding: 5px;
+    padding: 20px 5px;
+    box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
 }
 .headers {
-  border: 2px solid yellowgreen;
+  border: 1px solid #F5F5F5;
+  box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+  border-radius: 4px;
   width: 100%;
   padding: 5px 60px 5px 0px;
   /* height: 100px; */
@@ -68,19 +71,22 @@ h1 {
   width: 400px;
 }
 .cart {
-  border: 2px solid green;
+  /* border: 2px solid green; */
   width: 100%;
   position: relative;
   /* height: 100px; */
   margin: 20px auto;
-  padding: 5px 60px 5px 0px;
+  padding: 2px 60px 2px 0px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  border-radius: 4px;
   justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
 }
 .det {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   width: 200px;
   height: 60px;
   overflow: hidden;
@@ -92,11 +98,12 @@ h1 {
   width: 100px;
 } */
 .img {
-  border: 2px solid darkblue;
+  /* border: 2px solid darkblue; */
   width: 60px;
   height: 100%;
   margin-right: 5px;
-  padding: 5px;
+  padding: 2px;
+  background: #F5F5F5;
 }
 .p-img {
   width: 100%;
@@ -104,11 +111,12 @@ h1 {
   object-fit: cover;
 }
 .rem {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   width: 30px;
   height: 60px;
   position: absolute;
-  right: 0px
+  right: 0px;
+  box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
 }
 
 @media screen and (max-width: 768px) {

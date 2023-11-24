@@ -14,8 +14,10 @@
         <i class="material-symbols-outlined font-inc">arrow_forward</i>
       </div>
     </div>
-    <div ref="el" class="sales">
-      <FlashSales />
+    <div class="sales">
+      <div ref="el" class="naham">
+        <FlashSales />
+      </div>
     </div>
     <div class="view">
       <router-link to="/all-products">
@@ -61,7 +63,7 @@ export default {
     /* border: 6px solid red; */
     width: 100%;
     height: auto;
-    padding: 50px;
+    padding: 80px;
 }
 h1 {
     border-left: 20px solid #DB4444;
@@ -102,10 +104,16 @@ h2 {
   background: #cccccc;
 }
 .sales {
-  /* border: 1px solid green; */
-  width: 100%;
+  /* border: 3px solid green; */
+  width: 1100px;
   height: auto;
   margin: 30px auto;
+  overflow: auto;
+}
+.naham {
+  /* border: 3px solid greenyellow; */
+  height: auto;
+  width: 100%;
   overflow: auto;
 }
 .view {
@@ -141,6 +149,9 @@ button:hover {
   }
   .time {
     display: none;
+  }
+  .sales {
+    width: 100%;
   }
 }
 

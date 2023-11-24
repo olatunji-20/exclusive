@@ -56,13 +56,14 @@ export default {
 
 <style scoped>
 .main {
-    border: 4px solid salmon;
+    /* border: 4px solid salmon; */
     width: 100%;
     height: auto;
     margin-top: 30px;
+    box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
 }
 .cart2 {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     width: 100%;
     max-height: 250px;
     overflow: auto;
@@ -74,18 +75,20 @@ h2 {
   width: 250px;
 }
 .cart {
-  border: 2px solid green;
+  /* border: 2px solid green; */
   width: 100%;
   /* height: 100px; */
-  margin: 5px auto;
+  margin: 10px auto;
   padding: 5px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
 }
 .det {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   width: 220px;
   height: 60px;
   overflow: hidden;
@@ -94,11 +97,12 @@ h2 {
   flex-wrap: nowrap;
 }
 .img {
-  border: 2px solid darkblue;
+  /* border: 2px solid darkblue; */
   width: 60px;
   height: 100%;
   margin-right: 10px;
   padding: 5px;
+  background: #F5F5F5;
 }
 .p-img {
   width: 100%;
@@ -106,18 +110,23 @@ h2 {
   object-fit: cover;
 }
 .last {
-  border: 3px solid green;
+  border: 1px solid #F5F5F5;
   width: 100%;
   height: auto;
-  padding: 0px 20px;
+  padding: 20px 10px;
   margin-top: 30px;
 }
 .proceed {
-  border: 1px solid brown;
+  /* border: 1px solid brown; */
   width: 250px;
   padding: 10px;
   margin-top: 20px;
   text-align: center;
-  background: pink;
+  background: #DB4444;
+  color: white;
+  border-radius: 4px;
+}
+.proceed:hover {
+  background: #E07575;
 }
 </style>

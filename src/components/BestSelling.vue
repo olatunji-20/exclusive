@@ -29,7 +29,7 @@ export default {
 
 <style scoped>
 .flash {
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
     width: 3000px;
     height: auto;
     display: flex;

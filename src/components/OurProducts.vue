@@ -34,7 +34,7 @@
       /* border: 3px solid blue; */
       width: 100%;
       height: auto;
-      padding: 50px;
+      padding: 80px;
   }
   h1 {
       border-left: 20px solid #DB4444;

@@ -37,7 +37,7 @@ export default {
 
 <style scoped>
 .categories {
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
     width: 100%;
     height: auto;
     padding: 50px;
@@ -49,13 +49,13 @@ h1 {
     padding: 15px;
 }
 .related {
-    border: 4px solid brown;
+    /* border: 4px solid brown; */
     width: 100%;
     height: auto;
     margin: 50px auto;
 }
 .related-card {
-    border: 4px solid green;
+    /* border: 4px solid green; */
     width: 100%;
     height: auto;
     display: flex;

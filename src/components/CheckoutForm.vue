@@ -27,7 +27,7 @@ export default {
 
 <style scoped>
 .formc {
-    border: 4px solid lime;
+    /* border: 4px solid lime; */
     width: 100%;
     height: auto;
     padding: 30px 5px;
@@ -39,7 +39,8 @@ input {
     width: 100%;
     height: 35px;
     margin: 10px auto;
-    background: powderblue;
+    background: #F5F5F5;
     border: 0px;
+    border-radius: 4px;
 }
 </style>

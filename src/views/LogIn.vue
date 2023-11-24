@@ -49,6 +49,9 @@ export default {
     /* border: 2px solid red; */
     width: 400px;
     height: 450px;
+    border-radius: 4px;
+    margin-top: 60px;
+    box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
 }
 
 @media screen and (max-width: 768px) {

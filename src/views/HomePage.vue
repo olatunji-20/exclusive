@@ -21,6 +21,7 @@
         </aside>
     </section>
     <Todays />
+    <hr />
     <Categories />
     <Month />
     <Enhance />
@@ -82,10 +83,11 @@ aside ul li {
     line-height: 35px;
 }
 .hero {
-    border-left: 2px solid green;
+    border-left: 1px solid #808080;
+    /* box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px; */
     width: 75%;
     height: auto;
-    padding: 30px;
+    padding: 20px;
 }
 .main {
     /* border: 3px solid blue; */

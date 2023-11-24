@@ -34,7 +34,7 @@
       /* border: 3px solid blue; */
       width: 100%;
       height: auto;
-      padding: 50px;
+      padding: 80px;
   }
   h1 {
       border-left: 20px solid #DB4444;
@@ -68,7 +68,7 @@
   }
   .sales {
     /* border: 3px solid green; */
-    width: 100%;
+    width: 1100px;
     height: auto;
     margin: 30px auto;
     overflow: auto;
@@ -88,6 +88,9 @@
       bottom: 0;
       right: calc(50% - 60px);
       margin-top: 120px;
+    }
+    .sales {
+      width: 100%;
     }
 
 

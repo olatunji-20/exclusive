@@ -1,8 +1,10 @@
 <template>
   <Preloader v-if="productStore.isLoading" />
-  <div v-else class="flash">
-    <Card :link="'/product-page/'" :displayProducts="productStore.flashProducts" />
-  </div>
+  <!-- <div v-else class="slide"> -->
+    <div class="flash">
+      <Card :link="'/product-page/'" :displayProducts="productStore.flashProducts" />
+    </div>
+  <!-- </div> -->
 </template>
 
 <script>
@@ -29,13 +31,19 @@ export default {
 
 <style scoped>
 .flash {
-    border: 4px solid purple;
+    /* border: 4px solid purple; */
     width: 3000px;
     height: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-
+    /* overflow: auto; */
+}
+.slide {
+  border: 4px solid red;
+  height: auto;
+  width: 100%;
+  overflow: auto;
 }
 </style>

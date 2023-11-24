@@ -33,31 +33,33 @@
   
   <style scoped>
   .large {
-    border: 5px solid blue;
+    /* border: 5px solid blue; */
     width: 100%;
     height: auto;
-    padding: 50px;
+    padding: 80px;
   }
   .standard {
-    border: 4px solid green;
+    /* border: 4px solid green; */
     width: 100%;
     height: auto;
     margin: 40px auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .form {
-    border: 4px solid red;
-    width: 500px;
-    height: auto;
-    /* padding: 20px 0px; */
-  }
-  .cart2 {
-    border: 2px solid blue;
+    /* border: 4px solid red; */
     width: 450px;
     height: auto;
+    /* padding: 20px 0px; */
+    box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+  }
+  .cart2 {
+    /* border: 2px solid blue; */
+    width: 400px;
+    height: auto;
+    /* box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px; */
   }
 
   @media screen and (max-width: 768px) {

@@ -60,7 +60,7 @@ export default {
     /* border: 3px solid blue; */
     width: 100%;
     height: auto;
-    padding: 50px;
+    padding: 80px;
 }
 h1 {
     border-left: 20px solid #DB4444;
@@ -93,8 +93,8 @@ h2 {
 }
 .cat {
     border: 1px solid black;
-    width: 180px;
-    height: 150px;
+    width: 160px;
+    height: 130px;
     border-radius: 5px;
     padding: 30px;
     text-align: center;
@@ -113,7 +113,7 @@ h2 {
     margin: 0px auto;
 }
 .cat p {
-    margin-top: 25px;
+    margin-top: 10px;
 }
 .font-inc {
     font-size: 45px;

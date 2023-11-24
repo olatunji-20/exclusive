@@ -9,7 +9,7 @@
             <div class="star">
                 <star-rating :rating="productInfo.rating" :starStyle="starStyle" :key="productInfo.id"></star-rating>
             </div>
-            <p style="display: inline-block;"> In stock</p>
+            <p style="display: inline-block; color: #00ff66;"> In stock</p>
             <p>${{ productInfo.price }}</p>
             <p class="description">{{ productInfo.productDescription }}.</p>
             <hr />
@@ -125,6 +125,7 @@ export default {
     width: 450px;
     height: 450px;
     background: #F5F5F5;
+    box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
 }
 .p-img {
     width: 100%;
@@ -136,7 +137,8 @@ export default {
     width: 350px;
     height: auto;
     padding: 0px 5px;
-    box-shadow: 2px 2px 2px 2px;
+    border-radius: 4px;
+    box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
 }
 .star {
     /* border: 1px solid pink; */
@@ -144,7 +146,7 @@ export default {
     height: 20px;
     width: 130px;
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 hr {
     border: 1px solid black;
