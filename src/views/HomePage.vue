@@ -89,7 +89,7 @@ aside ul li {
 }
 .main {
     /* border: 3px solid blue; */
-    background: black;
+    /* background: brown; */
     width: 97%;
     height: 350px;
 }

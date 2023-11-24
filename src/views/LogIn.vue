@@ -25,17 +25,17 @@ export default {
 
 <style scoped>
 .large {
-    border: 6px solid blue;
+    /* border: 6px solid blue; */
     width: 100%;
     height: auto;
-    padding: 80px 50px;
+    padding: 120px 80px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 .image {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     width: 650px;
     height: 650px;
 }
@@ -43,9 +43,10 @@ export default {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 4px;
 }
 .form {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 400px;
     height: 450px;
 }

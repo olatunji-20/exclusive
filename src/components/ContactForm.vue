@@ -23,7 +23,7 @@ export default {
 
 <style scoped>
 .larges {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     width: 100%;
     height: 100%;
     padding: 50px;
@@ -33,18 +33,33 @@ input {
     height: 35px;
     display: inline-block;
     margin-right: 10px;
+    background: #F5F5F5;
+    border: 0px;
+    border-radius: 4px;
+    text-indent: 10px;
 }
 textarea {
     width: 100%;
     height: 150px;
     margin: 30px auto 10px;
+    background: #F5F5F5;
+    text-indent: 10px;
+    border-radius: 4px;
+    border: 0px;
+    padding-top: 10px;
 }
 button {
     /* float: right; */
     padding: 10px 30px;
-    background: tomato;
+    background: #DB4444;
+    border: 0px;
+    border-radius: 4px;
     color: white;
     cursor: pointer;
+    margin-top: 20px;
+}
+button:hover {
+    background: #E07575;
 }
 
 @media screen and (max-width: 768px) {

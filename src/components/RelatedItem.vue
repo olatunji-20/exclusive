@@ -43,7 +43,7 @@ export default {
     padding: 50px;
 }
 h1 {
-    border-left: 20px solid blue;
+    border-left: 20px solid #DB4444;
     width: auto;
     height: 60px;
     padding: 15px;

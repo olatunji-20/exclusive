@@ -42,7 +42,7 @@
                         <p>Enter your postal code for delivery availability.</p>
                     </div>
                 </div>
-                <hr />
+                <hr class="line-d" />
                 <div class="aaa">
                     <div class="icon">
                         <i class="material-symbols-outlined font-inc">change_circle</i>
@@ -106,13 +106,13 @@ export default {
 
 <style scoped>
 .qqq {
-    border: 4px solid yellow;
+    /* border: 4px solid yellow; */
     width: 100%;
     height: auto;
     padding: 80px 50px;
 }
 .details {
-    border: 6px solid blue;
+    /* border: 6px solid blue; */
     width: 100%;
     height: auto;
     display: flex;
@@ -121,10 +121,10 @@ export default {
     justify-content: space-around;
 }
 .image {
-    border: 6px solid green;
+    /* border: 6px solid green; */
     width: 450px;
     height: 450px;
-    background: pink;
+    background: #F5F5F5;
 }
 .p-img {
     width: 100%;
@@ -132,26 +132,29 @@ export default {
     object-fit: contain;
 }
 .det {
-    border: 5px solid red;
+    /* border: 5px solid red; */
     width: 350px;
     height: auto;
+    padding: 0px 5px;
+    box-shadow: 2px 2px 2px 2px;
 }
 .star {
-    border: 1px solid pink;
-    border-right: 4px solid blue;
+    /* border: 1px solid pink; */
+    border-right: 2px solid #db4444;
     height: 20px;
-    width: 140px;
+    width: 130px;
     display: inline-block;
     margin-right: 20px;
 }
 hr {
-    border: 2px solid saddlebrown;
+    border: 1px solid black;
+    margin: 25px auto;
 }
 .description {
     font-size: 14px;
 }
 .ppp {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     width: 100%;
     height: 44px;
     margin: 20px auto;
@@ -161,25 +164,26 @@ hr {
     justify-content: space-between;
 }
 .one {
-    border: 2px solid green;
+    border: 1px solid black;
     width: 40%;
-    height: 40px;
+    height: 34px;
+    border-radius: 4px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
 }
 .plus {
-    border: 2px solid yellowgreen;
+    /* border: 2px solid yellowgreen; */
     width: 35px;
     height: 35px;
     padding: 3px;
     cursor: pointer;
 }
 .plus1 {
-    border: 2px solid yellowgreen;
+    /* border: 2px solid yellowgreen; */
     width: 50px;
-    height: 35px;
+    height: auto;
 }
 input {
     width: 45px;
@@ -192,18 +196,19 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 .two {
-    border: 2px solid red;
-    width: 40px;
-    height: 40px;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 35px;
+    height: 35px;
     padding: 7px 6px;
 }
 .free {
-    border: 2px solid chartreuse;
+    border: 1px solid black;
     width: 100%;
     height: auto;
 }
 .aaa {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     width: 100%;
     height: 70px;
     display: flex;
@@ -211,14 +216,17 @@ input::-webkit-inner-spin-button {
     flex-wrap: nowrap;
     justify-content: space-between;
 }
+.line-d {
+    margin: 0px;
+}
 .icon {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 18%;
     height: 100%;
     padding: 8px 4px;
 }
 .wup {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 78%;
     height: 100%;
 }

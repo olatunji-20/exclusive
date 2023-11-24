@@ -72,24 +72,24 @@ export default {
 
 <style scoped>
 .about {
-    border: 4px solid fuchsia;
+    /* border: 4px solid fuchsia; */
     width: 100%;
     height: auto;
-    padding: 50px;
+    padding: 120px 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 .story1 {
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
     width: 450px;
     height: 500px;
     text-align: left;
     padding: 40px 0px;
 }
 .story {
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
     width: 500px;
     height: 500px;
     text-align: left;
@@ -101,18 +101,20 @@ export default {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 4px;
 }
 .values {
-    border: 4px solid purple;
+    /* border: 4px solid purple; */
     width: 100%;
     height: auto;
-    padding: 100px 80px;
+    padding: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 .val {
-    border: 2px solid purple;
+    border: 1px solid black;
+    border-radius: 4px;
     width: 200px;
     height: 200px;
     padding: 35px 5px;
@@ -120,13 +122,14 @@ export default {
     transition: .3s ease;
 }
 .val:hover {
-    background: tomato;
+    background: #DB4444;
     cursor: pointer;
     color: white
 }
 .buss {
-    border: 10px solid green;
-    background: greenyellow;
+    border: 10px solid #CCCCCC;
+    background: black;
+    color: white;
     width: 70px;
     height: 70px;
     margin: 0px auto;

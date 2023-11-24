@@ -68,13 +68,13 @@ export default {
 
 <style>
 .all-products {
-  border: 4px solid firebrick;
+  /* border: 4px solid firebrick; */
   width: 100%;
   height: auto;
-  padding: 50px;
+  padding: 80px 50px;
 }
 .all {
-  border: 3px solid blue;
+  /* border: 3px solid blue; */
   width: 100%;
   height: auto;
 }

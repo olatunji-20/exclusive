@@ -104,6 +104,7 @@ h2 {
     cursor: pointer;
     transition: .3s;
     color: white;
+    border: 0;
 }
 .icon {
     /* border: 1px solid red; */

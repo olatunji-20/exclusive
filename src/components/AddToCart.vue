@@ -24,11 +24,16 @@ export default {
 
 <style scoped>
 .www {
-    border: 3px solid purple;
-    background: yellow;
+    /* border: 0px solid purple; */
+    background: #DB4444;
+    border-radius: 4px;
+    color: white;
     width: 100%;
-    padding: 6px;
+    padding: 8px 6px;
     text-align: center;
     cursor: pointer;
+}
+.www:hover {
+    background: #E07575;
 }
 </style>

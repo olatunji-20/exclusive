@@ -104,7 +104,7 @@ export default {
 }
 .sub-main {
     /* border: 4px solid greenyellow; */
-    /* background: black; */
+    background: black;
     width: 100%;
     height: 93%;
     display: flex;

@@ -130,11 +130,11 @@ input {
   border-radius: 5px;
 }
 .cl {
-  border: 2px solid black;
+  border: 1px solid #CCCCCC;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: #cccccc;
+  background: #F5F5F5;
   cursor: pointer;
 }
 .fave {

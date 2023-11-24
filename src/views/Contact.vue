@@ -4,18 +4,18 @@
         <div class="call">
             <div class="to">
                 <div class="icon">
-                  <i class="material-symbols-outlined">add_call</i>
+                  <i class="material-symbols-outlined font-inc">add_call</i>
                 </div>
-                <h4 style="display:inline-block; position: relative; bottom: 20px">Call Us</h4>
+                <h4>Call Us</h4>
             </div>
             <p>We are available 24/7, 7 days a week.</p>
             <p>Phone: +8801 6111 2222</p>
             <hr />
             <div class="to">
                 <div class="icon">
-                  <i class="material-symbols-outlined">mail</i>
+                  <i class="material-symbols-outlined font-inc">mail</i>
                 </div>
-                <h4 style="display:inline-block; position: relative; bottom: 20px">Write To Us</h4>
+                <h4>Write To Us</h4>
             </div>
             <p>Fill out our form and we will contact you within 24 hours.</p>
             <p>Email: customer@exclusive.com</p>
@@ -45,43 +45,57 @@
   
   <style scoped>
   .large {
-    border: 4px solid red;
+    /* border: 4px solid red; */
     width: 100%;
     height: auto;
-    padding: 50px;
+    padding: 120px 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
   }
   .call {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     width: 350px;
     height: auto;
-    padding: 30px;
+    padding: 30px 20px;
+    box-shadow: 2px 2px 2px 2px;
   }
   .to {
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
     width: 100%;
     height: 54px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
   }
   .call p {
     font-size: 14px;
+    line-height: 14px;
   }
   .icon {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 50px;
     height: 50px;
-    display: inline-block;
+    color: white;
+    border-radius: 50%;
+    background: #DB4444;
+    /* display: inline-block; */
     margin-right: 20px;
+    padding: 5px;
+  }
+  .font-inc {
+    font-size: 40px;
   }
   hr {
-      margin: 20px auto;
+      margin: 30px auto;
   }
   .contact-form {
-    border: 4px solid green;
+    /* border: 4px solid green; */
     width: 750px;
     height: auto;
+    box-shadow: 2px 2px 2px 2px;
   }
 
   @media screen and (max-width: 768px) {
