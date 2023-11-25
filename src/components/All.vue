@@ -32,8 +32,8 @@ export default {
 
 @media screen and (max-width: 768px) {
     .all-p {
-        height: 700px;
-        width: 1300px;
+        height: 770px;
+        width: 1100px;
     }
 }
 </style>

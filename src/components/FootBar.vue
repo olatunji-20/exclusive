@@ -54,16 +54,13 @@
         </div>
         <div class="socials">
             <div class="social">
-                <img src="/img/twitter.svg" class="p-img2" />
-            </div>
-            <div class="social">
-                <img src="/img/linkedin.svg" class="p-img2" />
-            </div>
-            <div class="social">
                 <img src="/img/facebook.svg" class="p-img2" />
             </div>
             <div class="social">
                 <img src="/img/twitter.svg" class="p-img2" />
+            </div>
+            <div class="social">
+                <img src="/img/linkedin.svg" class="p-img2" />
             </div>
         </div>
     </section>
@@ -126,6 +123,7 @@ section {
     height: 35px;
     background: #F5F5F5;
     border: 0px;
+    border-radius: 2px;
 }
 .sddd {
     /* border: 2px solid red; */
@@ -199,7 +197,7 @@ ul li:hover {
 .socials {
     /* border: 2px solid green; */
     height: 35px;
-    width: 200px;
+    width: 150px;
     margin-top: 40px;
     display: flex;
     flex-direction: row;
@@ -233,6 +231,9 @@ ul li:hover {
     footer {
         padding: 40px 5px;
     }
+    .mail {
+        width: 300px;
+    }
     section {
         width: 100%;
         height: auto;
@@ -244,6 +245,14 @@ ul li:hover {
     }
     .app {
         height: 200px;
+    }
+    .qr {
+        width: 180px;
+        height: 180px;
+    }
+    .playstore1, .playstore2 {
+        width: 170px;
+        height: 90px;
     }
 }
 

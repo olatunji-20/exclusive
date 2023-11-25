@@ -108,13 +108,13 @@ h2 {
   width: 100%;
   height: auto;
   margin: 30px auto;
-  overflow: auto;
+  /* overflow: hidden; */
 }
 .naham {
   /* border: 3px solid greenyellow; */
   height: auto;
   width: 100%;
-  overflow: auto;
+  overflow: hidden;
 }
 .view {
   /* border: 1px solid blue; */

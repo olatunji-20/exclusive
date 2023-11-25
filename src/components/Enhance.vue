@@ -40,12 +40,13 @@ export default {
     /* border: 2px solid red; */
     background: black;
     width: 90%;
-    height: 400px;
+    height: 450px;
     margin: 0px auto;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
+    border-radius: 4px;
 }
 .one {
     /* border: 2px solid blue; */

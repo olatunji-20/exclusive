@@ -187,55 +187,55 @@
             {
                 "id": 1,
                 "name": "Falana Sheriff",
-                "position": "C.E.O",
-                "imageUrl": "/img/sheriff.png"
+                "position": "Founder & Chairman",
+                "imageUrl": "/img/exclusive-images/sheriff.png"
             },
             {
                 "id": 2,
-                "name": "nfuiofrwa222",
-                "position": "nwgonre222",
-                "imageUrl": "knbrgr"
+                "name": "Emma Watson",
+                "position": "Managing Director",
+                "imageUrl": "/img/exclusive-images/emma.png"
             },
             {
                 "id": 3,
-                "name": "jngjnr",
-                "position": "wengwg",
-                "imageUrl": "jgnrjn"
+                "name": "Tom Cruise",
+                "position": "Product Designer",
+                "imageUrl": "/img/exclusive-images/tom.png"
             },
             {
                 "id": 4,
-                "name": "nfui444ofrwa",
-                "position": "nw444gonre",
-                "imageUrl": "knbrgr"
+                "name": "Will Smith",
+                "position": "Manager",
+                "imageUrl": "/img/exclusive-images/frame.png"
             },
             {
                 "id": 5,
-                "name": "nfuio555frwa",
-                "position": "nw555gonre",
+                "name": "Reece James",
+                "position": "Captain",
                 "imageUrl": "knbrgr"
             },
             {
                 "id": 6,
-                "name": "nfuiof666rwa",
-                "position": "nw666gonre",
+                "name": "Raheem Sterling",
+                "position": "Frontend Engineer",
                 "imageUrl": "knbrgr"
             },
             {
                 "id": 7,
-                "name": "Will Smith",
-                "position": "Manager",
+                "name": "Cole Palmer",
+                "position": "Backend Engineer",
                 "imageUrl": "/img/frame.png"
             },
             {
                 "id": 8,
-                "name": "nfuiof888rwa",
-                "position": "nw888gonre",
+                "name": "Dwayne Johnson",
+                "position": "UI/UX Designer",
                 "imageUrl": "knbrgr"
             },
             {
                 "id": 9,
-                "name": "nfuiof999rwa",
-                "position": "nw999gonre",
+                "name": "Idris Elba",
+                "position": "Content Writer",
                 "imageUrl": "knbrgr"
             }
     ]

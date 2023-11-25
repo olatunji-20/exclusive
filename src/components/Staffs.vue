@@ -22,9 +22,15 @@
             <h2>{{ staff.name }}</h2>
             <p>{{ staff.position }}</p>
             <div class="social">
-                <div class="media"></div>
-                <div class="media"></div>
-                <div class="media"></div>
+                <div class="media">
+                   <img src="/img/facebook.svg" class="p-img2" />
+                </div>
+                <div class="media">
+                    <img src="/img/linkedin.svg" class="p-img2" />
+                </div>
+                <div class="media">
+                    <img src="/img/twitter.svg" class="p-img2" />
+                </div>
             </div>
         </swiper-slide>
         
@@ -72,13 +78,13 @@ export default {
 
 <style scoped>
 .large {
-    border: 6px solid brown;
+    /* border: 6px solid brown; */
     width: 100%;
     height: auto;
-    padding: 50px;
+    padding: 80px;
 }
 .low {
-    border: 6px solid green;
+    /* border: 6px solid green; */
     width: 100%;
     height: auto;
     display: flex;
@@ -86,38 +92,47 @@ export default {
     justify-content: space-between;
 }
 .staff-card {
-    border: 4px solid purple;
+    border: 1px solid #f5f5f5;
     width: 250px;
     height: 420px;
+    border-radius: 4px;
 }
 .staff-card .image {
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
     width: 100%;
     height: 300px;
+    background: #f5f5f5;
 }
+
 .p-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 h2 {
-    line-height: 5px;
+    line-height: 15px;
 }
 p {
     line-height: 10px;
 }
 .social {
-    border: 1px solid blue;
-    width: 100px;
-    height: 25px;
+    /* border: 1px solid blue; */
+    width: 70px;
+    height: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 .media {
-    border: 1px solid red;
-    width: 25px;
-    height: 25px;
+    /* border: 1px solid red; */
+    width: 18px;
+    height: 18px;
+    background: #808080;
+}
+.p-img2 {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 @media screen and (max-width: 768px) {

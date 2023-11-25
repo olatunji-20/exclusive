@@ -57,6 +57,7 @@ export default {
     width: 14rem;
     height: auto;
     margin: 10px auto;
+    /* grid-area: card; */
     border-radius: 4px;
     position: relative;
     cursor: pointer;

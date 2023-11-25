@@ -8,7 +8,7 @@
         <input placeholder="Password" type="password" />
         <button class="create">Create Account</button>
         <button>Sign up with Google</button>
-        <p class="log">Already have an account?<router-link to="/login">Log in</router-link> .</p>
+        <p class="log">Already have an account? <router-link to="/login">Log in</router-link>.</p>
     </form>
   </div>
 </template>

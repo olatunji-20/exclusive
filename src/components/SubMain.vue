@@ -108,7 +108,8 @@ export default {
 }
 .sub-main {
     /* border: 4px solid greenyellow; */
-    background: black;
+    padding-top: 30px;
+    background: #000000;
     width: 100%;
     height: 93%;
     display: flex;
@@ -119,7 +120,7 @@ export default {
 .sub1 {
     /* border: 4px solid brown; */
     width: 350px;
-    height: 300px;
+    height: 350px;
     padding: 20px 50px 0px 0px;
     color: white;
 }
@@ -152,7 +153,7 @@ export default {
 .sub2 {
     /* border: 4px solid brown; */
     width: 400px;
-    height: 300px;
+    height: 350px;
 }
 .sub2 .image {
     /* border: 2px solid blueviolet; */
@@ -175,9 +176,9 @@ export default {
         width: 100%;
         text-align: center;
     }
-    .sub1 h1 {
-        /* font-size: 40px; */
-    }
+    /* .sub1 h1 {
+        font-size: 40px;
+    } */
     .sub2 {
         height: 50%;
         width: 100%;

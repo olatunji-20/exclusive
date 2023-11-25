@@ -12,6 +12,7 @@ import { RouterLink, RouterView } from 'vue-router'
 }
 body {
   margin: 0px !important;
+  font-family: "Montserrat", sans-serif;
 }
 html {
   scroll-behavior: smooth;

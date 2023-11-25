@@ -38,12 +38,6 @@ export default {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    /* overflow: auto; */
-}
-.slide {
-  border: 4px solid red;
-  height: auto;
-  width: 100%;
-  overflow: auto;
+    /* overflow-x: scroll; */
 }
 </style>

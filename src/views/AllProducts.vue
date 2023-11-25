@@ -75,7 +75,7 @@ export default {
 }
 .all {
   /* border: 3px solid blue; */
-  width: 1100px;
+  width: 100%;
   height: auto;
   margin: 40px auto 20px;
 }

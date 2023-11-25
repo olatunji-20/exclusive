@@ -93,7 +93,7 @@ aside ul li {
     /* border: 3px solid blue; */
     /* background: brown; */
     width: 97%;
-    height: 350px;
+    height: 400px;
 }
 
 @media screen and (max-width: 768px) {

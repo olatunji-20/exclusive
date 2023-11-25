@@ -1,10 +1,10 @@
 <template>
   <div class="border">
     <div class="headers">
-      <h4 class="pqp">Product</h4>
-      <h4>Price</h4>
-      <h4>Quantity</h4>
-      <h4>Subtotal</h4>
+      <h4 class="pqp">PRODUCT</h4>
+      <h4>PRICE</h4>
+      <h4>QUANTITY</h4>
+      <h4>SUBTOTAL</h4>
     </div>
     <h1 v-if="cartStore.cartItems.length === 0">Your shopping cart is currently empty.</h1>
     <div v-for="product in cartStore.cartItems" :key="product.id" class="cart">

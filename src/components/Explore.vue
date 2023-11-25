@@ -39,7 +39,6 @@ import Preloader from './Preloader.vue';
       height: 100%;
       margin: 0px auto;
       display: flex;
-      flex-grow: unset;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-around;
@@ -50,8 +49,8 @@ import Preloader from './Preloader.vue';
 
   @media screen and (max-width: 768px) {
     .flash {
-      height: 700px;
-      width: 1300px;
+      height: 750px;
+      width: 1100px;
       justify-content: space-between;
     }
   }
