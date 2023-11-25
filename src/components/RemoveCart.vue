@@ -27,8 +27,8 @@
   <style scoped>
   .www {
       /* border: 1px solid yellow; */
-      background: red;
-      color: white;
+      /* background: red; */
+      color: red;
       border-radius: 4px;
       width: 100%;
       height: 100%;
@@ -37,6 +37,6 @@
       cursor: pointer;
   }
   .www:hover {
-    background: #E07575;
+    background: #CCCCCC;
   }
   </style>

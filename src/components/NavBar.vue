@@ -8,7 +8,7 @@
         <li><router-link to="/" class="rlink">Home</router-link></li>
         <li><router-link to="/contact" class="rlink">Contact</router-link></li>
         <li><router-link to="/about" class="rlink">About</router-link></li>
-        <router-link to="/signup" class="rlink"><li>Sign Up</li></router-link>
+        <li><router-link to="/signup" class="rlink">Sign Up</router-link></li>
       </ul>
     </nav>
     <div class="menu">
@@ -28,9 +28,23 @@
           </div>
       </router-link>
     </div>
+    <div @click="toggleMenu" class="small-menu">
+      <i v-if="showMenu" class="material-symbols-outlined font-inc">close</i>
+      <i v-else class="material-symbols-outlined font-inc">menu</i>
+    </div>
   </header>
   <div v-if="showBoard" class="search-board" v-on:click-outside="closeSearch">
     <p v-for="product in filteredProducts" :key="product.id"><router-link class="rlink" :to="'/all-product-page/' + `${product.id}`"> {{ product.productName }} </router-link></p>
+  </div>
+  <div v-if="showMenu" class="menu-board">
+    <ul>
+      <li><router-link class="rlink" to="/">Home</router-link></li>
+      <li><router-link class="rlink" to="/contact">Contact</router-link></li>
+      <li><router-link class="rlink" to="/about">About</router-link></li>
+      <li><router-link class="rlink" to="/signup">Sign Up</router-link></li>
+      <li><router-link class="rlink" to="/cart-page">Cart</router-link></li>
+      <li><router-link class="rlink" to="/wishlist">Wishlist</router-link></li>
+    </ul>
   </div>
 </template>
 
@@ -45,6 +59,8 @@ export default {
         const searchText = ref("");
         const showBoard = ref(false);
         const showClose = ref(false);
+        const showMenu = ref(false);
+
         const productStore = useProductStore();
         productStore.getAllProducts();
         const search = () => {
@@ -58,13 +74,19 @@ export default {
         const filteredProducts = computed(() => {
             return productStore.allProducts.filter((product) => product.productName.toLowerCase().includes(searchText.value.toLowerCase()));
         });
+
+        const toggleMenu = () => {
+          showMenu.value = !showMenu.value;
+        }
         return {
             searchText,
             filteredProducts,
             showBoard,
             search,
             closeSearch,
-            showClose
+            showClose,
+            showMenu,
+            toggleMenu
         };
     },
     components: { CartCard }
@@ -112,6 +134,9 @@ ul li {
   align-items: center;
   justify-content: space-between;
 }
+.font-inc {
+  font-size: 30px;
+}
 .search {
   /* border: 1px solid black; */
   /* background: #F5F5F5; */
@@ -153,6 +178,13 @@ input {
   border-radius: 50%;
   padding: 5px 4px;
 }
+.small-menu {
+  border: 1px solid green;
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  display: none;
+}
 .search-board {
   border: 2px solid #808080;
   width: 100%;
@@ -161,6 +193,20 @@ input {
   z-index: 9;
   background: #F5F5F5;
   position: absolute;
+}
+.menu-board {
+  /* border: 2px solid #808080; */
+  width: 250px;
+  height: 400px;
+  position: absolute;
+  right: 0;
+  background: #f5f5f5;
+  z-index: 10;
+}
+.menu-board ul li {
+  list-style-type: none;
+  line-height: 50px;
+  display: block;
 }
 
 @media screen and (max-width: 768px) {
@@ -171,15 +217,18 @@ input {
   .nav {
     display: none;
   }
-
-
-
-}
-
-
-@media screen and (max-width: 480px) {
   .menu {
     display: none;
   }
+  .small-menu {
+    display: inline-block;
+  }
+
+
+
 }
+
+
+/* @media screen and (max-width: 480px) {
+} */
 </style>

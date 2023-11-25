@@ -1,5 +1,5 @@
 <template>
-    <swiper 
+    <swiper ref="swiperRef"
         class="swippp"
         :modules="modules"
         :slides-per-page="1"
@@ -37,6 +37,7 @@
 </template>
 
 <script>
+import { register } from 'swiper/element'
 import {  Autoplay, Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
@@ -44,7 +45,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 export default {
     name: 'SubMain',
     setup() {
@@ -86,17 +87,22 @@ export default {
         const onSlideChange = () => {
             // console.log("slide change");
         };
+
+        onMounted(() => {
+            console.log("MOUNTEDDDDDDDD")
+        })
         return {
             modules: [Autoplay, Navigation, Pagination, Scrollbar, A11y],
             tops,
             onSwiper,
-            onSlideChange,
+            onSlideChange
         }
     },
     components: {
         Swiper,
         SwiperSlide
-    }
+    },
+    
 }
 </script>
 

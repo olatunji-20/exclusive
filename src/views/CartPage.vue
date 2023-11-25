@@ -60,7 +60,7 @@ export default {
   /* border: 6px solid palevioletred; */
   width: 100%;
   height: auto;
-  padding: 80px 50px;
+  padding: 80px;
 }
 .last {
   /* border: 3px solid green; */
