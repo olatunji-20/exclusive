@@ -18,7 +18,7 @@ export const useProductStore = defineStore('productStore', {
         async getFlashProducts() {
             try {
                 this.isLoading = true;
-                const res = await axios.get("http://localhost:5000/flash-products");
+                const res = await axios.get("https://my-json-server.typicode.com/olatunji-20/exclusive-api/flash-products");
                 this.flashProducts = await res.data;
                 this.isLoading = false;
             } catch (err) {
@@ -28,7 +28,7 @@ export const useProductStore = defineStore('productStore', {
 
         async getFlashProduct(id) {
             try {
-                const res = await axios.get("http://localhost:5000/flash-products/" + id);
+                const res = await axios.get("https://my-json-server.typicode.com/olatunji-20/exclusive-api/flash-products/" + id);
                 const reqProduct = await res.data;
                 this.flashProduct = reqProduct
             } catch(err) {
@@ -39,7 +39,7 @@ export const useProductStore = defineStore('productStore', {
         async getBestProducts() {
             try {
                 this.isLoading = true;
-                const res = await axios.get("http://localhost:5000/best-products");
+                const res = await axios.get("https://my-json-server.typicode.com/olatunji-20/exclusive-api2/best-products");
                 this.bestProducts = await res.data;
                 this.isLoading = false;
             } catch (err) {
@@ -49,7 +49,7 @@ export const useProductStore = defineStore('productStore', {
         
         async getBestProduct(id) {
             try {
-                const res = await axios.get("http://localhost:5000/best-products/" + id);
+                const res = await axios.get("https://my-json-server.typicode.com/olatunji-20/exclusive-api2/best-products/" + id);
                 const reqProduct = await res.data;
                 this.bestProduct = reqProduct
             } catch(err) {
@@ -87,7 +87,7 @@ export const useProductStore = defineStore('productStore', {
         
         async getStaffs() {
             try {
-                const res = await axios.get("http://localhost:5000/staffs");
+                const res = await axios.get("https://my-json-server.typicode.com/olatunji-20/exclusive-api/staffs");
                 this.staffs = await res.data;
             } catch (err) {
                 console.log("ERROR IN FECTHING PRODUCTS", err);

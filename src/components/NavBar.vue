@@ -1,7 +1,9 @@
 <template>
   <header>
     <div class="logo">
-      <img src="/img/exclusive.svg" class="p-img" />
+      <router-link to="/">
+        <img src="/img/exclusive.svg" class="p-img" />
+      </router-link>
     </div>
     <nav class="nav">
       <ul>
@@ -31,6 +33,7 @@
     <div @click="toggleMenu" class="small-menu">
       <i v-if="showMenu" class="material-symbols-outlined font-inc">close</i>
       <i v-else class="material-symbols-outlined font-inc">menu</i>
+      <CartCard />
     </div>
   </header>
   <div v-if="showBoard" class="search-board" v-on:click-outside="closeSearch">
@@ -136,6 +139,7 @@ ul li {
 }
 .font-inc {
   font-size: 30px;
+  font-weight: bolder;
 }
 .search {
   /* border: 1px solid black; */
@@ -179,7 +183,7 @@ input {
   padding: 5px 4px;
 }
 .small-menu {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   width: 30px;
   height: 30px;
   margin-right: 20px;
