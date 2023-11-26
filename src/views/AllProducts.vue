@@ -5,85 +5,78 @@
     <div class="all">
       <Preloader v-if="productStore.isLoading" />
       <All v-else :allProducts="displayedPosts" />
-
     </div>
     <div class="page">
       <vue-awesome-paginate
-      :total-items="productStore.allProducts.length"
-      :items-per-page="perPage"
-      v-model="currentPage"
-      :on-click="onClickHandler"
-    />
+        :total-items="productStore.allProducts.length"
+        :items-per-page="perPage"
+        v-model="currentPage"
+        :on-click="onClickHandler"
+      />
     </div>
-
   </section>
   <FootBar />
 </template>
 
 <script>
-import NavBar from '../components/NavBar.vue'
-import FootBar from '../components/FootBar.vue'
-import All from '../components/All.vue';
+import NavBar from "../components/NavBar.vue";
+import FootBar from "../components/FootBar.vue";
+import All from "../components/All.vue";
 
-import { useProductStore } from '../stores/productStore';
-import { ref, computed } from 'vue';
-import Preloader from '../components/Preloader.vue';
+import { useProductStore } from "../stores/productStore";
+import { ref, computed } from "vue";
+import Preloader from "../components/Preloader.vue";
 
 export default {
-    name: 'AllProducts',
-    setup() {
-      const currentPage = ref(1);
-      const perPage = ref(8);
-      const onClickHandler = (page) => {
-        console.log(page)
-      }
+  name: "AllProducts",
+  setup() {
+    const currentPage = ref(1);
+    const perPage = ref(8);
+    const onClickHandler = (page) => {
+      console.log(page);
+    };
 
-        const productStore = useProductStore();
-        productStore.getAllProducts();
+    const productStore = useProductStore();
+    productStore.getAllProducts();
 
+    const displayedPosts = computed(() => {
+      let startIndex = perPage.value * (currentPage.value - 1);
+      let endIndex = startIndex + perPage.value;
+      return productStore.allProducts.slice(startIndex, endIndex);
+    });
 
-        const displayedPosts = computed(() => {
-          let startIndex = perPage.value * (currentPage.value - 1);
-          let endIndex = startIndex + perPage.value;
-          return productStore.allProducts.slice(startIndex, endIndex);
-        })
-
-        return {
-            productStore,
-            currentPage,
-            perPage,
-            onClickHandler,
-            displayedPosts
-        }
-    },
-    components: {
+    return {
+      productStore,
+      currentPage,
+      perPage,
+      onClickHandler,
+      displayedPosts,
+    };
+  },
+  components: {
     NavBar,
     FootBar,
     All,
-    Preloader
-}
-
-}
+    Preloader,
+  },
+};
 </script>
 
 <style>
 .all-products {
-  /* border: 4px solid firebrick; */
   width: 100%;
   height: auto;
-  padding: 80px;
+  padding: 5rem;
 }
 .all {
-  /* border: 3px solid blue; */
   width: 100%;
   height: auto;
-  margin: 40px auto 20px;
+  margin: 2.5rem auto 1.25rem;
 }
 .page {
-  /* border: 2px solid darkblue; */
-  width: 200px;
+  width: 12.5rem;
   height: auto;
-  margin: 40px auto 10px;
+  margin: 2.5rem auto 0.625rem;
   text-align: center;
 }
 .pagination-container {
@@ -113,10 +106,9 @@ export default {
   background-color: #e07575;
 }
 
-
 @media screen and (max-width: 768px) {
   .all-products {
-    padding: 20px 5px;
+    padding: 1.25rem 0.3125rem;
   }
   .all {
     overflow: auto;

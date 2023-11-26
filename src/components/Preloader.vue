@@ -6,43 +6,39 @@
 
 <script>
 export default {
-    name: 'Preloader',
-    setup() {
-
-    }
-
-}
+  name: "Preloader",
+  setup() {},
+};
 </script>
 
 <style scoped>
 .pre {
-    /* border: 4px solid red; */
-    width: 100%;
-    height: 400px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
 .sub {
-    border: 10px solid #CCCCCC;
-    border-top: 10px solid #Db4444;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin: 80px auto;
-    animation-name: spinner;
-    animation-duration: .8s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+  border: 10px solid #cccccc;
+  border-top: 10px solid #db4444;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  margin: 6rem auto;
+  animation-name: spinner;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 @keyframes spinner {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg)
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 </style>

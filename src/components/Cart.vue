@@ -6,17 +6,19 @@
       <h4>QUANTITY</h4>
       <h4>SUBTOTAL</h4>
     </div>
-    <h1 v-if="cartStore.cartItems.length === 0">Your shopping cart is currently empty.</h1>
+    <h1 v-if="cartStore.cartItems.length === 0">
+      Your shopping cart is currently empty.
+    </h1>
     <div v-for="product in cartStore.cartItems" :key="product.id" class="cart">
       <div class="det">
         <div class="img">
           <img :src="product.productImage" class="p-img" />
         </div>
-        <p> {{ product.productName }} </p>
+        <p>{{ product.productName }}</p>
       </div>
-      <p> ${{ product.price }} </p>
-      <p> {{ product.quantity }} </p>
-      <p> ${{ product.price * product.quantity }} </p>
+      <p>${{ product.price }}</p>
+      <p>{{ product.quantity }}</p>
+      <p>${{ product.price * product.quantity }}</p>
       <div class="rem">
         <RemoveCart :product="product" />
       </div>
@@ -25,36 +27,34 @@
 </template>
 
 <script>
-import { useCartStore } from '../stores/cartStore';
-import RemoveCart from './RemoveCart.vue';
+import { useCartStore } from "../stores/cartStore";
+import RemoveCart from "./RemoveCart.vue";
 
 export default {
-    name: 'Cart',
-    setup() {
-        const cartStore = useCartStore();
-        return {
-            cartStore
-        };
-    },
-    components: { RemoveCart }
-}
+  name: "Cart",
+  setup() {
+    const cartStore = useCartStore();
+    return {
+      cartStore,
+    };
+  },
+  components: { RemoveCart },
+};
 </script>
 
 <style scoped>
 .border {
-    /* border: 1px solid red; */
-    width: 100%;
-    height: auto;
-    padding: 20px 5px;
-    box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+  width: 100%;
+  height: auto;
+  padding: 1.25rem 0.3125rem;
+  box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
 }
 .headers {
-  border: 1px solid #F5F5F5;
+  border: 1px solid #f5f5f5;
   box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
   border-radius: 4px;
   width: 100%;
-  padding: 5px 60px 5px 0px;
-  /* height: 100px; */
+  padding: 0.3125rem 3.75rem 0.3125rem 0rem;
   margin: 0px auto;
   display: flex;
   flex-direction: row;
@@ -62,21 +62,19 @@ export default {
   justify-content: space-between;
 }
 .headers .pqp {
-  width: 240px;
+  width: 15rem;
 }
 h1 {
-  font-size: 50px;
+  font-size: 3.125rem;
   text-align: center;
-  margin: 80px auto;
-  width: 400px;
+  margin: 5rem auto;
+  width: 25rem;
 }
 .cart {
-  /* border: 2px solid green; */
   width: 100%;
   position: relative;
-  /* height: 100px; */
-  margin: 20px auto;
-  padding: 2px 60px 2px 0px;
+  margin: 1.25rem auto;
+  padding: 0.125rem 3.75rem 0.125rem 0rem;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -86,24 +84,20 @@ h1 {
   box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
 }
 .det {
-  /* border: 2px solid blue; */
-  width: 200px;
-  height: 60px;
+  width: 12.5rem;
+  height: 3.75rem;
   overflow: hidden;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  align-items: center;
 }
-/* .det p {
-  width: 100px;
-} */
 .img {
-  /* border: 2px solid darkblue; */
-  width: 60px;
+  width: 3.75rem;
   height: 100%;
-  margin-right: 5px;
-  padding: 2px;
-  background: #F5F5F5;
+  margin-right: 0.3125rem;
+  padding: 0.125rem;
+  background: #f5f5f5;
 }
 .p-img {
   width: 100%;
@@ -111,9 +105,8 @@ h1 {
   object-fit: cover;
 }
 .rem {
-  /* border: 2px solid blue; */
-  width: 30px;
-  height: 60px;
+  width: 1.875rem;
+  height: 3.75rem;
   position: absolute;
   right: 0px;
   box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
@@ -121,13 +114,13 @@ h1 {
 
 @media screen and (max-width: 768px) {
   .headers {
-    padding-right: 10px;
+    padding-right: 0.625rem;
   }
   .headers .pqp {
-    width: 120px;
+    width: 7.5rem;
   }
   .det {
-    width: 140px;
+    width: 8.75rem;
   }
 }
 </style>

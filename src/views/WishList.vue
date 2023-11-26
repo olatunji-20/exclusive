@@ -35,13 +35,11 @@ export default {
 
 <style scoped>
 .gogo {
-    /* border: 4px solid peru; */
     width: 100%;
     height: auto;
-    padding: 50px;
+    padding: 3.125rem;
 }
 .wishlist {
-    /* border: 5px solid saddlebrown; */
     width: auto;
     height: auto;
     box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
@@ -51,9 +49,9 @@ export default {
     justify-content: space-between;
 }
 h3 {
-    font-size: 30px;
-    width: 300px;
+    font-size: 1.875rem;
+    width: 18.75rem;
     text-align: center;
-    margin: 50px auto;
+    margin: 3.125rem auto;
 }
 </style>

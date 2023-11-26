@@ -1,192 +1,173 @@
 <template>
-    <div class="categories">
-      <h1>Featured</h1>
-      <h2>New Arrival</h2>
-      <div class="new">
-        <div class="first">
-            <img src="/img/ps5.png" class="p-img"/>
-            <div class="play">
-                <h4 style="line-height: 1px">PlayStation 5</h4>
-                <p style="font-size: 14px; line-height: 14px">Black and white version of the PS5 coming out on sale</p>
-                <p style="line-height: 3px;">Shop Now</p>
-            </div>
+  <div class="categories">
+    <h1>Featured</h1>
+    <h2>New Arrival</h2>
+    <div class="new">
+      <div class="first">
+        <img src="/img/ps5.png" class="p-img" />
+        <div class="play">
+          <h4 style="line-height: 1px">PlayStation 5</h4>
+          <p style="font-size: 14px; line-height: 14px">
+            Black and white version of the PS5 coming out on sale
+          </p>
+          <p style="line-height: 3px">Shop Now</p>
         </div>
+      </div>
 
-        <div class="second">
-            <div class="one">
-                <img src="/img/attractive.png" class="p-img"/>
-                <div class="play">
-                    <h4 style="line-height: 1px">Women's Collections</h4>
-                    <p style="font-size: 14px; line-height: 14px">Featured women collection that gives you another vibe</p>
-                    <p style="line-height: 3px;">Shop Now</p>
-                </div>
-            </div>
-            <div class="two">
-                <img src="/img/speakers.png" class="p-img2"/>
-                <div class="play1">
-                    <h4 style="line-height: 1px">Speakers</h4>
-                    <p style="font-size: 14px; line-height: 14px">Amazon wireless speakers</p>
-                    <p style="line-height: 3px;">Shop Now</p>
-                </div>
-            </div>
-            <div class="three">
-                <img src="/img/perf.png" class="p-img2"/>
-                <div class="play1">
-                    <h4 style="line-height: 1px">Perfumes</h4>
-                    <p style="font-size: 14px; line-height: 14px">GUCCI INTENSE OUD EDP</p>
-                    <p style="line-height: 3px;">Shop Now</p>
-                </div>
-            </div>
+      <div class="second">
+        <div class="one">
+          <img src="/img/attractive.png" class="p-img" />
+          <div class="play">
+            <h4 style="line-height: 1px">Women's Collections</h4>
+            <p style="font-size: 14px; line-height: 14px">
+              Featured women collection that gives you another vibe
+            </p>
+            <p style="line-height: 3px">Shop Now</p>
+          </div>
+        </div>
+        <div class="two">
+          <img src="/img/speakers.png" class="p-img2" />
+          <div class="play1">
+            <h4 style="line-height: 1px">Speakers</h4>
+            <p style="font-size: 14px; line-height: 14px">
+              Amazon wireless speakers
+            </p>
+            <p style="line-height: 3px">Shop Now</p>
+          </div>
+        </div>
+        <div class="three">
+          <img src="/img/perf.png" class="p-img2" />
+          <div class="play1">
+            <h4 style="line-height: 1px">Perfumes</h4>
+            <p style="font-size: 14px; line-height: 14px">
+              GUCCI INTENSE OUD EDP
+            </p>
+            <p style="line-height: 3px">Shop Now</p>
+          </div>
         </div>
       </div>
     </div>
-  </template>
+  </div>
+</template>
   
   <script>
-  export default {
-      name: "NewArrival",
-      setup() {
-  
-      }
-  
-  }
-  </script>
+export default {
+  name: "NewArrival",
+  setup() {},
+};
+</script>
   
   <style scoped>
+.categories {
+  width: 100%;
+  height: auto;
+  padding: 3.125rem 5rem;
+}
+h1 {
+  border-left: 1.25rem solid #db4444;
+  width: auto;
+  height: 3.75rem;
+  padding: 0.9375rem;
+}
+h2 {
+  font-size: 2.8125rem;
+}
+.new {
+  width: 100%;
+  height: 31.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.first {
+  width: 48%;
+  height: 100%;
+  position: relative;
+  padding: 0.3125rem;
+  background: black;
+}
+.play {
+  width: 15.625rem;
+  height: auto;
+  padding-left: 0.1875rem;
+  position: absolute;
+  bottom: 0.625rem;
+  color: white;
+  bottom: 0px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.play:hover {
+  bottom: 15px;
+}
+.p-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.p-img2 {
+  width: 100%;
+  height: 100%;
+  padding: 0.625rem;
+  object-fit: contain;
+}
+.play1 {
+  width: 11.25rem;
+  height: auto;
+  position: absolute;
+  padding-left: 0.1875rem;
+  bottom: 10px;
+  color: white;
+  bottom: 0px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.play1:hover {
+  bottom: 15px;
+}
+.second {
+  width: 50%;
+  height: 100%;
+  display: grid;
+  grid-template-areas: "one one" "two three";
+  gap: 5px;
+}
+.one {
+  position: relative;
+  height: 15rem;
+  grid-area: one;
+}
+.two {
+  position: relative;
+  height: 15rem;
+  grid-area: two;
+  background: black;
+}
+.three {
+  position: relative;
+  height: 15rem;
+  grid-area: three;
+  background: black;
+}
+
+@media screen and (max-width: 768px) {
   .categories {
-      /* border: 3px solid blue; */
-      width: 100%;
-      height: auto;
-      padding: 50px 80px;
-  }
-  h1 {
-      border-left: 20px solid #DB4444;
-      width: auto;
-      height: 60px;
-      padding: 15px;
+    padding: 3.125rem 0.5rem;
   }
   h2 {
-      font-size: 45px;
+    font-size: 2.1875em;
   }
   .new {
-    /* border: 6px solid green; */
-    width: 100%;
-    height: 500px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
+    height: auto;
+    flex-direction: column;
   }
   .first {
-    /* border: 4px solid salmon; */
-    width: 48%;
-    height: 100%;
-    position: relative;
-    padding: 5px;
-    background: black;
-  }
-  .play {
-    /* border: 1px solid #CCCCCC; */
-    width: 250px;
-    height: auto;
-    padding-left: 3px;
-    position: absolute;
-    bottom: 10px;
-    color: white;
-    bottom: 0px;
-    transition: .2s ease-in-out;
-    cursor: pointer;
-  }
-  .play:hover {
-    bottom: 15px;
-  }
-  .p-img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-  .p-img2 {
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    object-fit: contain;
-}
-  .play1 {
-    /* border: 1px solid #CCCCCC; */
-    width: 180px;
-    height: auto;
-    position: absolute;
-    padding-left: 3px;
-    bottom: 10px;
-    color: white;
-    bottom: 0px;
-    transition: .2s ease-in-out;
-    cursor: pointer;
-  }
-  .play1:hover {
-    bottom: 15px;
+    height: 25rem;
   }
   .second {
-    /* border: 4px solid blue; */
-    width: 50%;
-    height: 100%;
-    display: grid;
-    grid-template-areas: 'one one' 'two three';
-    gap: 5px;
+    width: 100%;
+    height: 31.25rem;
   }
-  .one {
-    /* border: 4px solid red; */
-    position: relative;
-    height: 240px;
-    grid-area: one;
-  }
-  .two {
-    /* border: 4px solid green; */
-    position: relative;
-    height: 240px;
-    grid-area: two;
-    background: black;
-  }
-  .three {
-    /* border: 4px solid purple; */
-    position: relative;
-    height: 240px;
-    grid-area: three;
-    background: black;
-  }
-
-  @media screen and (max-width: 768px) {
-    .categories {
-      padding: 50px 8px;
-    }
-    h2 {
-      font-size: 35px;
-    }
-    .new {
-      height: auto;
-      flex-direction: column;
-    }
-    .first {
-      width: 100%;
-      height: 400px;
-    }
-    .second {
-      width: 100%;
-      height: 500px;
-    }
-
-
-
-
-
-
-
-
-
-
-    
-  }
-
-
-
-  </style>
+}
+</style>

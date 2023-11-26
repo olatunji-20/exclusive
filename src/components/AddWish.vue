@@ -1,48 +1,38 @@
 <template>
-  <div @click="wishStore.addToWish({product, quantity})" class="www">
+  <div @click="wishStore.addToWish({ product, quantity })" class="www">
     <i class="material-symbols-outlined">visibility</i>
   </div>
 </template>
   
   <script>
-  import { useWishStore } from '../stores/wishStore';
-  import { ref } from 'vue'
-  
-  export default {
-      name: 'AddWish',
-      setup() {
-          const wishStore = useWishStore();
-          const quantity = ref(1);
+import { useWishStore } from "../stores/wishStore";
+import { ref } from "vue";
 
-          return {
-              wishStore,
-              quantity
-          }
-      },
-      props: {
-          product: Object,
-      }
+export default {
+  name: "AddWish",
+  setup() {
+    const wishStore = useWishStore();
+    const quantity = ref(1);
+
+    return {
+      wishStore,
+      quantity,
+    };
+  },
+  props: {
+    product: Object,
+  },
+};
+</script>
   
-  }
-  </script>
-  
-  <style scoped>
-  .www {
-      /* border: 1px solid purple; */
-      background: #FFF;
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      padding-top: 2px;
-      text-align: center;
-      cursor: pointer;
-  }
-  /* .xxx {
-      border: 3px solid purple;
-      background: blueviolet;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      cursor: pointer;
-  } */
-  </style>
+<style scoped>
+.www {
+  background: #fff;
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 50%;
+  padding-top: 0.125rem;
+  text-align: center;
+  cursor: pointer;
+}
+</style>

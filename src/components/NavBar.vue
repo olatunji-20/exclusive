@@ -15,8 +15,15 @@
     </nav>
     <div class="menu">
       <div class="search">
-        <input v-on:input="search" v-model="searchText" placeholder="search" type="text" />
-        <div v-if="showClose" @click="closeSearch" class="cl"><i class="material-symbols-outlined">search_off</i></div>
+        <input
+          v-on:input="search"
+          v-model="searchText"
+          placeholder="search"
+          type="text"
+        />
+        <div v-if="showClose" @click="closeSearch" class="cl">
+          <i class="material-symbols-outlined">search_off</i>
+        </div>
       </div>
       <router-link to="/wishlist">
         <div class="fave">
@@ -24,10 +31,10 @@
         </div>
       </router-link>
       <router-link to="/cart-page" class="rlink">
-          <div class="cart">
-            <i class="material-symbols-outlined">shopping_cart</i>
-            <CartCard />
-          </div>
+        <div class="cart">
+          <i class="material-symbols-outlined">shopping_cart</i>
+          <CartCard />
+        </div>
       </router-link>
     </div>
     <div @click="toggleMenu" class="small-menu">
@@ -37,7 +44,11 @@
     </div>
   </header>
   <div v-if="showBoard" class="search-board" v-on:click-outside="closeSearch">
-    <p v-for="product in filteredProducts" :key="product.id"><router-link class="rlink" :to="'/all-product-page/' + `${product.id}`"> {{ product.productName }} </router-link></p>
+    <p v-for="product in filteredProducts" :key="product.id">
+      <router-link class="rlink" :to="'/all-product-page/' + `${product.id}`">
+        {{ product.productName }}
+      </router-link>
+    </p>
   </div>
   <div v-if="showMenu" class="menu-board">
     <ul>
@@ -52,100 +63,97 @@
 </template>
 
 <script>
-import { ref, computed } from 'vue';
-import { useProductStore } from '../stores/productStore';
-import CartCard from './CartCard.vue';
+import { ref, computed } from "vue";
+import { useProductStore } from "../stores/productStore";
+import CartCard from "./CartCard.vue";
 
 export default {
-    name: 'NavBar',
-    setup() {
-        const searchText = ref("");
-        const showBoard = ref(false);
-        const showClose = ref(false);
-        const showMenu = ref(false);
+  name: "NavBar",
+  setup() {
+    const searchText = ref("");
+    const showBoard = ref(false);
+    const showClose = ref(false);
+    const showMenu = ref(false);
 
-        const productStore = useProductStore();
-        productStore.getAllProducts();
-        const search = () => {
-            showBoard.value = true;
-            showClose.value = true;
-        };
-        const closeSearch = () => {
-            showBoard.value = false;
-            showClose.value = false;
-        };
-        const filteredProducts = computed(() => {
-            return productStore.allProducts.filter((product) => product.productName.toLowerCase().includes(searchText.value.toLowerCase()));
-        });
+    const productStore = useProductStore();
+    productStore.getAllProducts();
+    const search = () => {
+      showBoard.value = true;
+      showClose.value = true;
+    };
+    const closeSearch = () => {
+      showBoard.value = false;
+      showClose.value = false;
+    };
+    const filteredProducts = computed(() => {
+      return productStore.allProducts.filter((product) =>
+        product.productName
+          .toLowerCase()
+          .includes(searchText.value.toLowerCase())
+      );
+    });
 
-        const toggleMenu = () => {
-          showMenu.value = !showMenu.value;
-        }
-        return {
-            searchText,
-            filteredProducts,
-            showBoard,
-            search,
-            closeSearch,
-            showClose,
-            showMenu,
-            toggleMenu
-        };
-    },
-    components: { CartCard }
-}
+    const toggleMenu = () => {
+      showMenu.value = !showMenu.value;
+    };
+    return {
+      searchText,
+      filteredProducts,
+      showBoard,
+      search,
+      closeSearch,
+      showClose,
+      showMenu,
+      toggleMenu,
+    };
+  },
+  components: { CartCard },
+};
 </script>
 
 <style scoped>
 header {
-    border-bottom: 1px solid #808080;
-    width: 100%;
-    height: 100px;
-    box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
-    /* padding: 25px 0px; */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+  border-bottom: 1px solid #808080;
+  width: 100%;
+  height: 7rem;
+  box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 .logo {
-  /* border: 1px solid pink; */
   width: 200px;
   height: 50px;
 }
 .p-img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 .nav {
-  /* border: 1px solid red; */
   width: auto;
-  height: 50px;
+  height: 3.125rem;
 }
 ul li {
   display: inline-block;
-  padding: 0px 20px;
+  padding: 0px 1.25rem;
 }
 .menu {
-  /* border: 2px solid blue; */
-  /* background: blue; */
-  width: 320px;
-  height: 44px;
+  width: 20rem;
+  height: 2.75rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 .font-inc {
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: bolder;
 }
 .search {
-  /* border: 1px solid black; */
-  /* background: #F5F5F5; */
-  height: 40px;
-  width: 200px;
+  height: 2.5rem;
+  width: 12.5rem;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -155,53 +163,49 @@ ul li {
 input {
   width: 100%;
   height: 100%;
-  background: #F5F5F5;
-  border: 1px solid #F5F5F5;
-  text-indent: 10px;
-  border-radius: 5px;
+  background: #f5f5f5;
+  border: 1px solid #f5f5f5;
+  text-indent: 0.625rem;
+  border-radius: 0.3125rem;
 }
 .cl {
-  border: 1px solid #CCCCCC;
-  width: 30px;
-  height: 30px;
+  border: 1px solid #cccccc;
+  width: 1.875rem;
+  height: 1.875rem;
   border-radius: 50%;
-  background: #F5F5F5;
+  background: #f5f5f5;
   cursor: pointer;
 }
 .fave {
-  /* border: 2px solid green; */
-  height: 35px;
-  width: 35px;
+  height: 2.1875rem;
+  width: 2.1875rem;
   border-radius: 50%;
-  padding: 5px 4px;
+  padding: 0.3125rem 0.25rem;
 }
 .cart {
-  /* border: 2px solid green; */
-  height: 35px;
-  width: 35px;
+  height: 2.1875rem;
+  width: 2.1875rem;
   border-radius: 50%;
-  padding: 5px 4px;
+  padding: 0.3125rem 0.25rem;
 }
 .small-menu {
-  /* border: 1px solid green; */
-  width: 30px;
-  height: 30px;
-  margin-right: 20px;
+  width: 1.875rem;
+  height: 1.875rem;
+  margin-right: 1.25rem;
   display: none;
 }
 .search-board {
-  border: 2px solid #808080;
+  border: 1px solid #808080;
   width: 100%;
-  padding: 20px 10px;
+  padding: 1.25rem 0.625rem;
   height: auto;
   z-index: 9;
-  background: #F5F5F5;
+  background: #f5f5f5;
   position: absolute;
 }
 .menu-board {
-  /* border: 2px solid #808080; */
-  width: 250px;
-  height: 400px;
+  width: 15.625rem;
+  height: 25rem;
   position: absolute;
   right: 0;
   background: #f5f5f5;
@@ -209,14 +213,14 @@ input {
 }
 .menu-board ul li {
   list-style-type: none;
-  line-height: 50px;
+  line-height: 3.125rem;
   display: block;
 }
 
 @media screen and (max-width: 768px) {
   header {
     justify-content: space-between;
-    padding-left: 20px;
+    padding-left: 1.25rem;
   }
   .nav {
     display: none;
@@ -227,12 +231,5 @@ input {
   .small-menu {
     display: inline-block;
   }
-
-
-
 }
-
-
-/* @media screen and (max-width: 480px) {
-} */
 </style>

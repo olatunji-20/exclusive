@@ -1,41 +1,42 @@
 <template>
   <Preloader v-if="productStore.isLoading" />
   <div v-else class="flash">
-    <Card :link="'/best-product-page/'" :displayProducts="productStore.bestProducts" />
+    <Card
+      :link="'/best-product-page/'"
+      :displayProducts="productStore.bestProducts"
+    />
   </div>
 </template>
 
 <script>
-import { useProductStore } from '../stores/productStore';
-import Card from './Card.vue';
-import Preloader from './Preloader.vue';
+import { useProductStore } from "../stores/productStore";
+import Card from "./Card.vue";
+import Preloader from "./Preloader.vue";
 
 export default {
-    name: 'BestSelling',
-    setup() {
-      const productStore = useProductStore();
-      productStore.getBestProducts();
+  name: "BestSelling",
+  setup() {
+    const productStore = useProductStore();
+    productStore.getBestProducts();
 
-      return {
-        productStore
-      }
-    },
-    components: {
+    return {
+      productStore,
+    };
+  },
+  components: {
     Card,
-    Preloader
-}
-}
+    Preloader,
+  },
+};
 </script>
 
 <style scoped>
 .flash {
-    /* border: 2px solid purple; */
-    width: 3000px;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-
+  width: 187.5rem;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 </style>

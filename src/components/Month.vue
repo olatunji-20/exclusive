@@ -1,103 +1,87 @@
 <template>
-    <div class="categories">
-      <h1>This Month</h1>
-      <h2>Best Selling Products</h2>
-      <div class="dir">        
-        <router-link to="/all-products">
-          <button>View All</button>
-        </router-link>
-      </div>
-      <div class="sales">
-        <BestSelling />
-      </div>
-      
+  <div class="categories">
+    <h1>This Month</h1>
+    <h2>Best Selling Products</h2>
+    <div class="dir">
+      <router-link to="/all-products">
+        <button>View All</button>
+      </router-link>
     </div>
-  </template>
+    <div class="sales">
+      <BestSelling />
+    </div>
+  </div>
+</template>
   
-  <script>
-  import BestSelling from './BestSelling.vue';
+<script>
+import BestSelling from "./BestSelling.vue";
 
-  export default {
-      name: "Month",
-      setup() {
+export default {
+  name: "Month",
+  setup() {},
+  components: {
+    BestSelling,
+  },
+};
+</script>
   
-      },
-      components: {
-        BestSelling
+<style scoped>
+.categories {
+  width: 100%;
+  height: auto;
+  padding: 5rem;
 }
-  
-  }
-  </script>
-  
-  <style scoped>
+h1 {
+  border-left: 1.25rem solid #db4444;
+  width: auto;
+  height: 3.75rem;
+  padding: 0.9375rem;
+}
+h2 {
+  font-size: 2.5rem;
+  display: inline;
+}
+.dir {
+  width: 7.5rem;
+  height: 3.125rem;
+  text-align: center;
+  float: right;
+}
+button {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border: 0px;
+  background: #db4444;
+  color: white;
+  border-radius: 4px;
+}
+button:hover {
+  background: #e07575;
+}
+.sales {
+  width: 100%;
+  height: auto;
+  margin: 1.875rem auto;
+  overflow: auto;
+}
+
+@media screen and (max-width: 768px) {
   .categories {
-      /* border: 3px solid blue; */
-      width: 100%;
-      height: auto;
-      padding: 80px;
-  }
-  h1 {
-      border-left: 20px solid #DB4444;
-      width: auto;
-      height: 60px;
-      padding: 15px;
+    padding: 3.125rem 0.5rem;
+    position: relative;
   }
   h2 {
-      font-size: 40px;
-      display: inline;
+    font-size: 2.1875rem;
   }
   .dir {
-    /* border: 3px solid firebrick; */
-    width: 120px;
-    height: 50px;
-    text-align: center;
-    /* background: pink; */
-    float: right;
-  }
-  button {
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    border: 0px;
-    background: #DB4444;
-    color: white;
-    border-radius: 4px;
-  }
-  button:hover {
-    background: #E07575;
+    position: absolute;
+    bottom: 0;
+    right: calc(50% - 60px);
+    margin-top: 7.5rem;
   }
   .sales {
-    /* border: 3px solid green; */
     width: 100%;
-    height: auto;
-    margin: 30px auto;
-    overflow: auto;
   }
-
-
-  @media screen and (max-width: 768px) {
-    .categories {
-      padding: 50px 8px;
-      position: relative;
-    }
-    h2 {
-      font-size: 35px;
-    }
-    .dir {
-      position: absolute;
-      bottom: 0;
-      right: calc(50% - 60px);
-      margin-top: 120px;
-    }
-    .sales {
-      width: 100%;
-    }
-
-
-
-
-
-  }
-
-
-  </style>
+}
+</style>

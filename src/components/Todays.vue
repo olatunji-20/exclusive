@@ -7,7 +7,7 @@
       <CountDown />
     </div>
     <div class="dir">
-      <div @click="x -= 500"  class="arr">
+      <div @click="x -= 500" class="arr">
         <i class="material-symbols-outlined font-inc">arrow_back</i>
       </div>
       <div @click="x += 500" class="arr">
@@ -24,128 +24,117 @@
         <button>View All Products</button>
       </router-link>
     </div>
-    
   </div>
 </template>
 
 <script>
-import { ref } from 'vue'
-import { useScroll } from '@vueuse/core';
-import FlashSales from '../components/FlashSales.vue';
-import CountDown from './CountDown.vue';
+import { ref } from "vue";
+import { useScroll } from "@vueuse/core";
+import FlashSales from "../components/FlashSales.vue";
+import CountDown from "./CountDown.vue";
 
 export default {
-    name: "Todays",
-    setup() {
-      const el = ref(null);
+  name: "Todays",
+  setup() {
+    const el = ref(null);
 
-      const { x, y } = useScroll(el, {
-        behavior: 'smooth'
-      });
+    const { x, y } = useScroll(el, {
+      behavior: "smooth",
+    });
 
-
-      return {
-        el,
-        x,
-        y
-      }
-    },
-    components: {
+    return {
+      el,
+      x,
+      y,
+    };
+  },
+  components: {
     FlashSales,
-    CountDown
-}
-
-}
+    CountDown,
+  },
+};
 </script>
 
 <style scoped>
 .categories {
-    /* border: 6px solid red; */
-    width: 100%;
-    height: auto;
-    padding: 80px;
+  width: 100%;
+  height: auto;
+  padding: 5rem;
 }
 h1 {
-    border-left: 20px solid #DB4444;
-    width: auto;
-    height: 60px;
-    padding: 15px;
+  border-left: 1.25rem solid #db4444;
+  width: auto;
+  height: 3.75rem;
+  padding: 0.9375rem;
 }
 h2 {
-    font-size: 40px;
-    display: inline;
+  font-size: 2.5rem;
+  display: inline;
 }
 .time {
-  /* border: 1px solid red; */
-  width: 300px;
-  height: 70px;
+  width: 18.75rem;
+  height: 4.375rem;
   display: inline-block;
-  margin-left: 70px;
+  margin-left: 4.375rem;
 }
 .dir {
-  /* border: 1px solid firebrick; */
-  width: 120px;
-  height: 50px;
+  width: 7.5rem;
+  height: 3.125rem;
   float: right;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 .arr {
-  /* border: 2px solid greenyellow; */
-  width: 50px;
-  height: 50px;
-  padding: 4px 2px;
+  width: 3.125rem;
+  height: 3.125rem;
+  padding: 0.25rem 0.125rem;
   border-radius: 50%;
-  background: #F5F5F5;
+  background: #f5f5f5;
   cursor: pointer;
 }
 .arr:hover {
   background: #cccccc;
 }
 .sales {
-  /* border: 3px solid green; */
   width: 100%;
   height: auto;
-  margin: 30px auto;
-  /* overflow: hidden; */
+  margin: 1.875rem auto;
 }
 .naham {
-  /* border: 3px solid greenyellow; */
   height: auto;
   width: 100%;
   overflow: hidden;
 }
 .view {
-  /* border: 1px solid blue; */
   width: 250px;
   height: 45px;
   text-align: center;
-  margin: 10px auto;
+  margin: 0.625rem auto;
 }
 button {
   cursor: pointer;
   width: 100%;
   height: 100%;
   border: 0px;
-  background: #DB4444;
+  background: #db4444;
   color: white;
   border-radius: 4px;
 }
 button:hover {
-  background: #E07575;
+  background: #e07575;
 }
 
 .font-inc {
-    font-size: 45px;
+  font-size: 2.8125rem;
 }
 
 @media screen and (max-width: 768px) {
   .categories {
-    padding: 50px 8px;
+    padding: 3.125rem 0.5rem;
   }
   h2 {
-    font-size: 35px;
+    font-size: 2.1875rem;
   }
   .time {
     display: none;
@@ -154,5 +143,4 @@ button:hover {
     width: 100%;
   }
 }
-
 </style>

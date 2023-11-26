@@ -1,198 +1,190 @@
 <template>
-    <swiper ref="swiperRef"
-        class="swippp"
-        :modules="modules"
-        :slides-per-page="1"
-        :space-between="20"
-        :loop="true"
-        navigation
-        :pagination="{ clickable: true }"
-        @swiper="onSwiper"
-        @slideChange="onSlideChange"
-        :autoplay="{
-        delay: 3000,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: true,
-        }"
-    >
-        <swiper-slide v-for="top in tops" :key="top.id" class="sub-main">
-          <div class="sub1">
-            <div class="logo-box">
-                <div class="logo">
-                  <i class="material-symbols-outlined font-inc">{{ top.logo }}</i>
-                </div>
-                <p>{{ top.productName }}</p>
-            </div>
-              <h1>Up to 10%</h1>
-              <h1>off Voucher</h1>
-              <p>Shop Now</p>
+  <swiper
+    ref="swiperRef"
+    class="swippp"
+    :modules="modules"
+    :slides-per-page="1"
+    :space-between="20"
+    :loop="true"
+    navigation
+    :pagination="{ clickable: true }"
+    @swiper="onSwiper"
+    @slideChange="onSlideChange"
+    :autoplay="{
+      delay: 3000,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+    }"
+  >
+    <swiper-slide v-for="top in tops" :key="top.id" class="sub-main">
+      <div class="sub1">
+        <div class="logo-box">
+          <div class="logo">
+            <i class="material-symbols-outlined font-inc">{{ top.logo }}</i>
           </div>
-          <div class="sub2">
-              <div class="image">
-                  <img :src="top.image" :alt="top.productName" class="p-img" />
-              </div>
-          </div>
-        </swiper-slide>
-    </swiper>
+          <p>{{ top.productName }}</p>
+        </div>
+        <h1>Up to 10%</h1>
+        <h1>off Voucher</h1>
+        <p>Shop Now</p>
+      </div>
+      <div class="sub2">
+        <div class="image">
+          <img :src="top.image" :alt="top.productName" class="p-img" />
+        </div>
+      </div>
+    </swiper-slide>
+  </swiper>
 </template>
 
 <script>
-import { register } from 'swiper/element'
-import {  Autoplay, Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { register } from "swiper/element";
+import {
+  Autoplay,
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+} from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-import { ref, onMounted } from 'vue'
+import { ref, onMounted } from "vue";
 export default {
-    name: 'SubMain',
-    setup() {
-        const tops = ref([
-            {
-                id: 1,
-                productName: "iPhone",
-                image: "/img/endframe.png",
-                logo: "phone_iphone"
-            },
-            {
-                id: 2,
-                productName: "Laptops",
-                image: "/img/laptop.png",
-                logo: "keyboard"
-            },
-            {
-                id: 3,
-                productName: "Speakers",
-                image: "/img/speakers.png",
-                logo: "volume_up"
-            },
-            {
-                id: 4,
-                productName: "Perfumes",
-                image: "/img/perf.png",
-                logo: "cleaning"
-            },
-            {
-                id: 5,
-                productName: "Play Station",
-                image: "/img/ps5.png",
-                logo: "stadia_controller"
-            }
-        ]);
-        const onSwiper = (swiper) => {
-            // console.log(swiper);
-        };
-        const onSlideChange = () => {
-            // console.log("slide change");
-        };
+  name: "SubMain",
+  setup() {
+    const tops = ref([
+      {
+        id: 1,
+        productName: "iPhone",
+        image: "/img/endframe.png",
+        logo: "phone_iphone",
+      },
+      {
+        id: 2,
+        productName: "Laptops",
+        image: "/img/laptop.png",
+        logo: "keyboard",
+      },
+      {
+        id: 3,
+        productName: "Speakers",
+        image: "/img/speakers.png",
+        logo: "volume_up",
+      },
+      {
+        id: 4,
+        productName: "Perfumes",
+        image: "/img/perf.png",
+        logo: "cleaning",
+      },
+      {
+        id: 5,
+        productName: "Play Station",
+        image: "/img/ps5.png",
+        logo: "stadia_controller",
+      },
+    ]);
+    const onSwiper = (swiper) => {
+      // console.log(swiper);
+    };
+    const onSlideChange = () => {
+      // console.log("slide change");
+    };
 
-        onMounted(() => {
-            console.log("MOUNTEDDDDDDDD")
-        })
-        return {
-            modules: [Autoplay, Navigation, Pagination, Scrollbar, A11y],
-            tops,
-            onSwiper,
-            onSlideChange
-        }
-    },
-    components: {
-        Swiper,
-        SwiperSlide
-    },
-    
-}
+    onMounted(() => {
+      console.log("MOUNTEDDDDDDDD");
+    });
+    return {
+      modules: [Autoplay, Navigation, Pagination, Scrollbar, A11y],
+      tops,
+      onSwiper,
+      onSlideChange,
+    };
+  },
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+};
 </script>
 
 <style scoped>
 .swippp {
-    /* border: 3px solid tomato; */
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 .sub-main {
-    /* border: 4px solid greenyellow; */
-    padding-top: 30px;
-    background: #000000;
-    width: 100%;
-    height: 93%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
+  padding-top: 1.875rem;
+  background: #000000;
+  width: 100%;
+  height: 93%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 .sub1 {
-    /* border: 4px solid brown; */
-    width: 350px;
-    height: 350px;
-    padding: 20px 50px 0px 0px;
-    color: white;
+  width: 21.875rem;
+  height: 21.875rem;
+  padding: 1.25rem 3.125rem 0rem 0rem;
+  color: white;
 }
 .logo-box {
-    /* border: 2px solid blue; */
-    /* width: 150px; */
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 .font-inc {
-    font-size: 40px;
+  font-size: 2.5rem;
 }
 .logo {
-    /* border: 2px solid red; */
-    width: 45px;
-    height: 45px;
-    margin-right: 10px;
-    /* display: inline-block; */
+  width: 2.8125rem;
+  height: 2.8125rem;
+  margin-right: 0.625rem;
 }
 .sub1 h1 {
-    font-size: 50px;
-    line-height: 8px;
+  font-size: 3.125rem;
+  line-height: 0.5rem;
 }
 .sub1 p {
-    line-height: 0px;
-    display: inline-block;
+  line-height: 0px;
+  display: inline-block;
 }
 .sub2 {
-    /* border: 4px solid brown; */
-    width: 400px;
-    height: 350px;
+  width: 25rem;
+  height: 21.875rem;
 }
 .sub2 .image {
-    /* border: 2px solid blueviolet; */
-    width: 350px;
-    height: 300px;
+  width: 21.875rem;
+  height: 18.75rem;
 }
 .p-img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 @media screen and (max-width: 768px) {
-    .sub-main{
-        flex-direction: column;
-        height: 100%;
-    }
-    .sub1 {
-        height: 50%;
-        width: 100%;
-        text-align: center;
-    }
-    /* .sub1 h1 {
-        font-size: 40px;
-    } */
-    .sub2 {
-        height: 50%;
-        width: 100%;
-    }
-    .sub2 .image {
-        margin: 0px auto;
-    }
+  .sub-main {
+    flex-direction: column;
+    height: 100%;
+  }
+  .sub1 {
+    height: 50%;
+    width: 100%;
+    text-align: center;
+  }
+  .sub2 {
+    height: 50%;
+    width: 100%;
+  }
+  .sub2 .image {
+    margin: 0px auto;
+  }
 }
-
-
 </style>
