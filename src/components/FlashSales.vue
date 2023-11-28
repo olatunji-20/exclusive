@@ -1,6 +1,6 @@
 <template>
   <Preloader v-if="productStore.isLoading" />
-  <div class="flash">
+  <div v-else class="flash">
     <Card
       :link="'/product-page/'"
       :displayProducts="productStore.flashProducts"
