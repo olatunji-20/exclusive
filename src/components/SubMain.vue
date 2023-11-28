@@ -178,6 +178,7 @@ export default {
     height: 50%;
     width: 100%;
     text-align: center;
+    padding: 0px;
   }
   .sub2 {
     height: 50%;

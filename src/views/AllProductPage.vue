@@ -5,7 +5,7 @@
   <FootBar />
 </template>
   
-  <script>
+<script>
 import NavBar from "../components/NavBar.vue";
 import ProductDetail from "../components/ProductDetail.vue";
 import RelatedItem from "../components/RelatedItem.vue";
@@ -33,10 +33,10 @@ export default {
     NavBar,
     ProductDetail,
     RelatedItem,
-    FootBar,
-  },
+    FootBar
+  }
 };
 </script>
   
-  <style>
+<style>
 </style>

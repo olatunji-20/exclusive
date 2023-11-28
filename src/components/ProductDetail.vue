@@ -1,4 +1,5 @@
 <template>
+  <Pop v-show="showPop" :name="productInfo.productName" :quantity="quantity" />
   <section class="qqq">
     <div class="details">
       <div class="image">
@@ -34,7 +35,7 @@
             </div>
           </div>
           <div class="one">
-            <AddToCart :product="productInfo" :quantity="quantity" />
+            <AddToCart :product="productInfo" :quantity="quantity" @click="loud" />
           </div>
           <div class="two">
             <i class="material-symbols-outlined">favorite</i>
@@ -69,6 +70,7 @@
 <script>
 import { ref } from "vue";
 import AddToCart from "./AddToCart.vue";
+import Pop from "./Pop.vue"
 import StarRating from "vue-dynamic-star-rating";
 
 export default {
@@ -82,7 +84,17 @@ export default {
       quantity.value--;
     };
 
+    const showPop = ref(false);
+
+    const loud = () => {
+      showPop.value = true;
+      setTimeout(() => {
+        showPop.value = false;
+      }, 3000);
+    };
     return {
+      showPop,
+      loud,
       quantity,
       increase,
       decrease,
@@ -100,6 +112,7 @@ export default {
   components: {
     AddToCart,
     StarRating,
+    Pop
   },
   watch: {
     quantity(val) {
