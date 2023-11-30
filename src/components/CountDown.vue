@@ -43,7 +43,7 @@ export default {
 .count {
   width: 100%;
   height: 100%;
-  color: black;
+  color: #404040;
 }
 .ddd {
   display: flex;

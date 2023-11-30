@@ -22,7 +22,7 @@ export default {
 
 <style scoped>
 .add {
-    border: 2px solid #DB4444;
+    border: 1px solid #DB4444;
     background: #00ff66;
     width: 500px;
     height: auto;
