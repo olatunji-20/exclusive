@@ -3,7 +3,7 @@
     <h1>Featured</h1>
     <h2>New Arrival</h2>
     <div class="new">
-      <div class="first">
+      <div class="first" data-aos="slide-up">
         <img src="/img/ps5.png" class="p-img" />
         <div class="play">
           <h4 style="line-height: 1px">PlayStation 5</h4>
@@ -50,7 +50,14 @@
   </div>
 </template>
   
-  <script>
+<script>
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init({
+  duration: 1000,
+});
+
 export default {
   name: "NewArrival",
   setup() {},

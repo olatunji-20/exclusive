@@ -4,37 +4,37 @@
     <h2>Browse By Category</h2>
     <div class="content">
       <div class="sub-content">
-        <div class="cat">
+        <div class="cat" data-aos="slide-right">
           <div class="icon">
             <i class="material-symbols-outlined font-inc">smartphone</i>
           </div>
           <p>Phones</p>
         </div>
-        <div class="cat">
+        <div class="cat" data-aos="slide-down">
           <div class="icon">
             <i class="material-symbols-outlined font-inc">computer</i>
           </div>
           <p>Computers</p>
         </div>
-        <div class="cat">
+        <div class="cat" data-aos="zoom-in-up">
           <div class="icon">
             <i class="material-symbols-outlined font-inc">watch</i>
           </div>
           <p>SmartWatch</p>
         </div>
-        <div class="cat">
+        <div class="cat" data-aos="zoom-out-down">
           <div class="icon">
             <i class="material-symbols-outlined font-inc">photo_camera</i>
           </div>
           <p>Camera</p>
         </div>
-        <div class="cat">
+        <div class="cat" data-aos="slide-up">
           <div class="icon">
             <i class="material-symbols-outlined font-inc">headphones</i>
           </div>
           <p>HeadPhones</p>
         </div>
-        <div class="cat">
+        <div class="cat" data-aos="slide-left">
           <div class="icon">
             <i class="material-symbols-outlined font-inc">stadia_controller</i>
           </div>
@@ -46,6 +46,13 @@
 </template>
 
 <script>
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init({
+  duration: 1000,
+});
+
 export default {
   name: "Categories",
   setup() {},
@@ -57,6 +64,7 @@ export default {
   width: 100%;
   height: auto;
   padding: 5rem;
+  overflow: hidden;
 }
 h1 {
   border-left: 1.25rem solid #db4444;

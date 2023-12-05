@@ -1,7 +1,7 @@
 <template>
   <NavBar />
   <section>
-    <aside class="left">
+    <aside class="left" data-aos="fade-right">
       <ul>
         <li>Women's fashion</li>
         <li>Men's fashion</li>
@@ -15,7 +15,7 @@
       </ul>
     </aside>
     <aside class="hero">
-      <div class="main">
+      <div class="main" data-aos="fade-up">
         <SubMain />
       </div>
     </aside>
@@ -42,6 +42,13 @@ import OurProducts from "../components/OurProducts.vue";
 import NewArrival from "../components/NewArrival.vue";
 import Value from "../components/Value.vue";
 import FootBar from "../components/FootBar.vue";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init({
+  duration: 800,
+});
 
 export default {
   name: "HomePage",

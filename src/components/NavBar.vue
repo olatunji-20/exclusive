@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header data-aos="fade-down">
     <div class="logo">
       <router-link to="/">
         <img src="/img/exclusive.svg" class="p-img" />
@@ -66,6 +66,14 @@
 import { ref, computed } from "vue";
 import { useProductStore } from "../stores/productStore";
 import CartCard from "./CartCard.vue";
+
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init({
+  duration: 800,
+});
 
 export default {
   name: "NavBar",
