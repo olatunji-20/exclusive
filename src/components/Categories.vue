@@ -10,7 +10,7 @@
           </div>
           <p>Phones</p>
         </div>
-        <div class="cat" data-aos="slide-down">
+        <div class="cat" data-aos="fade-out">
           <div class="icon">
             <i class="material-symbols-outlined font-inc">computer</i>
           </div>
@@ -50,7 +50,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 AOS.init({
-  duration: 1000,
+  duration: 1500,
 });
 
 export default {

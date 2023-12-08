@@ -23,7 +23,7 @@ export default {
 <style scoped>
 .add {
     border: 1px solid #DB4444;
-    background: #00ff66;
+    background: #CCCCCC;
     width: 500px;
     height: auto;
     position: fixed;

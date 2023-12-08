@@ -50,16 +50,18 @@
       </router-link>
     </p>
   </div>
-  <div v-if="showMenu" class="menu-board">
-    <ul>
-      <li><router-link class="rlink" to="/">Home</router-link></li>
-      <li><router-link class="rlink" to="/contact">Contact</router-link></li>
-      <li><router-link class="rlink" to="/about">About</router-link></li>
-      <li><router-link class="rlink" to="/signup">Sign Up</router-link></li>
-      <li><router-link class="rlink" to="/cart-page">Cart</router-link></li>
-      <li><router-link class="rlink" to="/wishlist">Wishlist</router-link></li>
-    </ul>
-  </div>
+  <transition name="board">
+    <div v-if="showMenu" class="menu-board">
+      <ul>
+        <li><router-link class="rlink" to="/">Home</router-link></li>
+        <li><router-link class="rlink" to="/contact">Contact</router-link></li>
+        <li><router-link class="rlink" to="/about">About</router-link></li>
+        <li><router-link class="rlink" to="/signup">Sign Up</router-link></li>
+        <li><router-link class="rlink" to="/cart-page">Cart</router-link></li>
+        <li><router-link class="rlink" to="/wishlist">Wishlist</router-link></li>
+      </ul>
+    </div>
+  </transition>
 </template>
 
 <script>
@@ -72,7 +74,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 AOS.init({
-  duration: 800,
+  duration: 1000,
 });
 
 export default {
@@ -217,12 +219,23 @@ input {
   position: absolute;
   right: 0;
   background: #f5f5f5;
+  opacity: .9;
   z-index: 10;
 }
 .menu-board ul li {
   list-style-type: none;
   line-height: 3.125rem;
   display: block;
+}
+
+.board-enter-from, .board-leave-to {
+  right: -300px;
+}
+.board-enter-to, .board-leave-from {
+  right: 0px;
+}
+.board-enter-active, .board-leave-active {
+  transition: .3s ease;
 }
 
 @media screen and (max-width: 768px) {

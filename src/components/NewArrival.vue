@@ -15,7 +15,7 @@
       </div>
 
       <div class="second">
-        <div class="one">
+        <div class="one" data-aos="slide-up">
           <img src="/img/attractive.png" class="p-img" />
           <div class="play">
             <h4 style="line-height: 1px">Women's Collections</h4>
@@ -25,7 +25,7 @@
             <p style="line-height: 3px">Shop Now</p>
           </div>
         </div>
-        <div class="two">
+        <div class="two" data-aos="slide-down">
           <img src="/img/speakers.png" class="p-img2" />
           <div class="play1">
             <h4 style="line-height: 1px">Speakers</h4>
@@ -35,7 +35,7 @@
             <p style="line-height: 3px">Shop Now</p>
           </div>
         </div>
-        <div class="three">
+        <div class="three" data-aos="fade-down">
           <img src="/img/perf.png" class="p-img2" />
           <div class="play1">
             <h4 style="line-height: 1px">Perfumes</h4>
@@ -55,7 +55,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 AOS.init({
-  duration: 1000,
+  duration: 1500,
 });
 
 export default {
