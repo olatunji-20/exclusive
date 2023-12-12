@@ -9,20 +9,22 @@
     <h1 v-if="cartStore.cartItems.length === 0">
       Your shopping cart is currently empty.
     </h1>
-    <div v-for="product in cartStore.cartItems" :key="product.id" class="cart">
-      <div class="det">
-        <div class="img">
-          <img :src="product.productImage" class="p-img" />
+    <transition-group name="kat" appear v-else>
+      <div v-for="product in cartStore.cartItems" :key="product.id" class="cart">
+        <div class="det">
+          <div class="img">
+            <img :src="product.productImage" class="p-img" />
+          </div>
+          <p>{{ product.productName }}</p>
         </div>
-        <p>{{ product.productName }}</p>
+        <p>${{ product.price }}</p>
+        <p>{{ product.quantity }}</p>
+        <p>${{ product.price * product.quantity }}</p>
+        <div class="rem">
+          <RemoveCart :product="product" />
+        </div>
       </div>
-      <p>${{ product.price }}</p>
-      <p>{{ product.quantity }}</p>
-      <p>${{ product.price * product.quantity }}</p>
-      <div class="rem">
-        <RemoveCart :product="product" />
-      </div>
-    </div>
+    </transition-group>
   </div>
 </template>
 
@@ -50,8 +52,8 @@ export default {
   box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
 }
 .headers {
-  border: 1px solid #f5f5f5;
-  box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+  border: 1px solid #cccccc;
+  box-shadow: rgba(99, 99, 99, 0.6) 0px 2px 8px 0px;
   border-radius: 4px;
   width: 100%;
   padding: 0.3125rem 3.75rem 0.3125rem 0rem;
@@ -110,6 +112,22 @@ h1 {
   position: absolute;
   right: 0px;
   box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+}
+
+.kat-enter-from, .kat-leave-to {
+  opacity: 0;
+  transform: scale(0.6)
+}
+.kat-enter-to, .kat-leave-from {
+  left: 1;
+  transform: scale(1)
+}
+.kat-enter-active, .kat-leave-active {
+  transition: .4s ease;
+  position: absolute;
+}
+.kat-move {
+  transition: .5s ease;
 }
 
 @media screen and (max-width: 768px) {
