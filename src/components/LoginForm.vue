@@ -14,13 +14,13 @@
   </div>
 </template>
   
-  <script>
+<script>
 export default {
   name: "SignupForm",
 };
 </script>
   
-  <style scoped>
+<style scoped>
 .larges {
   width: 100%;
   height: auto;

@@ -22,14 +22,14 @@ export default {
   align-items: center;
 }
 .sub {
-  border: 10px solid #cccccc;
-  border-top: 10px solid #db4444;
+  border: 8px solid #cccccc;
+  border-top: 8px solid #db4444;
   width: 6rem;
   height: 6rem;
   border-radius: 50%;
   margin: 6rem auto;
   animation-name: spinner;
-  animation-duration: 0.8s;
+  animation-duration: 1.2s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
