@@ -25,7 +25,7 @@
             <p style="line-height: 3px">Shop Now</p>
           </div>
         </div>
-        <div class="two" data-aos="slide-down">
+        <div class="two" data-aos="slide-down" data-aos-delay="300">
           <img src="/img/speakers.png" class="p-img2" />
           <div class="play1">
             <h4 style="line-height: 1px">Speakers</h4>
@@ -35,7 +35,7 @@
             <p style="line-height: 3px">Shop Now</p>
           </div>
         </div>
-        <div class="three" data-aos="fade-down">
+        <div class="three" data-aos="fade-down" data-aos-delay="300">
           <img src="/img/perf.png" class="p-img2" />
           <div class="play1">
             <h4 style="line-height: 1px">Perfumes</h4>
